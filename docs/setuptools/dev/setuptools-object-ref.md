@@ -277,7 +277,9 @@ Tests whether or not local storage works on the browser.
 
 This utility uses <a href="https://github.com/noelboss/featherlight" target="_blank">Featherlight</a> to create the lightboxes in use within SetupTools.
  
-#### setuptools.lightbox.create = function(html data [, object config, string title='Muledump Setup'])
+```js
+setuptools.lightbox.create(html data [, object config, string title='Muledump Setup'])
+````
 
 Creates a Featherlight lightbox with the supplied HTML data with the specified title and optional configuration.
 
