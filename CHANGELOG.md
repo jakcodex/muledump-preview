@@ -13,6 +13,7 @@
 - SetupTools can no longer be disabled in the Settings Manager for Muledump Online users (#38)
 - Dev docs written for SetupTools (#35)
 - Added a vendor licenses file
+- Muledump Online [Preview Release](https://jakcodex.github.io/muledump-preview/) demos upcoming changes to Muledump before they're released
 
 **2017-09-28** version 0.8.0-9
 
