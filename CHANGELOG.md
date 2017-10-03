@@ -1,4 +1,4 @@
-**2017-10-??** version 0.8.1-0
+**2017-10-??** version 0.8.1-1
 
 - Bug Fixes
   * SetupTools: Accounts.js export incorrectly using the default settings instead of user settings (#26)
