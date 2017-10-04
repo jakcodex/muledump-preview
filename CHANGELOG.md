@@ -1,4 +1,4 @@
-**2017-10-??** version 0.8.1-3
+**2017-10-04** version 0.8.1-3
 
 - Bug Fixes
   * Muledump: Empty vaults weren't always getting displayed (#30)
@@ -15,7 +15,7 @@
 - SetupTools can no longer be disabled in the Settings Manager for Muledump Online users (#38)
 - Dev docs written for SetupTools (#35)
 - Added a vendor licenses file
-- Muledump Online [Preview Release](https://jakcodex.github.io/muledump-preview/) demos upcoming changes to Muledump before they're released
+- Muledump Online [Preview Release](https://jakcodex.github.io/muledump-preview/) demos upcoming changes to Muledump before they're released (#39)
 
 **2017-09-28** version 0.8.0-9
 
