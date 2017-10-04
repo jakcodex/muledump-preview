@@ -1,6 +1,7 @@
-**2017-10-??** version 0.8.1-2
+**2017-10-??** version 0.8.1-3
 
 - Bug Fixes
+  * Muledump: Empty vaults weren't always getting displayed (#30)
   * SetupTools: Accounts.js export incorrectly using the default settings instead of user settings (#26)
   * SetupTools: Mulelogin setting would not import correctly (#25)
   * SetupTools: Bypass mode would overwrite accounts.js settings with default settings (#36)
