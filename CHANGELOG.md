@@ -1,4 +1,4 @@
-**2017-10-??** version 0.8.1-1
+**2017-10-??** version 0.8.1-2
 
 - Bug Fixes
   * SetupTools: Accounts.js export incorrectly using the default settings instead of user settings (#26)
@@ -9,6 +9,7 @@
 - Improvements
   * Muledump Online: Update check replaced with a new version alert (#29)
   
+- Updated vaults to new 100-vault layout (#40)
 - Options loading moved into SetupTools main execution to enable modifying before display (#32)
 - SetupTools can no longer be disabled in the Settings Manager for Muledump Online users (#38)
 - Dev docs written for SetupTools (#35)
