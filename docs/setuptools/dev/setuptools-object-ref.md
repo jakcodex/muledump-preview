@@ -310,7 +310,7 @@ Adds the provided html to the page being built. Build data is stored in an array
 
 #### setuptools.lightbox.display(string page [, object config])
 
-Processes and removes all special build data for the specified page (settitle, goback, etc), builds the HTML response data, and sends it to `setuptools.lightbox.create()`.
+Processes and removes all special build data for the specified page (settitle, goback, etc), builds the HTML response data, and sends it to setuptools.lightbox.create().
 
 #### setuptools.lightbox.ajax(object e, object drawhelpData, object self [, boolean net=false])
 
@@ -329,7 +329,7 @@ setuptools.lightbox.display('myspace-method');
 $('.setuptools.link.somehelpdoc').click(function(e) { setuptools.lightbox.ajax(e, {title: 'My help title'}, this); });
 ```
 
-This creates a lightbox with a link in its message. When the link is clicked the Ajax response data is processed for links and displayed in a lightbox. The class `noclose` prevents SetupTools from erasing the previous page so when the user closes the help doc they are returned to the original page. 
+This creates a lightbox with a link in its message. When the link is clicked the Ajax response data is processed for links and displayed in a lightbox. The class noclose prevents SetupTools from erasing the previous page so when the user closes the help doc they are returned to the original page. 
 
 #### setuptools.lightbox.cancel(string page)
 
@@ -409,6 +409,10 @@ Determine of the supplied accountConfig format matches the specified format. Ret
 #### setuptools.app.config.determineFormat(object accountConfig)
 
 Determine the format of the supplied accountConfig. Returns 0 or 1. Throws an error if invalid.
+
+#### setuptools.app.config.listUsers([string id, boolean enabled])
+
+Lists all users in the configuration and optionally filters on id (group or guid) and enabled status.
 
 #### setuptools.app.config.userExists(string username)
 
@@ -544,7 +548,3 @@ Process a CustomList and validate its char ids against the Mule's char id list.
 #### setuptools.app.muledump.chsortcustom(object mule)
 
 Displays a page for management custom character sorting lists.
-
-#### setuptools.app.muledump.loadOptions()
-
-Transforms and initializes Muledump options.
