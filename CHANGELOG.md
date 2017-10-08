@@ -1,4 +1,9 @@
-**2017-10-??** version 0.8.1-5
+**2017-10-??** version 0.8.1-6
+
+- Bug Fixed
+  * Muledump: TOS, Migration, and Age Verification actions throwing errors (#42)
+
+**2017-10-08** version 0.8.1-5
 
 - Bug Fixes
   * Muledump: Empty vaults weren't always getting displayed (#30)
