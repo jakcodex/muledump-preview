@@ -17,6 +17,7 @@
 - Updated vaults to new 100-vault layout (#40)
 - Options loading moved into SetupTools main execution to enable modifying before display (#32)
 - SetupTools can no longer be disabled in the Settings Manager for Muledump Online users (#38)
+- Minor updates to lib/pcstats.js
 - Dev docs written for SetupTools (#35)
 - Added a vendor licenses file
 - Muledump Online [Preview Release](https://jakcodex.github.io/muledump-preview/) demos upcoming changes to Muledump before they're released (#39)
