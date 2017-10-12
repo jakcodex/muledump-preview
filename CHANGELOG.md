@@ -1,12 +1,8 @@
-**2017-10-??** version 0.8.1-6
-
-- Bug Fixed
-  * Muledump: TOS, Migration, and Age Verification actions throwing errors (#42)
-
-**2017-10-08** version 0.8.1-5
+**2017-10-12** version 0.8.1-6
 
 - Bug Fixes
   * Muledump: Empty vaults weren't always getting displayed (#30)
+  * Muledump: TOS, Migration, and Age Verification actions throwing errors (#42)
   * SetupTools: Accounts.js export incorrectly using the default settings instead of user settings (#26)
   * SetupTools: Mulelogin setting would not import correctly (#25)
   * SetupTools: Bypass mode would overwrite accounts.js settings with default settings (#36)
