@@ -1,8 +1,19 @@
+**2017-??-??** version 0.8.2-0
+
+- New Feature: Groups Manager
+
+- New Settings
+  * longpress: How long to wait for longpress clicks (currently used in Groups Manager)
+
 **2017-10-12** version 0.8.1-6
 
 - Bug Fixes
-  * Muledump: Empty vaults weren't always getting displayed (#30)
   * Muledump: TOS, Migration, and Age Verification actions throwing errors (#42)
+  
+**2017-10-08** version 0.8.1-5
+
+- Bug Fixes
+  * Muledump: Empty vaults weren't always getting displayed (#30)
   * SetupTools: Accounts.js export incorrectly using the default settings instead of user settings (#26)
   * SetupTools: Mulelogin setting would not import correctly (#25)
   * SetupTools: Bypass mode would overwrite accounts.js settings with default settings (#36)

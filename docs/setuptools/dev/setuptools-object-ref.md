@@ -336,6 +336,10 @@ This creates a lightbox with a link in its message. When the link is clicked the
 
 Erases the build data for the specified page.
 
+#### setuptools.lightbox.close(page)
+
+Manually closes a lightbox for the specified page.
+
 #### setuptools.lightbox.drawhelp(string page, string link, string title)
 
 Adds to the page build data a drawhelp object with the format:
