@@ -76,13 +76,23 @@ input[name="checkAll"] {
     text-align: center;
 }
 
+.setuptools-medium-static .featherlight-content {
+    max-width: 35%;
+    min-width: 35%;
+}
+
 .setuptools-large .featherlight-content {
     max-width: 60%;
     min-width: 20%;
 }
 
 .setuptools-tiles .featherlight-content {
-    max-width: 80%;
+    max-width: 1000px;
+}
+
+.setuptools-tiles-fixed .featherlight-content {
+    max-width: 50%;
+    min-width: 50%;
 }
 
 .setuptools input[name="restoreSaveExisting"] {
@@ -477,4 +487,116 @@ input.setuptools.groups {
 
 .setuptools.div.menu strong {
     color: #22b7da;
+}
+
+/* group editor */
+.setuptools.div.groups.editor.active {
+    min-width: 670px;
+}
+
+.setuptools.div.groups.editor > div {
+    width: 325px;
+}
+
+.setuptools.div.groups.editor > div:first-child {
+    float: left;
+    clear: left;
+    margin-right: 5px;
+}
+
+.setuptools.div.groups.editor > div:last-child {
+    float: right;
+    clear: right;
+}
+
+.setuptools.div.groups.editor div.availableAccounts > div:first-child {
+    border-bottom: #fff solid 1px;
+}
+
+.setuptools.div.groups.editor div.groupMembers > div:first-child {
+    border-bottom: #fff solid 1px;
+}
+
+.setuptools.div.groups.editor div.cell {
+    width: 100%;
+}
+
+.setuptools.div.groups.editor div.editor.control.lastPage {
+    float: right;
+    clear: right;
+}
+
+.setuptools.div.groups.editor div.editor.control.nextPage {
+    float: right;
+}
+
+.setuptools.div.groups.editor div.editor.control.firstPage {
+    float: left;
+    clear: left;
+}
+
+.setuptools.div.groups.editor div.editor.control.previousPage {
+    float: left;
+}
+
+.setuptools.div.groups.editor div.editor.control.customPage {
+    background-color: #222 !important;
+    width: auto;
+    border: 0 !important;
+    padding-top: 0 !important;
+    float: left;
+    margin-right: 0 !important;
+}
+
+.setuptools.div.groups.editor div.editor.control.customPage input {
+    font-size: 12px;
+    width: 35px;
+    height: 21px;
+    border: 1px solid #ffffff;
+    background-color: #333;
+    color: #ffffff;
+    padding-left: 2px;
+    padding-right: 2px;
+    text-align: center;
+}
+
+.setuptools.div.groups.editor div.editor.control.customPage span {
+    font-weight: normal;
+    padding-top: 3px;
+    font-size: 12px;
+    cursor: default !important;
+}
+
+.setuptools.div.groups.editor div.editor.control.gotoPage {
+    float: left;
+    border: 0 !important;
+    background-color: #222 !important;
+    padding: 0 !important;
+}
+
+.setuptools.div.groups.editor div.editor.control.gotoPage:hover {
+    color: rgb(59, 85, 255);
+}
+
+
+.setuptools.div.groups.editor div.availableAccounts div.setuptools.div.groupControls {
+    width: 100%;
+}
+
+.setuptools.div.groups.editor div.availableAccounts div.setuptools.div.groupControls div {
+    padding-top: 0 !important;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.setuptools.div.groups.editor div.availableAccounts div.setuptools.div.groupControls div:hover, .setuptools.div.groups.editor div.availableAccounts div.setuptools.div.groupControls div:active {
+    background-color: #0c0870;
+}
+
+.setuptools.div.groups.editor div.availableAccounts div.setuptools.div.groupControls div.lastPage {
+    margin-right: 0 !important;
+}
+
+.setuptools.div.groups.editor div.availableAccounts div.dragbox div.cell:hover {
+    background-color: #0c0870;
 }
