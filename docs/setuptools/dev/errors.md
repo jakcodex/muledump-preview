@@ -84,5 +84,5 @@ Users who have not migrated to SetupTools configuration cannot utilize this feat
 #### Error 27 - setuptools.app.groups.delete
 Required argument groupName was invalid
 
-#### Error 28 - setuptools.app.groups.delete
-Supplied groupName does not exist in client configuration
+#### Error 28 - setuptools.app.groups.manager
+Supplied groupName does not exist in client configuration or was an invalid name

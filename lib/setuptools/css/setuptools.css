@@ -426,7 +426,7 @@ input.setuptools.groups {
     margin-right: 10px;
 }
 
-.setuptools.bottom.container div:last-child {
+.setuptools.bottom.container div:last-child:not(:first-child) {
     margin-left: 10px;
 }
 
@@ -435,12 +435,12 @@ input.setuptools.groups {
 }
 
 
-.setuptools.div.groupControls, .setuptools.div.groupList {
+.setuptools.div.pageControls, .setuptools.div.groupControls, .setuptools.div.groupList {
     float: left;
     clear: both;
 }
 
-.setuptools.div.groupControls div {
+.setuptools.div.pageControls div, .setuptools.div.groupControls div {
     float: left;
     border: #fff solid 1px;
     text-align: center;
@@ -454,7 +454,7 @@ input.setuptools.groups {
     height: 21px;
 }
 
-.setuptools.div.groupControls div:not(.selected) {
+.setuptools.div.pageControls div:not(.selected), .setuptools.div.groupControls div:not(.selected) {
     background-color: #333;
 }
 
@@ -521,25 +521,25 @@ input.setuptools.groups {
     width: 100%;
 }
 
-.setuptools.div.groups.editor div.editor.control.lastPage {
+div.setuptools.div.pageControls div.editor.control.lastPage {
     float: right;
     clear: right;
 }
 
-.setuptools.div.groups.editor div.editor.control.nextPage {
+div.setuptools.div.pageControls div.editor.control.nextPage {
     float: right;
 }
 
-.setuptools.div.groups.editor div.editor.control.firstPage {
+div.setuptools.div.pageControls div.editor.control.firstPage {
     float: left;
     clear: left;
 }
 
-.setuptools.div.groups.editor div.editor.control.previousPage {
+div.setuptools.div.pageControls div.editor.control.previousPage {
     float: left;
 }
 
-.setuptools.div.groups.editor div.editor.control.customPage {
+div.setuptools.div.pageControls div.editor.control.customPage, div.setuptools.div.pageControls div.editor.control.searchName {
     background-color: #222 !important;
     width: auto;
     border: 0 !important;
@@ -548,7 +548,7 @@ input.setuptools.groups {
     margin-right: 0 !important;
 }
 
-.setuptools.div.groups.editor div.editor.control.customPage input {
+div.setuptools.div.pageControls div.editor.control input {
     font-size: 12px;
     width: 35px;
     height: 21px;
@@ -560,43 +560,48 @@ input.setuptools.groups {
     text-align: center;
 }
 
-.setuptools.div.groups.editor div.editor.control.customPage span {
+div.setuptools.div.pageControls div.editor.control span {
     font-weight: normal;
     padding-top: 3px;
     font-size: 12px;
     cursor: default !important;
 }
 
-.setuptools.div.groups.editor div.editor.control.gotoPage {
+div.editor.control.searchName input {
+    width: 200px !important;
+    text-align: left !important;
+}
+
+div.setuptools.div.pageControls div.editor.control.gotoPage, div.setuptools.div.pageControls div.editor.control.search {
     float: left;
     border: 0 !important;
     background-color: #222 !important;
     padding: 0 !important;
 }
 
-.setuptools.div.groups.editor div.editor.control.gotoPage:hover {
+div.setuptools.div.pageControls div.editor.control.gotoPage:hover, div.setuptools.div.pageControls div.editor.control.search:hover {
     color: rgb(59, 85, 255);
 }
 
 
-.setuptools.div.groups.editor div.availableAccounts div.setuptools.div.groupControls {
+div.setuptools.div.pageControls {
     width: 100%;
 }
 
-.setuptools.div.groups.editor div.availableAccounts div.setuptools.div.groupControls div {
+div.setuptools.div.pageControls div {
     padding-top: 0 !important;
     font-size: 14px;
     font-weight: bold;
 }
 
-.setuptools.div.groups.editor div.availableAccounts div.setuptools.div.groupControls div:hover, .setuptools.div.groups.editor div.availableAccounts div.setuptools.div.groupControls div:active {
+div.setuptools.div.pageControls div:hover, div.setuptools.div.pageControls div:active {
     background-color: #0c0870;
 }
 
-.setuptools.div.groups.editor div.availableAccounts div.setuptools.div.groupControls div.lastPage {
+div.setuptools.div.pageControls div.lastPage {
     margin-right: 0 !important;
 }
 
-.setuptools.div.groups.editor div.availableAccounts div.dragbox div.cell:hover {
+.setuptools.div.groups.editor > div > div > div.cell:hover {
     background-color: #0c0870;
 }
