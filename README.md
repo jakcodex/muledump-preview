@@ -24,6 +24,8 @@ Muledump Online is available hosted on Github [here](https://jakcodex.github.io/
 
 All released versions are available for download [here](https://github.com/jakcodex/muledump/releases).
 
+Head over to [Installation and Setup](https://github.com/jakcodex/muledump/wiki/Installation-and-Setup) in the wiki for a detailed setup guide.
+
 ## Local Download Version
 
 - Unzip the latest muledump release
@@ -44,7 +46,6 @@ All released versions are available for download [here](https://github.com/jakco
 - Manage all of your ROTMG accounts from a single interface
 - [SetupTools](docs/setuptools/index.md) - An easy to use, browser-based user interface for managing Muledump
 - [Muledump Online](https://jakcodex.github.io/muledump-preview/muledump.html) - Load Muledump directly from Github using SetupTools
-- Groups Manager - A work in progress :)
 - MuleQueue - Task queuing to control the flow of requests from Muledump
 - Vault display is now fully customizable and comes with three pre-defined layouts
 - Character Sorting by fame, exp, total fame, class, and custom lists
@@ -63,6 +64,7 @@ All released versions are available for download [here](https://github.com/jakco
 
 And of course, feel free to contribute to it!
 
+<a id="jakcodex-supportandcontributions"></a>
 ## Support and Contributions
 
 You can message me [on Reddit](https://www.reddit.com/message/compose?to=jakisaurus&subject=Muledump%20support&message=) with any questions, comments, concerns, or other feedback. I will respond as soon as I am able to. I'm glad to help get you up and running or answer any questions.
@@ -82,6 +84,10 @@ Muledump versions are described as 0.x.y-p where x is the major version, y is th
 All incrementes of x or y are published as an official Muledump Local release. The patch version at time of release will be noted in the release notes. Subsequent patches after release will not be published as a new release unless they are for a high severity issue or there is a cumulative release.
 
 Muledump Online always runs the latest version of Muledump with all patches.
+
+## Special Thanks
+
+Muledump Renders and Constants have been provided to Jakcodex/Muledump courtesy of [TheSTDMan](https://github.com/thestdman) and is primarily maintained by [Wawawa](https://github.com/wawawawawawawa/muledump). They made my life easier and I appreciate that greatly.
 
 ## Original Muledump License
 

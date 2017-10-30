@@ -1,9 +1,12 @@
 **2017-??-??** version 0.8.2-0
 
-- New Feature: Groups Manager
+- New Feature: Groups Manager in dev
 
 - New Settings
-  * longpress: How long to wait for longpress clicks (currently used in Groups Manager)
+  * accountsPerPage: How many accounts to display per page 
+  * longpress: How long to wait for longpress clicks
+  
+- Renders update for X17
 
 **2017-10-12** version 0.8.1-6
 
