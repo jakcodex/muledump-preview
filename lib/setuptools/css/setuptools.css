@@ -475,6 +475,7 @@ input.setuptools.groups {
     width: 100%;
     padding-bottom: 7px;
     padding-top: 7px;
+    overflow: hidden;
 }
 
 .setuptools.div.menu div:not(:last-child) {
@@ -503,22 +504,22 @@ input.setuptools.groups {
     width: 325px;
 }
 
-.setuptools.div.groups.editor > div:first-child {
+.setuptools.div.groups.editor > div.availableAccounts {
     float: left;
     clear: left;
     margin-right: 5px;
 }
 
-.setuptools.div.groups.editor > div:last-child {
+.setuptools.div.groups.editor > div.groupMembers {
     float: right;
     clear: right;
 }
 
-.setuptools.div.groups.editor div.availableAccounts > div:first-child {
-    border-bottom: #fff solid 1px;
+div.nocontext {
+   cursor: initial;
 }
 
-.setuptools.div.groups.editor div.groupMembers > div:first-child {
+.setuptools.div.groups.editor > div > div:first-child {
     border-bottom: #fff solid 1px;
 }
 
