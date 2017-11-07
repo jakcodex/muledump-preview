@@ -273,6 +273,12 @@ a.setuptools.app.config.settings.action.save {
     clear: both !important;
 }
 
+a.setuptools.app.config.settings.action.eraseAll, a.setuptools.app.config.settings.action.eraseCache {
+    float: left;
+    clear: both;
+    color: #9e0900 !important;
+}
+
 a.setuptools.app.action.destroy {
     float: right;
     clear: right;
@@ -285,7 +291,7 @@ a.setuptools.app.action.arrrrgbaaad {
     color: #9e0900 !important;
 }
 
-a.setuptools.app.action.destroy:hover, a.setuptools.app.action.arrrrgbaaad:hover {
+a.setuptools.app.action.destroy:hover, a.setuptools.app.action.arrrrgbaaad:hover, a.setuptools.app.config.settings.action.eraseAll:hover, a.setuptools.app.config.settings.action.eraseCache:hover {
     color: #bb0b00 !important;
 }
 
@@ -702,4 +708,12 @@ div.setuptools.group.save:active {
 
 div.error {
     color: red !important;
+}
+
+.hidden {
+    display: none;
+}
+
+.setuptools.containerSettings {
+    width: 450px;
 }

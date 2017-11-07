@@ -1,13 +1,25 @@
 **2017-??-??** version 0.8.2-0
 
-- New Feature: Groups Manager in dev
+- New Features
+  * [Groups Manager](docs/setuptools/groups-manager/index.md) account organization tool (#28)
+  * Custom context menus
+  * Pagination tools for easier management of large lists (e.g. accounts)
+
+- Bug Fixes
+  * Detect and warn on bad account data (#47)
+
+- Improvements
+  * Settings Manager reorganized (#54)
+  * Added options to erase cached or all local storage data (#51)
 
 - New Settings
   * accountsPerPage: How many accounts to display per page 
+  * groups: Whether or not Group Manager is enabled
   * longpress: How long to wait for longpress clicks
   
 - Renders update for X17
 - Renders update for X18
+- Adjusted accountLoadDelay automatic settings
 - Clipboard.js 1.7.1 added
 
 **2017-10-12** version 0.8.1-6
