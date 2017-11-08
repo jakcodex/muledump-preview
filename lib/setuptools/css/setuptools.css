@@ -452,11 +452,11 @@ input.setuptools.groups {
     text-align: center;
     vertical-align: middle;
     margin-right: 5px;
+    padding: 1px 0 0 1px;
     margin-top: 5px;
-    padding-top: 3px;
-    font-size: 11px;
+    font-size: 14px;
     cursor: pointer;
-    width: 21px;
+    width: 24px;
     height: 21px;
 }
 
@@ -706,8 +706,13 @@ div.setuptools.group.save:active {
     background-color: #060434;
 }
 
-div.error {
+div.error, span.error {
     color: red !important;
+}
+
+div.success, span.success {
+    color: lawngreen !important;
+    margin-left: 5px;
 }
 
 .hidden {

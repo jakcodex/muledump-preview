@@ -87,7 +87,7 @@ Muledump Online always runs the latest version of Muledump with all patches.
 
 ## Special Thanks
 
-Muledump Renders and Constants have been provided to Jakcodex/Muledump courtesy of [TheSTDMan](https://github.com/thestdman) and is primarily maintained by [Wawawa](https://github.com/wawawawawawawa/muledump). They made my life easier and I appreciate that greatly.
+Muledump Renders and Constants are maintained for Jakcodex/Muledump by [TheSTDMan](https://github.com/thestdman).
 
 ## Original Muledump License
 

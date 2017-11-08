@@ -45,6 +45,7 @@ body {
 	text-align: left;
 	font-weight: normal;
 	font-size: 15px;
+	overflow: hidden;
 }
 .menu:hover:not(.setuptools) { display: block; }
 .handle { position: relative; }

@@ -4,9 +4,11 @@
   * [Groups Manager](docs/setuptools/groups-manager/index.md) account organization tool (#28)
   * Custom context menus
   * Pagination tools for easier management of large lists (e.g. accounts)
+  * Backup Assistant to remind user to download a backup (#50)
 
 - Bug Fixes
   * Detect and warn on bad account data (#47)
+  * Options menu not displaying correctly in Firefox (#49)
 
 - Improvements
   * Settings Manager reorganized (#54)
