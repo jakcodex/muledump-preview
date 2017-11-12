@@ -62,18 +62,22 @@ Head over to [Installation and Setup](https://github.com/jakcodex/muledump/wiki/
 
 ## Head to the [wiki](https://github.com/jakcodex/muledump/wiki) for more information!
 
-And of course, feel free to contribute to it!
+## Demoing Muledump
+
+Want to take a look around Muledump without having to provide any account information? A sample backup with dummy accounts can be downloaded here: [docs/setuptools/muledump-sample-config.json](docs/setuptools/muledump-sample-config.json).
+
+This file can be imported to Muledump via the upload backup option.
 
 <a id="jakcodex-supportandcontributions"></a>
 ## Support and Contributions
 
-You can message me [on Reddit](https://www.reddit.com/message/compose?to=jakisaurus&subject=Muledump%20support&message=) with any questions, comments, concerns, or other feedback. I will respond as soon as I am able to. I'm glad to help get you up and running or answer any questions.
+A new Discord for Jakcodex/Muledump is available here - [https://discord.gg/bHuBZuB](https://discord.gg/JFS5fqW).
 
-A Muledump support Discord is available at [https://discord.gg/bHuBZuB](https://discord.gg/bHuBZuB).
+Feel free to join and ask for help getting setup, hearing about updates, offer your suggestions and feedback, or just say hi.
 
 If you encounter a bug, have a feature request, or have any other feedback then you can check out the [issue tracker](https://github.com/jakcodex/muledump/issues) to see if it's already being discussed. If not then you can [submit a new issue](https://github.com/jakcodex/muledump/issues/new).
 
-If you are interested in helping test new versions of this software before release then check out the [Beta Testing](https://github.com/jakcodex/muledump/wiki/Beta-Testing) wiki page for more information.
+If you are interested in helping test new versions of this software before release then check out [Muledump Preview](https://github.com/jakcodex/muledump-preview/) for the recent stable development builds of Muledump.
 
 Feel free to submit pull requests or patches if you have any Muledump changes you'd like to contribute. See [Contributing](https://github.com/jakcodex/muledump/wiki/Contributing) for more information.
 

@@ -63,6 +63,7 @@ body {
     color: #fff;
 }
 
+.menu:not(.setuptools) div { overflow: hidden; }
 .menu:not(.setuptools) div>div>div { padding-left: 15px; }
 
 #export { width: auto; text-align: center; }

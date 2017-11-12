@@ -11,6 +11,7 @@
   * Options menu not displaying correctly in Firefox (#49)
 
 - Improvements
+  * Accounts Manager rewritten with a nicer UI (#53)
   * Settings Manager reorganized (#54)
   * Added options to erase cached or all local storage data (#51)
 
