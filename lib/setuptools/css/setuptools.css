@@ -103,7 +103,7 @@ input[name="checkAll"] {
     position: absolute;
     z-index: 9999;
     top: 0;
-    right: 60px;
+    right: 30px;
     line-height: 25px;
     width: 25px;
     cursor: pointer;
@@ -119,7 +119,6 @@ input[name="checkAll"] {
 
 .drawhelp.gohome {
     right: 30px;
-
 }
 
 .drawhelp.noclose:not(.nostyle) {
@@ -147,7 +146,7 @@ input.setuptools.app.wideinput {
 .setuptools.app select, select.setuptools {
     font-size: 12px;
     width: 200px;
-    border: #575757 solid 2px;
+    border: #707070 solid 2px;
     background-color: #333;
     padding: 3px;
     color: #ffffff;
@@ -163,7 +162,6 @@ input.setuptools.app.wideinput {
 
 div.setuptools.app.uploadData {
     width: 700px;
-    padding-right: 5px;
 }
 
 .setuptools.app.uploadData textarea {
@@ -223,7 +221,7 @@ div.setuptools.app.uploadData {
 .setuptools.app.config.settings select {
     clear: right;
     float: right;
-    height: 25px;
+    height: 24px;
 }
 
 .setuptools.app.save {
@@ -338,83 +336,6 @@ a.setuptools.app.config.settings.action.eraseCache:hover {
     height: 25px;
 }
 
-.setuptools.app.initsetup.accounts {
-    clear: both;
-    float: left;
-}
-
-.setuptools.app.initsetup.accounts:first-child div:first-child {
-    width: 25px;
-}
-
-.setuptools.app.initsetup.accounts div:first-child {
-    width: 25px;
-}
-
-.setuptools.app.initsetup.accounts div:not(.controller) {
-    float: left;
-    width: 200px;
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-.setuptools.app.initsetup.accounts:not(:last-child) {
-    margin-bottom: 5px;
-}
-
-.setuptools.app.initsetup.accounts .controller {
-    font-size: 24px;
-    font-weight: bold;
-    float: left;
-    width: 20px;
-    cursor: pointer;
-}
-
-.setuptools.app.initsetup.accounts input[type="checkbox"] {
-    width: 25px;
-}
-
-.setuptools.app.initsetup.accounts input,
-.setuptools.app.initsetup.accounts select {
-    float: left;
-}
-
-.setuptools.app.initsetup.accounts .controller:first-of-type {
-    margin-left: 5px;
-}
-
-.setuptools.app.initsetup.accounts .reveal {
-    font-size: 20px;
-}
-
-.setuptools.app.initsetup.accounts .remove {
-    padding-left: 2px;
-}
-
-.setuptools.app.initsetup.accounts .add:hover {
-    color: #cccccc;
-}
-
-.setuptools.app.initsetup.accounts .add:active {
-    color: #2496ff;
-}
-
-.setuptools.app.initsetup.accounts .reveal:hover {
-    color: #cccccc;
-}
-
-.setuptools.app.initsetup.accounts .reveal:active {
-    color: #14ff2c;
-}
-
-.setuptools.app.initsetup.accounts .remove:hover {
-    color: #cccccc;
-}
-
-.setuptools.app.initsetup.accounts .remove:active {
-    color: #ff1c29;
-}
-
 /* groups manager */
 input.setuptools.groups {
 
@@ -468,7 +389,7 @@ input.setuptools.groups {
 
 .setuptools.div.accountControls div {
     float: left;
-    border: #575757 solid 2px;
+    border: #707070 solid 2px;
     text-align: center;
     vertical-align: middle;
     margin-right: 5px;
@@ -481,7 +402,7 @@ input.setuptools.groups {
 .setuptools.div.pageControls div,
 .setuptools.div.groupControls div {
     float: left;
-    border: #575757 solid 2px;
+    border: #707070 solid 2px;
     text-align: center;
     vertical-align: middle;
     margin-right: 5px;
@@ -518,7 +439,7 @@ input.setuptools.groups {
 }
 
 .setuptools.div.menu div:not(:last-child) {
-    border-bottom: #2386ff solid 1px;
+    border-bottom: #b4b4b4 solid 1px;
 }
 
 .setuptools.div.menu div:hover:not(.noselect) {
@@ -595,8 +516,8 @@ div.nocontext {
    cursor: initial;
 }
 
-.setuptools.div.groups.editor > div > div:first-child:not(.pageControls) {
-    border-bottom: #fff solid 1px;
+.setuptools.div.groups.editor > div > div:first-child:not(.pageControls):not(.menuStyle):not(.formStyle) {
+    border-bottom: #b4b4b4 solid 2px;
 }
 
 .setuptools.div.groups.editor div.cell {
@@ -635,7 +556,7 @@ div.setuptools.div.pageControls div.editor.control input {
     font-size: 12px;
     width: 35px;
     height: 24px;
-    border: 2px solid #575757;
+    border: 2px solid #707070;
     background-color: #333;
     color: #ffffff;
     padding-left: 2px;
@@ -706,43 +627,10 @@ div.setuptools.div.pageControls div.lastPage {
     bottom: 0;
 }
 
-.setuptools.groupSaveControls {
-    margin-top: 20px;
-}
-
-.setuptools.groupSaveControls > div:first-child {
-    clear: left;
-    margin-top: 20px;
-    margin-right: 10px;
-}
-
-.setuptools.groupSaveControls > div:last-child {
+.setuptools.groupSaveControls > div > div.save.result {
+    float: right;
     clear: right;
-}
-
-.setuptools.groupSaveControls > div:last-child > div {
-    padding-top: 31px;
-    margin-left: 10px;
-    color: #14ff2c;
-}
-
-div.setuptools.group.save {
-    width: 200px !important;
-    float: left;
-    clear: both;
-    border: #fff solid 1px;
-    background-color: #111;
-    padding: 10px 10px 10px 10px;
-    cursor: pointer;
-    text-align: center;
-}
-
-div.setuptools.group.save:hover {
-    background-color: #0c0870;
-}
-
-div.setuptools.group.save:active {
-    background-color: #060434;
+    color: #008cfc;
 }
 
 div.error, span.error {
@@ -750,7 +638,7 @@ div.error, span.error {
 }
 
 div.success, span.success {
-    color: lawngreen !important;
+    color: #00b0fc !important;
     margin-left: 5px;
 }
 
@@ -802,7 +690,7 @@ div.accountControls > div:last-child {
 }
 
 div.accountControls > div:hover,
-div.AccountsList > div.controller:hover {
+.formStyle:hover {
     background-color: #040f51 !important;
     color: #22b7da;
 }
@@ -812,41 +700,37 @@ div.accountControls > div[data-option="delete"]:hover {
     color: #fd0005;
 }
 
-div.AccountsList > div.controller {
-    float: left;
-    cursor: pointer;
-    font-size: 12px;
-    width: 200px;
-    border: #004db4 solid 2px;
-    background-color: #0e1622;
-    padding: 3px;
-    color: #2386ff;
-}
 
-div.AccountsList > div.controller.empty {
+
+div.empty {
     background-color: initial;
     border: initial;
     margin-top: 5px;
     margin-right: 5px;
     clear: left;
+    float: left;
 }
 
-div.AccountsList > div.controller.empty:hover {
+div.empty:hover {
     background-color: initial !important;
     cursor: initial;
 }
 
-div.AccountsList > div.controller.newAccount {
+div.controller.saveNotice {
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+div.AccountsList > div.controller.newAccount,
+div.AccountsList > div.controller.exportAccountsJS {
     margin-top: 5px;
     clear: right;
     float: right;
 }
 
 div.AccountsList > div.controller.saveAccounts {
-    color: #00ceff;
-    background-color: #12182b;
-    border: #000 solid 2px;
     margin-top: 34px;
+    float: left;
     clear: left;
     margin-right: 5px;
 }
@@ -856,25 +740,82 @@ div.AccountsList > div.controller.saveAccounts > span#changeStatus {
 }
 
 div.AccountsList > div.controller.importAccountsJS {
-    color: #00ceff;
-    background-color: #12182b;
-    border: #000 solid 2px;
     margin-top: 34px;
     float: right;
     clear: right;
 }
 
-div.AccountsList > div.controller.exportAccountsJS {
+.menuStyle {
+    float: left;
+    cursor: pointer;
+    font-size: 12px;
+    width: 200px;
+    padding: 3px;
     color: #00ceff;
     background-color: #12182b;
     border: #000 solid 2px;
-    margin-top: 5px;
-    float: right;
-    clear: right;
+}
+
+.formStyle {
+    float: left;
+    cursor: pointer;
+    font-size: 12px;
+    width: 200px;
+    padding: 3px;
+    border: #004db4 solid 2px;
+    background-color: #0e1622;
+    color: #2386ff;
 }
 
 div.AccountsList > div.controller.saveAccounts:hover,
 div.AccountsList > div.controller.importAccountsJS:hover,
-div.AccountsList > div.controller.exportAccountsJS:hover {
+div.AccountsList > div.controller.exportAccountsJS:hover,
+.menuStyle:hover {
     background-color: #142346 !important;
+}
+
+.menuStyle.negative {
+    color: #f6a084;
+    background-color: #2b1215;
+}
+
+.menuStyle.negative:hover {
+    background-color: #3c0e19 !important;
+}
+
+.menuStyle.disabled {
+    color: #5b6876;
+    background-color: #282f36;
+}
+
+.menuStyle.disabled:hover {
+    color: #5b6876 !important;
+    background-color: #282f36 !important;
+}
+
+.menuStyle.notice {
+    color: #a181a8;
+    background-color: #231525;
+}
+
+.menuStyle.notice:hover {
+    background-color: #302532 !important;
+}
+
+.fleft {
+    float: left;
+}
+
+.fright {
+    float: right;
+}
+
+.cfleft {
+    float: left;
+    clear: left;
+}
+
+.cfright {
+    float: right;
+    clear: right;
 }

@@ -5,10 +5,14 @@
   * Custom context menus
   * Pagination tools for easier management of large lists (e.g. accounts)
   * Backup Assistant to remind user to download a backup (#50)
+  * Login-Only mode gets daily login for account without displaying the Mule on-screen (#4)
+  * Accounts can now have their data cache disabled forcing a reload every time Muledump loads (#55)
 
 - Bug Fixes
   * Detect and warn on bad account data (#47)
   * Options menu not displaying correctly in Firefox (#49)
+  * Exporting images should call renders from Muledump Online (#57)
+  * Minor IsAgeVerified type issue fixed 
 
 - Improvements
   * Accounts Manager rewritten with a nicer UI (#53)
