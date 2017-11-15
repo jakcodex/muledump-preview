@@ -18,10 +18,11 @@
   * Accounts Manager rewritten with a nicer UI (#53)
   * Settings Manager reorganized (#54)
   * Added options to erase cached or all local storage data (#51)
+  * Backups can now be assigned custom names and are better identified in the list (#58)
 
 - New Settings
   * accountsPerPage: How many accounts to display per page 
-  * groups: Whether or not Group Manager is enabled
+  * groupsMergeMode: Which mode Groups Manager is operating in (off, parallel, or serial)
   * longpress: How long to wait for longpress clicks
   
 - Renders update for X17

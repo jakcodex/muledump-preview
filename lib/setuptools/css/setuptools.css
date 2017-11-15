@@ -58,6 +58,12 @@ input[name="checkAll"] {
     min-width: 20%;
 }
 
+.setuptools-small-centered .featherlight-content {
+    max-width: 20%;
+    min-width: 20%;
+    text-align: center;
+}
+
 .setuptools-small .featherlight-content {
     max-width: 370px;
     min-width: 370px;
@@ -143,7 +149,7 @@ input.setuptools.app.wideinput {
 }
 
 .setuptools.app input,
-.setuptools.app select, select.setuptools {
+.setuptools.app select, select.setuptools, .featherlight-inner select {
     font-size: 12px;
     width: 200px;
     border: #707070 solid 2px;
@@ -256,7 +262,7 @@ a.setuptools.app.config.settings.action {
     text-decoration: none !important;
 }
 
-.setuptools.app.deleteDisabled {
+.deleteDisabled {
     text-decoration: line-through !important;
 }
 
@@ -721,8 +727,7 @@ div.controller.saveNotice {
     margin-right: 5px;
 }
 
-div.AccountsList > div.controller.newAccount,
-div.AccountsList > div.controller.exportAccountsJS {
+div.AccountsList > div.controller.newAccount {
     margin-top: 5px;
     clear: right;
     float: right;
@@ -739,11 +744,19 @@ div.AccountsList > div.controller.saveAccounts > span#changeStatus {
     float: right;
 }
 
+div.AccountsList > div.controller.exportAccountsJS {
+    margin-right: 0;
+    margin-top: 5px;
+}
+
 div.AccountsList > div.controller.importAccountsJS {
     margin-top: 34px;
+    margin-right: 0;
     float: right;
     clear: right;
 }
+
+/* button types */
 
 .menuStyle {
     float: left;
@@ -754,6 +767,7 @@ div.AccountsList > div.controller.importAccountsJS {
     color: #00ceff;
     background-color: #12182b;
     border: #000 solid 2px;
+    margin-right: 5px;
 }
 
 .formStyle {
@@ -783,18 +797,33 @@ div.AccountsList > div.controller.exportAccountsJS:hover,
     background-color: #3c0e19 !important;
 }
 
+.menuStyle.positive {
+    color: #7df67f;
+    background-color: #132b1c;
+}
+
+.menuStyle.positive:hover {
+    background-color: #103c29 !important;
+}
+
 .menuStyle.disabled {
-    color: #5b6876;
-    background-color: #282f36;
+    color: #65676a;
+    background-color: #2c303c;
 }
 
 .menuStyle.disabled:hover {
     color: #5b6876 !important;
-    background-color: #282f36 !important;
+    background-color: #3a434d !important;
+}
+
+.menuStyle.disabled.truly:hover {
+    color: #65676a !important;
+    background-color: #2c303c !important;
+    cursor: initial !important;
 }
 
 .menuStyle.notice {
-    color: #a181a8;
+    color: #c78bff;
     background-color: #231525;
 }
 
@@ -802,6 +831,7 @@ div.AccountsList > div.controller.exportAccountsJS:hover,
     background-color: #302532 !important;
 }
 
+/* generic positioning */
 .fleft {
     float: left;
 }
@@ -818,4 +848,40 @@ div.AccountsList > div.controller.exportAccountsJS:hover,
 .cfright {
     float: right;
     clear: right;
+}
+
+/* specific featherlight variants */
+.fl-AccountsManager .featherlight-content  {
+    width: 545px;
+}
+
+.fl-GroupsManager .featherlight-content {
+    min-width: 365px;
+    max-width: 725px;
+}
+
+.fl-BackupsManager .featherlight-content {
+    min-width: 350px;
+    max-width: 510px;
+}
+
+.fl-Index .featherlight-content {
+    width: 370px;
+    text-align: center;
+}
+
+.fl-Introduction .featherlight-content {
+    width: 465px;
+}
+
+.fl-AccountsJSImportUpload .featherlight-content {
+    min-width: 455px;
+    max-width: 750px;
+}
+
+.fl-BackupUpload .featherlight-content {
+    max-width: 750px;
+}
+.fl-BackupRestore .featherlight-content {
+    width: 422px;
 }

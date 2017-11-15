@@ -36,8 +36,21 @@ Automatically create a daily backup of your configuration stored in browser loca
 #### ```Enable Debug Logging```
 Whether or not to output the debug log to the console.
 
-#### ```Groups Manager```
-Whether or not Groups Manager configuration is enabled.
+#### ```Groups Manager Mode```
+Which mode Groups Manager is running in. Possible modes are:
+
+##### Off
+Groups Manager configuration is not loaded.
+
+##### On, Parallel
+Groups Manager accounts are merged with their order preserved 
+
+Example: [a, b, c] + [d, e, f] + [g, h, i] = [a, d, g, b, e, h, c, f, i]
+
+##### On, Serial
+Groups Manager accounts are merged with their order arranged by overall order 
+
+Example: [a, b, c] + [d, e, f] + [g, h, i] = [a, b, c, d, e, f, g, h, i]
 
 #### ```Longpress Length in Seconds```
 Length of time that a long left click takes to activate.

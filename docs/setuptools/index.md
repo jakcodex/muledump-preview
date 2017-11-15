@@ -34,7 +34,7 @@ Account email addresses and user accounts for Steam, Kongregate, and Kabam are a
 
 Create groups to organize accounts however you wish. Accounts can be in multiple groups and multiple groups can be enabled at the same time.
 
-Groups and accounts are sorted by priority in their respective lists. The final accounts list is generated in order from all enabled groups.
+Groups and accounts are sorted by priority in their respective lists. The final accounts list is generated either in parallel (default) or serial mode.
 
 ### [Backups Manager](help/backups-manager/index.md)
 
