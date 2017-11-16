@@ -887,6 +887,10 @@ div.AccountsList > div.controller.exportAccountsJS:hover,
 
 .fl-Index .featherlight-content {
     width: 370px;
+}
+
+.fl-IndexCentered .featherlight-content {
+    width: 370px;
     text-align: center;
 }
 
