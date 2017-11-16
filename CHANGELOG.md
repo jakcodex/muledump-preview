@@ -6,7 +6,7 @@
   * Pagination tools for easier management of large lists (e.g. accounts)
   * Backup Assistant to remind user to download a backup (#50)
   * Login-Only mode gets daily login for account without displaying the Mule on-screen (#4)
-  * Accounts can now have their data cache disabled forcing a reload every time Muledump loads (#55)
+  * Accounts can now disable their data cache forcing a reload every time Muledump loads (#55)
 
 - Bug Fixes
   * Detect and warn on bad account data (#47)
@@ -19,6 +19,7 @@
   * Settings Manager reorganized (#54)
   * Added options to erase cached or all local storage data (#51)
   * Backups can now be assigned custom names and are better identified in the list (#58)
+  * Adjusted accountLoadDelay automatic settings
 
 - New Settings
   * accountsPerPage: How many accounts to display per page 
@@ -27,7 +28,6 @@
   
 - Renders update for X17
 - Renders update for X18
-- Adjusted accountLoadDelay automatic settings
 - Clipboard.js 1.7.1 added
 
 **2017-10-12** version 0.8.1-6

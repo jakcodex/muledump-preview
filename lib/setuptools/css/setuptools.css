@@ -530,6 +530,10 @@ div.nocontext {
     width: 100%;
 }
 
+div.setuptools.div.pageControls div.editor.control.massSwitch {
+    float: right;
+}
+
 div.setuptools.div.pageControls div.editor.control.lastPage {
     float: right;
     clear: right;
@@ -615,7 +619,8 @@ div.setuptools.div.pageControls div.lastPage {
     margin-right: 0 !important;
 }
 
-.setuptools.div.groups.editor > div > div > div.cell:hover {
+.setuptools.div.groups.editor > div > div > div.cell:hover,
+div.setuptools.div.pageControls div.editor.control.massSwitch:hover {
     background-color: #0c0870;
 }
 
@@ -686,6 +691,7 @@ div.setuptools.app.accountControls div {
     margin-top: 0 !important;
 }
 
+div.setuptools.div.pageControls div.editor.control.massSwitch,
 div.accountControls > div {
     width: 25px;
     text-align: center;
@@ -695,6 +701,7 @@ div.accountControls > div:last-child {
     margin-right: 0 !important;
 }
 
+div.setuptools.div.pageControls div.editor.control.massSwitch:hover,
 div.accountControls > div:hover,
 .formStyle:hover {
     background-color: #040f51 !important;
@@ -831,6 +838,15 @@ div.AccountsList > div.controller.exportAccountsJS:hover,
     background-color: #302532 !important;
 }
 
+.menuSmall {
+    width: 150px;
+}
+
+.menuTiny {
+    width: 100px;
+    text-align: center;
+}
+
 /* generic positioning */
 .fleft {
     float: left;
@@ -853,6 +869,10 @@ div.AccountsList > div.controller.exportAccountsJS:hover,
 /* specific featherlight variants */
 .fl-AccountsManager .featherlight-content  {
     width: 545px;
+}
+
+.fl-AccountsSmall .featherlight-content  {
+    width: 450px;
 }
 
 .fl-GroupsManager .featherlight-content {
@@ -882,6 +902,15 @@ div.AccountsList > div.controller.exportAccountsJS:hover,
 .fl-BackupUpload .featherlight-content {
     max-width: 750px;
 }
+
 .fl-BackupRestore .featherlight-content {
     width: 422px;
+}
+
+.fl-Settings .featherlight-content {
+    width: 497px;
+}
+
+.fl-SettingsSmall .featherlight-content {
+    width: 384px;
 }
