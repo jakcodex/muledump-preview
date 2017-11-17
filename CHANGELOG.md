@@ -2,32 +2,32 @@
 
 - New Features
   * [Groups Manager](docs/setuptools/groups-manager/index.md) account organization tool (#28)
-  * Custom context menus
-  * Pagination tools for easier management of large lists (e.g. accounts)
   * Backup Assistant to remind user to download a backup (#50)
   * Login-Only mode gets daily login for account without displaying the Mule on-screen (#4)
-  * Accounts can now disable their data cache forcing a reload every time Muledump loads (#55)
+  * Disable account data cache forcing a reload every time Muledump loads (#55)
+  * Automatic reload can be enabled to periodically refresh account data (#60)
 
 - Bug Fixes
   * Detect and warn on bad account data (#47)
-  * Options menu not displaying correctly in Firefox (#49)
+  * Options menu not displaying correctly in Firefox on Windows (#49)
   * Exporting images should call renders from Muledump Online (#57)
   * Minor IsAgeVerified type issue fixed 
 
 - Improvements
   * Accounts Manager rewritten with a nicer UI (#53)
   * Settings Manager reorganized (#54)
-  * Added options to erase cached or all local storage data (#51)
-  * Backups can now be assigned custom names and are better identified in the list (#58)
-  * Adjusted accountLoadDelay automatic settings
+  * Backups Manager reorganized and can now be assigned custom names (#58)
+  * Added options to erase all account data caches or all local storage data (#51)
+  * Gift chests moved to own display block outside and below of vault display (#61)
+  * Adjusted accountLoadDelay automatic settings to speed requests up
 
 - New Settings
   * accountsPerPage: How many accounts to display per page 
+  * autoReloadDays: How old account data can be before getting reloaded automatically
   * groupsMergeMode: Which mode Groups Manager is operating in (off, parallel, or serial)
   * longpress: How long to wait for longpress clicks
   
-- Renders update for X17
-- Renders update for X18
+- Renders updated with latest sprites and cleaned up numerous low-quality or old icons
 - Clipboard.js 1.7.1 added
 
 **2017-10-12** version 0.8.1-6

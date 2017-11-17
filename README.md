@@ -64,14 +64,14 @@ Head over to [Installation and Setup](https://github.com/jakcodex/muledump/wiki/
 
 ## Demoing Muledump
 
-Want to take a look around Muledump without having to provide any account information? A sample backup with dummy accounts can be downloaded here: [docs/setuptools/muledump-sample-config.json](docs/setuptools/muledump-sample-config.json).
+Want to take a look around Muledump's UI without having to provide any account information? A sample backup with dummy accounts can be downloaded here: [docs/setuptools/muledump-sample-config.json](docs/setuptools/muledump-sample-config.json).
 
 This file can be imported to Muledump via the upload backup option.
 
 <a id="jakcodex-supportandcontributions"></a>
 ## Support and Contributions
 
-A new Discord for Jakcodex/Muledump is available here - [https://discord.gg/bHuBZuB](https://discord.gg/JFS5fqW).
+A new Discord for Jakcodex/Muledump is available here - [https://discord.gg/JFS5fqW](https://discord.gg/JFS5fqW).
 
 Feel free to join and ask for help getting setup, hearing about updates, offer your suggestions and feedback, or just say hi.
 
@@ -91,7 +91,7 @@ Muledump Online always runs the latest version of Muledump with all patches.
 
 ## Special Thanks
 
-Muledump Renders and Constants are maintained for Jakcodex/Muledump by [TheSTDMan](https://github.com/thestdman).
+Muledump Renders and Constants are maintained for Jakcodex/Muledump with contributions by [TheSTDMan](https://github.com/thestdman), [Wawawa](https://github.com/wawawawawawawa), and [tuvior](https://github.com/tuvior).
 
 ## Original Muledump License
 
