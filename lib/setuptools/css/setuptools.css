@@ -1,5 +1,3 @@
-@import 'draggable.css';
-
 a.setuptools {
     color: #2386ff !important;
     text-decoration: none !important;
@@ -878,6 +876,7 @@ div.AccountsList > div.controller.exportAccountsJS:hover,
 }
 
 .fl-BackupUpload .featherlight-content {
+    min-width: 500px;
     max-width: 750px;
 }
 

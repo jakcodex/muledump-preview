@@ -24,6 +24,8 @@ Left click and drag between two groups to select all groups in between.
 
 Long left click to open group in Group Editor.
 
+Right click to open group menu.
+
 Groups can be sorted in order of priority (highest priority is farthest to the left). They can be moved left or right one spot, or to the start or end of the list.
 
 ### Group Menu
