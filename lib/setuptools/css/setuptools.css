@@ -54,55 +54,12 @@ input[name="checkAll"] {
 }
 
 .setuptools-small .featherlight-content {
-    max-width: 20%;
-    min-width: 20%;
-}
-
-.setuptools-small-centered .featherlight-content {
-    max-width: 20%;
-    min-width: 20%;
-    text-align: center;
-}
-
-.setuptools-small .featherlight-content {
     max-width: 370px;
     min-width: 370px;
 }
 
-.setuptools-halfsies .featherlight-content {
-    max-width: 25%;
-}
-
 .setuptools-medium .featherlight-content {
     max-width: 35%;
-}
-
-.setuptools-medium-centered .featherlight-content {
-    max-width: 35%;
-    text-align: center;
-}
-
-.setuptools-medium-static .featherlight-content {
-    max-width: 35%;
-    min-width: 35%;
-}
-
-.setuptools-large .featherlight-content {
-    max-width: 60%;
-    min-width: 20%;
-}
-
-.setuptools-tiles .featherlight-content {
-    max-width: 725px;
-}
-
-.setuptools-tiles-fixed .featherlight-content {
-    max-width: 50%;
-    min-width: 50%;
-}
-
-.setuptools input[name="restoreSaveExisting"] {
-
 }
 
 .drawhelp:not(.nostyle) {
@@ -132,7 +89,8 @@ input[name="checkAll"] {
 }
 
 .featherlight-content h3 {
-    margin: 0px; padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 input.setuptools.app.wideinput {
@@ -144,12 +102,8 @@ input.setuptools.app.wideinput {
     color: #ffffff;
 }
 
-.setuptools.app.nomargin {
-    margin: 0 !important;
-}
-
-.setuptools.app input,
-.setuptools.app select, select.setuptools, .featherlight-inner select {
+.featherlight-inner select,
+.featherlight-inner input {
     font-size: 12px;
     width: 200px;
     border: #707070 solid 2px;
@@ -343,9 +297,6 @@ a.setuptools.app.config.settings.action.eraseCache:hover {
 }
 
 /* groups manager */
-input.setuptools.groups {
-
-}
 
 .setuptools.div.app {
     clear: both;
@@ -763,6 +714,17 @@ div.AccountsList > div.controller.importAccountsJS {
     clear: right;
 }
 
+div.massSwitch > div.cfleft {
+    margin-bottom: 5px;
+    margin-right: 5px;
+    margin-top: 3px;
+    height: 24px
+}
+
+div.massSwitch > div.link {
+    margin-bottom: 5px;
+}
+
 /* button types */
 
 .menuStyle {
@@ -815,7 +777,7 @@ div.AccountsList > div.controller.exportAccountsJS:hover,
 
 .menuStyle.disabled {
     color: #65676a;
-    background-color: #2c303c;
+    background-color: #37393d;
 }
 
 .menuStyle.disabled:hover {
@@ -825,7 +787,7 @@ div.AccountsList > div.controller.exportAccountsJS:hover,
 
 .menuStyle.disabled.truly:hover {
     color: #65676a !important;
-    background-color: #2c303c !important;
+    background-color: #37393d !important;
     cursor: initial !important;
 }
 
@@ -864,6 +826,18 @@ div.AccountsList > div.controller.exportAccountsJS:hover,
 .cfright {
     float: right;
     clear: right;
+}
+
+.cboth {
+    clear: both;
+}
+
+.nomargin {
+    margin: 0 !important;
+}
+
+.textCenter {
+    text-align: center;
 }
 
 /* specific featherlight variants */
@@ -917,4 +891,79 @@ div.AccountsList > div.controller.exportAccountsJS:hover,
 
 .fl-SettingsSmall .featherlight-content {
     width: 384px;
+}
+
+/* other */
+
+.Accounts-AccountsJSImport {
+    width: 100%;
+    margin-top: 17px;
+}
+
+.mr5 {
+    margin-right: 5px;
+}
+
+.mr0 {
+    margin-right: 0 !important;
+}
+
+.mt10 {
+    margin-top: 10px;
+}
+
+.mt5 {
+    margin-top: 5px;
+}
+
+.mt15 {
+    margin-top: 15px;
+}
+
+.w100 {
+    width: 100% !important;
+}
+
+.w400px {
+    width: 400px;
+}
+
+.h100 {
+    height: 100%;
+}
+
+.Backups-BackupOptions > div {
+    width: 70px;
+    text-align: center;
+}
+
+.Settings-Menu > div {
+    width: 108px;
+    margin-right: 5px;
+    text-align: center;
+}
+
+.Groups-ManagerMenu > div {
+    width: 100px;
+    margin-right: 5px;
+    text-align: center;
+}
+
+.dragbox div {
+    padding: 10px;
+    margin-top: 5px;
+    margin-right: 5px;
+    border: #707070 solid 2px;
+    background-color: #1a1a1a;
+    float: left;
+    cursor: pointer;
+}
+
+.dragbox div:last-child {
+    margin-right: 0 !important;
+}
+
+.dragbox div.selected, .selected {
+    background-color: #0c0870;
+    color: #22b7da;
 }
