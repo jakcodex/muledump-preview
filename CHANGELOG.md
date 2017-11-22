@@ -1,4 +1,15 @@
-**2017-??-??** version 0.8.2-0
+**2017-??-??** version 0.8.3-0
+
+- New Features
+  * Total living character hours active now displayed in Account Info (#67) 
+
+- Bug Fixes
+  * Verify import data of custom options over default options (#64)
+
+- Improvements
+  * Add an identifier to account cache data (#68)
+
+**2017-11-20** version 0.8.2
 
 - New Features
   * [Groups Manager](docs/setuptools/groups-manager/index.md) account organization tool (#28)
@@ -16,20 +27,29 @@
 - Improvements
   * Accounts Manager rewritten with a nicer UI (#53)
   * Settings Manager reorganized (#54)
-  * Backups Manager reorganized and can now be assigned custom names (#58)
+  * Backups Manager reorganized and backups can now be assigned custom names (#58)
   * Added options to erase all account data caches or all local storage data (#51)
   * Gift chests moved to own display block outside and below of vault display (#61)
+  * Account info moved below account name
   * Adjusted accountLoadDelay automatic settings to speed requests up
 
 - New Settings
   * accountsPerPage: How many accounts to display per page 
   * autoReloadDays: How old account data can be before getting reloaded automatically
   * groupsMergeMode: Which mode Groups Manager is operating in (off, parallel, or serial)
-  * longpress: How long to wait for longpress clicks
+  * longpress: How long to wait for long left clicks
   
 - Renders updated with latest sprites and cleaned up numerous low-quality or old icons
 - Clipboard.js 1.7.1 added
 
+**2017-11-06** version 0.8.1-8
+
+- X18 renders/constants added (no tokens)
+
+**2017-10-29** version 0.8.1-7
+
+- Updated renders/constants (does not include Halloween update)
+``
 **2017-10-12** version 0.8.1-6
 
 - Bug Fixes
