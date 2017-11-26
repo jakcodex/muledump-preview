@@ -1,6 +1,7 @@
 **2017-??-??** version 0.8.3-0
 
 - New Features
+  * Added Wawawa option (#19)
   * Total living character hours active now displayed in Account Info (#67) 
 
 - Bug Fixes
@@ -8,6 +9,11 @@
 
 - Improvements
   * Add an identifier to account cache data (#68)
+  * Constants updated with bagType, soulbound, and st/ut data (#69)
+  * Item tooltip replaced
+  
+- Meta data added to account data cache (#68)
+- Default Groups Manager mode switched to Serial
 
 **2017-11-20** version 0.8.2
 
