@@ -10,7 +10,7 @@
 - Improvements
   * Add an identifier to account cache data (#68)
   * Constants updated with bagType, soulbound, and st/ut data (#69)
-  * Item tooltip replaced
+  * Item tooltip replaced (#70)
   
 - Meta data added to account data cache (#68)
 - Default Groups Manager mode switched to Serial
