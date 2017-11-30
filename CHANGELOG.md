@@ -3,12 +3,14 @@
 - New Features
   * Added Wawawa option (#19)
   * Total living character hours active now displayed in Account Info (#67) 
+  * XpBooster and Loot Drop / Tier info added (#56)
 
 - Bug Fixes
   * Verify import data of custom options over default options (#64)
+  * Options setting throwing errors (#75)
+  * Gifts chests properly displayed in totals when vaults are disabled (#73)
 
 - Improvements
-  * Add an identifier to account cache data (#68)
   * Constants updated with bagType, soulbound, and st/ut data (#69)
   * Item tooltip replaced (#70)
   
