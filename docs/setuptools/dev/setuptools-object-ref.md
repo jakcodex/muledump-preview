@@ -527,7 +527,7 @@ var PageList = ["Item 1", "Item 2", "Item 3", "Item 4", "Item 100"];
 
 Format B:
 ```js
-var PageList =[{item: 1}, {item: 2}, {item: 3}, {item: 4}, {item: 5}];
+var PageList = [{item: 1}, {item: 2}, {item: 3}, {item: 4}, {item: 5}];
 ```
 
 ##### ActionItem
@@ -558,12 +558,25 @@ Modifies aspects of the pagination system.
 
 You can add extra buttons next to the 'Next Page' button:
 ```js
-var Modifiers = {'pageButtons': '<div class="editor control massSwitch noselect" title="Mass Switch" style="font-weight: normal; font-size: 12px; padding-top: 3px !important;">&#8801;</div>'};
+var Modifiers = {
+    'pageButtons': ' \
+        <div \
+        class="editor control massSwitch noselect" \
+        title="Mass Switch" \
+        style="font-weight: normal; font-size: 12px; padding-top: 3px !important;">\
+            &#8801;\
+        </div>\
+    '};
 ```
 
-If your array is full of complex objects you can attach the search feature to specified keys:
+If you PageList is a Format B (see above) you can attach the search feature to specified keys:
 ```js
-var PageList = [{user: 'blah', someoption: true}, {user: 'ick', someoption: true}, {user: 'oof', someoption: true}, {user: 'doh', someoption: true}];
+var PageList = [
+    {user: 'blah', someoption: true}, 
+    {user: 'ick', someoption: true}, 
+    {user: 'oof', someoption: true}, 
+    {user: 'doh', someoption: true}
+];
 var Modifiers = {search: {key: 'user'}};
 ```
 

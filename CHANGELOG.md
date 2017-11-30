@@ -8,12 +8,14 @@
 - Bug Fixes
   * Verify import data of custom options over default options (#64)
   * Options setting throwing errors (#75)
+  * Empty vaults being displayed incorrectly as empty spaces (#77)
   * Gifts chests properly displayed in totals when vaults are disabled (#73)
 
 - Improvements
   * Constants updated with bagType, soulbound, and st/ut data (#69)
   * Item tooltip replaced (#70)
   
+- Renders updated to X20
 - Meta data added to account data cache (#68)
 - Default Groups Manager mode switched to Serial
 
