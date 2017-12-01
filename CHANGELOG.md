@@ -1,3 +1,7 @@
+**2017-12-01** version 0.8.3-1
+
+- Fixed an issue with loading and saving options
+
 **2017-11-30** version 0.8.3-0
 
 - New Features
@@ -15,10 +19,12 @@
   * Constants updated with bagType, soulbound, and st/ut data (#69)
   * Item tooltip replaced (#70)
   
-- Renders updated to X20
+- Renders updated to X.20.0
 - Meta data added to account data cache (#68)
-- Default Groups Manager mode switched to Serial
 - Re-enabled text selection in About and CORS Assistant 
+- Default Groups Manager Mode changed from Parallel to Serial
+- Default Account Reload Days changed from 0 to 1 (conditional client config upgrade)
+- Temporarily disabled the Account Reload Days master off setting
 
 **2017-11-20** version 0.8.2
 
