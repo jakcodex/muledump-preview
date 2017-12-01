@@ -85,13 +85,13 @@ Feel free to submit pull requests or patches if you have any Muledump changes yo
 
 Muledump versions are described as 0.x.y-p where x is the major version, y is the minor version, and p is the patch version.
 
-All incrementes of x or y are published as an official Muledump Local release. The patch version at time of release will be noted in the release notes. Subsequent patches after release will not be published as a new release unless they are for a high severity issue or there is a cumulative release.
+All incrementes of x or y are published as an official Muledump Local release. Subsequent patches after release will not be published as a new release.
 
 Muledump Online always runs the latest version of Muledump with all patches.
 
 ## Special Thanks
 
-Muledump Renders and Constants are maintained for Jakcodex/Muledump with contributions by [TheSTDMan](https://github.com/thestdman), [Wawawa](https://github.com/wawawawawawawa), and [tuvior](https://github.com/tuvior).
+Muledump Renders and Constants are maintained by [tuvior](https://github.com/tuvior).
 
 ## Original Muledump License
 

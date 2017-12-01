@@ -1,4 +1,4 @@
-**2017-??-??** version 0.8.3-0
+**2017-11-30** version 0.8.3-0
 
 - New Features
   * Added Wawawa option (#19)
@@ -18,6 +18,7 @@
 - Renders updated to X20
 - Meta data added to account data cache (#68)
 - Default Groups Manager mode switched to Serial
+- Re-enabled text selection in About and CORS Assistant 
 
 **2017-11-20** version 0.8.2
 

@@ -573,6 +573,15 @@ div.setuptools.div.pageControls div.editor.control.massSwitch:hover {
     background-color: #0c0870;
 }
 
+.select, .select .featherlight-content {
+    -webkit-touch-callout: initial !important;
+    -webkit-user-select: initial !important;
+    -khtml-user-select: initial !important;
+    -moz-user-select: initial !important;
+    -ms-user-select: initial !important;
+    user-select: initial !important;
+}
+
 .noselect, .featherlight-content {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
