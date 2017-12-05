@@ -2,11 +2,15 @@
 
 - Bug Fixes
   * Totals counting empty backpack data on chars with no backpacks (#79)
-  * Deleted accounts weren't being removed from client config (#83)
+  * Deleted accounts were not being removed from client config (#83)
   * Characters with no backpacks still getting counted as empty slots (#79)
+  * MP Pot div misaligned on wide Mules (#85)
   
 - Improvements
   * Character skins and missing textiles added to portraits (#82) [tuvior]
+  * Cleaned up dungeon portal names
+  
+- Added hash navigation for linking to Muledump SetupTools pages (#74)
 
 **2017-12-01** version 0.8.3-2
 
