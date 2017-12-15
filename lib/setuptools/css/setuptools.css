@@ -1061,3 +1061,32 @@ img.hidden {
     width: 175px;
     padding: 5px;
 }
+
+@keyframes notifypulse {
+    0% {
+        background-color: #0094ff;
+    }
+    100% {
+        background-color: #0056a4;
+    }
+}
+
+.center .featherlight-content {
+    text-align: center;
+}
+
+.nobackground {
+    background: initial !important;
+}
+
+.nobackground .featherlight-content {
+    border: #000 solid 2px;
+    box-shadow: 0 0 5px 5px #000;
+}
+
+.flex-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

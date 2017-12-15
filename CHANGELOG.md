@@ -1,4 +1,4 @@
-**2017-??-??** version 0.8.4-0
+**2017-??-??** version 0.8.4
 
 - Bug Fixes
   * Totals counting empty backpack data on chars with no backpacks (#79)
@@ -9,9 +9,11 @@
 - Improvements
   * Character skins and missing textiles added to portraits (#82) [tuvior]
   * Feed power filter added to options for totals (#78)
+  * Totals display width now adjustable (#89)
   * Cleaned up dungeon portal names
   
 - Added hash navigation for linking to Muledump SetupTools pages (#74)
+- Added optional usage analytics
 
 **2017-12-01** version 0.8.3-2
 
