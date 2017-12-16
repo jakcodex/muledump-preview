@@ -57,7 +57,7 @@
                 "https://www.google-analytics.com/analytics.js",
                 "analytics"
             );
-            if ( typeof ga === 'function' ) {
+            if ( typeof analytics === 'function' ) {
 
                 analytics('create', setuptools.config.ga);
                 analytics('send', 'pageview');
