@@ -61,18 +61,6 @@
 
                 ga('create', setuptools.config.ga);
                 ga('send', 'pageview');
-                ga('send', 'event', {
-                    eventCategory: 'system',
-                    eventAction: 'init',
-                    eventLabel: 'totalAccounts',
-                    eventValue: Object.keys(setuptools.data.accounts.accounts).length
-                });
-                ga('send', 'event', {
-                    eventCategory: 'system',
-                    eventAction: 'init',
-                    eventLabel: 'totalGroups',
-                    eventValue: setuptools.data.groups.groupList.length
-                });
 
             }
 
