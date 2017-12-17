@@ -9,11 +9,13 @@
 - Improvements
   * Character skins and missing textiles added to portraits (#82) [tuvior]
   * Feed power filter added to options for totals (#78)
+  * Added active time to character sort options (#88)
   * Totals display width now adjustable (#89)
+  * Added notices button for user information notification (#91)
   * Cleaned up dungeon portal names
   
 - Added hash navigation for linking to Muledump SetupTools pages (#74)
-- Added optional usage analytics
+- Added optional usage analytics (#90)
 
 **2017-12-01** version 0.8.3-2
 
