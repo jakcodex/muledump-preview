@@ -12,21 +12,23 @@
   * Added active time to character sort options (#88)
   * Totals display width now adjustable (#89)
   * Added notices button for user information notification (#91)
+  * Various styling changes (#92) [curlip]
   * Cleaned up dungeon portal names
   
 - Added hash navigation for linking to Muledump SetupTools pages (#74)
 - Added optional usage analytics (#90)
+- Renders updated to X20.1.0
 
-**2017-12-01** version 0.8.3-2
+**2017-12-01** version 0.8.3.2
 
 - Fixed an issue with totals not adding up properly
 
-**2017-12-01** version 0.8.3-1
+**2017-12-01** version 0.8.3.1
 
 - Fixed an issue with loading and saving options
 - Updated portrait sheet with a few missing dyes
 
-**2017-11-30** version 0.8.3-0
+**2017-11-30** version 0.8.3
 
 - New Features
   * Added Wawawa option (#19)
