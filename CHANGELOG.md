@@ -17,6 +17,8 @@
   
 - Added hash navigation for linking to Muledump SetupTools pages (#74)
 - Added optional usage analytics (#90)
+- Hover menus (options, export) less likely to close accidentally
+- Various other styling changes
 - Renders updated to X20.1.0
 
 **2017-12-01** version 0.8.3.2
