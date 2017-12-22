@@ -111,7 +111,7 @@ input.setuptools.app.wideinput {
     color: #ffffff;
 }
 
-.setuptools textarea {
+.setuptools textarea, textarea.setuptools {
     background-color: #000;
     color: #fff;
     padding: 5px;
@@ -741,6 +741,15 @@ div.massSwitch > div.cfleft {
 
 div.massSwitch > div.link {
     margin-bottom: 5px;
+}
+
+/* feedback */
+.setuptools.div.feedback > div:first-child {
+    flex-basis: 200px;
+}
+
+.setuptools.div.feedback > div:last-child {
+    flex-grow: 2;
 }
 
 /* button types */
