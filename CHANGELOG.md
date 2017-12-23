@@ -20,6 +20,7 @@
   * Added maxed stats to char description (#94) [curlip]
   * Muledump menu now always visible at top of window (#98) [curlip]
   * Added notices button for user information notification (#91)
+  * Adding displaying Mule IGN to options (#101)
   * Various styling changes (#92) [curlip]
   * Cleaned up dungeon portal names
   

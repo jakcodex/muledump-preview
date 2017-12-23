@@ -380,7 +380,7 @@ a.setuptools.app.config.settings.action.eraseCache:hover {
     position: absolute;
     z-index: 2147483647;
     width: 200px;
-    background-color: rgb(21, 31, 53);
+    background-color: rgb(28, 45, 85);
     overflow: hidden;
     box-shadow: #111 0 0 1px 4px;
 }
@@ -1067,7 +1067,7 @@ div.tooltip div.bagType {
 img.boost {
     width: 14px;
     height: 15px;
-    margin-top: 7px;
+    margin-top: 10px;
     overflow: hidden;
     position: relative;
     float: right;
