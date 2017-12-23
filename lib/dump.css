@@ -123,7 +123,7 @@ body {
 
 #errors:empty { display: none; }
 
-.mule {
+.mule:not(.setuptools) {
     padding: 2px;
     margin: 3px;
     border: solid 2px #555;
@@ -434,7 +434,9 @@ td.cont > div {
     margin: 10px;
 }
 
-.mule, #totals, .handle {
+.mule:not(.setuptools),
+#totals:not(.setuptools),
+.handle:not(.setuptools) {
     background-color: #333;
     box-shadow: 2px 2px 8px #111;
     border: none;
@@ -442,8 +444,7 @@ td.cont > div {
 
 #stickynotice {
     padding: 4px;
-    font: 18px Arial,sans-serif;
-    background-color: #F44336;
+    font: 14px Arial,sans-serif;
     text-align: center;
     color: #EEE;
     background-color: #F44336;
@@ -472,6 +473,5 @@ td.cont > div {
     right: 0;
     z-index: 1001;
     background-color: rgba(44,44,44,0.75);
-
     box-shadow: 2px 2px 8px rgba(0,0,0,0.4);
 }
