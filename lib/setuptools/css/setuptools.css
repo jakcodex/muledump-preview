@@ -593,7 +593,9 @@ div.setuptools.div.pageControls div.editor.control.massSwitch:hover {
     user-select: initial !important;
 }
 
-.noselect, .featherlight-content {
+.noselect,
+.featherlight-content,
+#top > div {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
