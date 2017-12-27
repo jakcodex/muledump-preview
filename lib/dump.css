@@ -29,7 +29,7 @@ body {
     cursor: pointer;
     padding: 3px 4px 0 4px;
     height: 20px;
-
+    z-index: 500;
     background-color: #424242;
     box-shadow: 2px 2px 8px #111;
     border: none;
@@ -45,7 +45,7 @@ body {
     position: absolute;
     left: 0px;
 	top: +26px;
-    z-index: 550;
+    z-index: 450;
     padding: 5px;
     color: #b3b3b3;
     width: 222px;
@@ -483,3 +483,7 @@ td.cont > div {
 .wawawa .good { color: #90ff90; }
 .wawawa .great { color: #00ff00; }
 .wawawa .bad { color: #ff0000; }
+
+#options {
+    z-index: 1000;
+}
