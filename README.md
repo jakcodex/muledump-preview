@@ -16,6 +16,8 @@ Currently due to how Deca handles requests to ROTMG servers a browser extension 
 
 See the [Requirements](REQUIREMENTS.md) page for more information.
 
+### Head over to [Installation and Setup](https://github.com/jakcodex/muledump/wiki/Installation-and-Setup) in the wiki for a detailed setup guide.
+
 ## Release Information
 
 This is a preview release of Jakcodex/Muledump v9.0.
@@ -24,31 +26,32 @@ Muledump Online is available hosted on Github [here](https://jakcodex.github.io/
 
 All released versions are available for download [here](https://github.com/jakcodex/muledump/releases).
 
-Head over to [Installation and Setup](https://github.com/jakcodex/muledump/wiki/Installation-and-Setup) in the wiki for a detailed setup guide.
+## Muledump Online Version
 
-## Local Download Version
+- Open **```https://jakcodex.github.io/muledump/muledump.html```**
+- Returning users can upload a backup or import their existing accounts.js file
+- New users will be guided through first time setup
+- This version runs entirely on your local computer and is updated automatically with new releases
+- All data submitted and stored in this version never leave your computer
+
+## Muledump Local Version
 
 - Unzip the latest muledump release
 - Open **`muledump.html`**
 - First time users will be guided thru Muledump setup
 - Returning users are ready to go immediately
 
-## Muledump Online Version
-
-- Open **```https://jakcodex.github.io/muledump-preview/muledump.html```**
-- Returning users can upload a backup or import their existing accounts.js file
-- New users will be guided through first time setup
-- This version runs entirely on your local computer and is updated automatically with new releases
-- All data submitted and stored in this version never leave your computer
-
 ## Main Features
 
 - Manage all of your ROTMG accounts from a single interface
 - [SetupTools](docs/setuptools/index.md) - An easy to use, browser-based user interface for managing Muledump
-- [Muledump Online](https://jakcodex.github.io/muledump-preview/muledump.html) - Load Muledump directly from Github using SetupTools
+- [Groups Manager](docs/setuptools/groups-manager/manager.md) - Account grouping and ordering utility to customize the Muledump accounts list
+- [Muledump Online](https://jakcodex.github.io/muledump/muledump.html) - Load Muledump directly from Github using SetupTools
 - MuleQueue - Task queuing to control the flow of requests from Muledump
-- Vault display is now fully customizable and comes with three pre-defined layouts
-- Character Sorting by fame, exp, total fame, class, and custom lists
+- Vault display is now fully customizable and comes with four pre-defined layouts
+- Full character skin and dye support in portraits
+- Totals filtering on fame bonus, feed power, soulbound, ut, and st
+- Character Sorting by fame, exp, total fame, class, active time, maxed stats, and custom lists
 - Character Lists allow you to create custom Muledump account layouts showing only characters you specify 
 - Exporting works with the following modes: text, csv, json, image, imgur
 - Fully compliant with Deca rate limiting
@@ -59,23 +62,18 @@ Head over to [Installation and Setup](https://github.com/jakcodex/muledump/wiki/
 - click on account name for individual options menu
 - ctrl-click account name to temporarily hide it from totals
 - logins thru muledump count towards daily login calendar
+- account settings include automatic reload, login-only (daily calendar only), and cache disable
 
-## Head to the [wiki](https://github.com/jakcodex/muledump/wiki) for more information!
-
-## Demoing Muledump
-
-Want to take a look around Muledump's UI without having to provide any account information? A sample backup with dummy accounts can be downloaded here: [docs/setuptools/muledump-sample-config.json](docs/setuptools/muledump-sample-config.json).
-
-This file can be imported to Muledump via the upload backup option.
+## Check out the [Frequently Asked Questions](https://github.com/jakcodex/muledump/wiki/Frequently-Asked-Questions) and explore the [wiki](https://github.com/jakcodex/muledump/wiki) for more information!
 
 <a id="jakcodex-supportandcontributions"></a>
 ## Support and Contributions
 
-A new Discord for Jakcodex/Muledump is available here - [https://discord.gg/JFS5fqW](https://discord.gg/JFS5fqW).
+Jakcodex/Muledump operates its own support Discord server - [https://discord.gg/JFS5fqW](https://discord.gg/JFS5fqW).
 
-Feel free to join and ask for help getting setup, hearing about updates, offer your suggestions and feedback, or just say hi.
+Feel free to join and ask for help getting setup, hear about new updates, offer your suggestions and feedback, or just say hi.
 
-If you encounter a bug, have a feature request, or have any other feedback then you can check out the [issue tracker](https://github.com/jakcodex/muledump/issues) to see if it's already being discussed. If not then you can [submit a new issue](https://github.com/jakcodex/muledump/issues/new).
+If you encounter a bug, have a feature request, or have any other feedback you can also check out the [issue tracker](https://github.com/jakcodex/muledump/issues) to see if it's already being discussed. If not then you can [submit a new issue](https://github.com/jakcodex/muledump/issues/new).
 
 If you are interested in helping test new versions of this software before release then check out [Muledump Preview](https://github.com/jakcodex/muledump-preview/) for the recent stable development builds of Muledump.
 
