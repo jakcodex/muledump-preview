@@ -15,6 +15,7 @@
   * Added ST, UT, and Soulbound filters (#97)
   * Totals display width now adjustable (#89)
   * Create images of Mules (#99)
+  * Added Mule Menu button and context menu accessible from anywhere on a mule (#105)
   * Renders update assistant helps Muledump Local users update to latest renders
 
 - Improvements

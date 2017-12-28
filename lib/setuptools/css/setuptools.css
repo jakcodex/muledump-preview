@@ -1070,9 +1070,9 @@ img.boost {
     width: 14px;
     height: 15px;
     margin-top: 10px;
+    margin-right: 5px;
     overflow: hidden;
-    position: relative;
-    float: right;
+    float: left;
     border: 0;
     cursor: pointer;
     z-index: 450;
