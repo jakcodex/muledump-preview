@@ -3,8 +3,8 @@
 - Bug Fixes
   * Totals counting empty backpack data on chars with no backpacks (#79)
   * Deleted accounts were not being removed from client config (#83)
-  * Characters with no backpacks still getting counted as empty slots (#79)
   * MP Pot div misaligned on wide Mules (#85)
+  * Character lists not detecting and removing dead characters (#87)
   * Hover menus (options, export) close prematurely (#100)
 
 - New Features
@@ -15,6 +15,7 @@
   * Added ST, UT, and Soulbound filters (#97)
   * Totals display width now adjustable (#89)
   * Create images of Mules (#99)
+  * Renders update assistant helps Muledump Local users update to latest renders
 
 - Improvements
   * Added maxed stats to char description (#94) [curlip]
@@ -22,6 +23,7 @@
   * Added notices button for user information notification (#91)
   * Adding displaying Mule IGN to options (#101)
   * Added new vault layout 'Simple' (#76)
+  * Version detection improved for Muledump Local users (#86)
   * Various styling changes (#92) [curlip]
   * Cleaned up dungeon portal names
   

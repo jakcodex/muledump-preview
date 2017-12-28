@@ -13,9 +13,9 @@ body {
     left: 4px;*/
     float: left;
     padding: 4px;
-    z-index: 600;
-    background-color: #ccc;
-    color: #333;
+    z-index: 1003 !important;
+    background-color: #333;
+    color: #ccc;
 }
 
 #top {
@@ -45,7 +45,7 @@ body {
     position: absolute;
     left: 0px;
 	top: +26px;
-    z-index: 450;
+    z-index: 451;
     padding: 5px;
     color: #b3b3b3;
     width: 222px;
@@ -298,6 +298,10 @@ hr {
     max-width: 110px;
 }
 
+.wawawa.pcstats td:nth-child(1) {
+    width: 84px;
+}
+
 .pcstats .goal {
     text-align: left;
 }
@@ -381,7 +385,7 @@ td.cont > div {
     background-color: rgba(0, 0, 0, 0.7);
     overflow: hidden;
     padding: 2px;
-    z-index: 700;
+    z-index: 451;
 }
 
 .log {
