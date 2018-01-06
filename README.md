@@ -20,7 +20,7 @@ See the [Requirements](REQUIREMENTS.md) page for more information.
 
 ## Release Information
 
-This is a preview release of Jakcodex/Muledump v9.0.
+This is a preview release of Jakcodex/Muledump v9.1.
 
 Muledump Online is available hosted on Github [here](https://jakcodex.github.io/muledump-preview/muledump.html).
 
