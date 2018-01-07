@@ -137,6 +137,7 @@ body {
     display: inline-block;
     font: 14px/26px sans-serif;
     max-width: 780px;
+    background-color: #303030;
 }
 
 #errors:empty { display: none; }
