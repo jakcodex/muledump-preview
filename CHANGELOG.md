@@ -2,6 +2,7 @@
 
 - New Features
   * MuleQueue v2 - In progress! (#71)
+  * Jakcodex/Muledump CORS Adapter - Chrome Extension (#122)
   
 - Improvements
   * Usage Analytics updates (#115)

@@ -1,6 +1,6 @@
 ### Effective Date: December 20, 2017
 
-Thank you for choosing and trusting Jakcodex/Muledump. Traditionally no information at all has been collected and with the introduction of anonymous analytics we want to be absolutely clear about what it means for you.
+Thank you for choosing and trusting Jakcodex/Muledump. Traditionally no information at all has been collected and with the introduction of Usage Analytics we want to be absolutely clear about what it means for you.
 
 ## Short version
 
@@ -13,6 +13,10 @@ This version collects absolutely no data and is ineligible to participate in Usa
 #### Muledump Online
 
 This version is eligible to participate in Usage Analytics which can be disabled in the [Settings Manager](https://jakcodex.github.io/muledump/muledump.html#settings-ga).
+
+#### Muledump CORS Adapter
+
+The Chrome web store extension does not collect any usage analytics or any other sort of data.
 
 ## About Usage Analytics in Jakcodex/Muledump
 
