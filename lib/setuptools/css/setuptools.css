@@ -1,7 +1,3 @@
-@import url('spinner-running.css');
-@import url('spinner-queue.css');
-@import url('spinner-error.css');
-
 a.setuptools {
     color: #0094ff !important;
     text-decoration: none !important;
