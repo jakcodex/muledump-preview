@@ -109,6 +109,7 @@ input.setuptools.app.wideinput {
     background-color: #333;
     padding: 3px;
     color: #ffffff;
+    outline: none;
 }
 
 .setuptools textarea, textarea.setuptools {
@@ -756,6 +757,10 @@ div.massSwitch > div.link {
 
 /* button types */
 
+.menuStyleHover:hover {
+    color: #00ceff;
+}
+
 .menuStyle {
     float: left;
     cursor: pointer;
@@ -1157,8 +1162,11 @@ img.hidden {
 }
 
 .flex-container {
-    width: 100%;
     display: flex;
+}
+
+.flex-container:not(.noFlexAutoWidth) {
+    width: 100%;
 }
 
 .flex-container:not(.noFlexAutoAlign) {

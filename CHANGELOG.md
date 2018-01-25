@@ -8,8 +8,10 @@
 - New Features
   * MuleQueue v2 - In progress! (#71)
   * Jakcodex/Muledump CORS Adapter - Chrome Extension (#122)
+  * Page Search for easily finding accounts on-screen (#121)
   
 - Improvements
+  * Search by IGN added to account search tool (#62)
   * Browser detection and upgrade assistant added (#110)
   * Usage Analytics updates (#115)
   

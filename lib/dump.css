@@ -21,8 +21,11 @@ body {
 
 #top {
     font-size: 14px;
-    margin: 0 3px;
     text-align: right;
+}
+
+#top > * {
+    margin: 0 0 0 4px;
 }
 
 #top > div:not(#spinner), #top > a {
@@ -506,4 +509,21 @@ td.cont > div {
 
 #options {
     z-index: 1000;
+}
+
+#affasearch {
+    width: 150px !important;
+    height: 23px !important;
+    padding: 0 4px 0 0 !important;
+}
+
+#affasearch > input {
+    background-color: #424242;
+    color: #00ceff;
+    outline: none;
+    border: 0;
+    padding: 0 2px;
+    margin: 0;
+    height: 100%;
+    width: 100%;
 }
