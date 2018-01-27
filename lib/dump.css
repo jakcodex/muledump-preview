@@ -87,7 +87,7 @@ body {
 .menu:not(.setuptools) input:hover ~ label,
 #export div:hover,
 #top > div:hover, #top > a:hover {
-    background: #253c63;
+    background: #253c63 !important;
     color: #fff;
 }
 
@@ -464,7 +464,14 @@ td.cont > div {
     font: 14px Arial,sans-serif;
     text-align: center;
     color: #EEE;
-    background-color: #F44336;
+}
+
+#fix:not(.rateLimited) > #stickynotice {
+    background-color: #a82f27;
+}
+
+#fix.rateLimited {
+    background: #222222 url(./media/top-rateLimited.svg) !important;
 }
 
 #previewnotice {
@@ -511,13 +518,13 @@ td.cont > div {
     z-index: 1000;
 }
 
-#affasearch {
+#pagesearch {
     width: 150px !important;
     height: 23px !important;
     padding: 0 4px 0 0 !important;
 }
 
-#affasearch > input {
+#pagesearch > input {
     background-color: #424242;
     color: #00ceff;
     outline: none;

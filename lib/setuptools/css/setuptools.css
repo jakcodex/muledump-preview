@@ -594,9 +594,9 @@ div.setuptools.div.pageControls div.editor.control.massSwitch:hover {
     user-select: initial !important;
 }
 
-.noselect,
-.featherlight-content,
-#top > div {
+.noselect:not(.select),
+.featherlight-content:not(.select),
+#top:not(.select) > div {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -1148,6 +1148,15 @@ img.hidden {
     }
 }
 
+@keyframes pausedPulse {
+    0% {
+        background-color: #2bac00;
+    }
+    100% {
+        background-color: #424242;
+    }
+}
+
 .center .featherlight-content {
     text-align: center;
 }
@@ -1183,13 +1192,18 @@ img.hidden {
     animation-direction: alternate;
 }
 
-.rateLimited {
+.rateLimited:not(.nopulse) {
     animation: rateLimitedPulse 3s infinite;
     animation-direction: alternate;
 }
 
 .running {
     animation: runningPulse 3s infinite;
+    animation-direction: alternate;
+}
+
+.paused {
+    animation: pausedPulse 3s infinite;
     animation-direction: alternate;
 }
 
@@ -1336,6 +1350,27 @@ div.QueueList > div.list > div.queuetask > div:not(:last-child) {
     margin-right: 5px;
 }
 
+div.mulequeue.progress:not(.AReduced) {
+    background-image: url(../../media/mulequeue-loadingbar-background.svg);
+}
+
+div.mulequeue.progress > div.bar:not(.rateLimited) {
+    background-image: url(../../media/mulequeue-loading-foreground.svg);
+}
+
+div.mulequeue.progress:not(.AReduced) > div.bar:not(.rateLimited) > div {
+    background-image: url(../../media/mulequeue-loading-foreground-overlay.svg);
+}
+
+div.mulequeue.progress:not(.AReduced) > div.bar.rateLimited {
+    width: 100% !important;
+    background-image: url(../../media/mulequeue-loading-rateLimited-foreground.svg);
+}
+
+#top.rateLimited {
+    background: url(../../media/top-rateLimited.svg);
+}
+
 .buttonStyle {
     border: #707070 solid 2px;
     text-align: center;
@@ -1352,3 +1387,4 @@ div.QueueList > div.list > div.queuetask > div:not(:last-child) {
 .textLeft {
     text-align: left;
 }
+
