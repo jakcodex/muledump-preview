@@ -571,8 +571,8 @@ div.setuptools.div.pageControls > div {
     font-weight: bold;
 }
 
-div.setuptools.div.pageControls > div:hover,
-div.setuptools.div.pageControls > div:active {
+div.setuptools.div.pageControls > div:hover:not(.nohover),
+div.setuptools.div.pageControls > div:active:not(.nohover) {
     background-color: #0c0870;
 }
 
@@ -860,11 +860,11 @@ div.AccountsList > div.controller.exportAccountsJS:hover,
 
 /* generic positioning */
 .fleft {
-    float: left;
+    float: left !important;
 }
 
 .fright {
-    float: right;
+    float: right !important;
 }
 
 .cfleft {
@@ -1197,6 +1197,16 @@ img.hidden {
     animation-direction: alternate;
 }
 
+a.rateLimited {
+    color: #ff0000;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+a.rateLimited:hover {
+    color: #ff0000;
+}
+
 .running {
     animation: runningPulse 3s infinite;
     animation-direction: alternate;
@@ -1367,7 +1377,80 @@ div.mulequeue.progress:not(.AReduced) > div.bar.rateLimited {
     background-image: url(../../media/mulequeue-loading-rateLimited-foreground.svg);
 }
 
-#top.rateLimited {
+div.QueueList div.queuetask > div:first-child {
+    flex-basis: 27px;
+    height: 24px;
+}
+
+div.QueueList div.queuetask > div:nth-child(2) {
+    flex-basis: 539px;
+    justify-content: space-between;
+    border: 0;
+}
+
+div.QueueList div.queuetask > div:nth-child(2) > div:first-child {
+    flex-basis: 439px;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+div.QueueList div.queuetask > div:nth-child(2) > div:last-child {
+    flex-basis: 100px;
+    text-align: right;
+    justify-content: flex-end;
+}
+
+div.QueueList div.queuetask > div:nth-child(3) {
+    flex-basis: 30px;
+    height: 24px;
+    justify-content: flex-end;
+}
+
+div.QueueList div.queuetask > div:nth-child(3) > div:first-child {
+    flex-basis: 25px;
+}
+
+div.mulequeue.progress {
+    position: relative;
+    box-shadow: 0 0 2px 2px #000000;
+    height: 30px;
+    margin: 10px 0;
+    justify-content: center;
+}
+
+div.mulequeue.progress > div.percentage {
+    z-index: 5000;
+    text-shadow: 1px 1px #000000;
+    background: rgba(0, 0, 0, 0.15);
+    padding: 2px;
+}
+
+div.mulequeue.progress > div.bar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+}
+
+div.mulequeue.main.menu.reload {
+    padding: 0;
+}
+
+div.mulequeue.queueCount {
+    cursor: initial !important;
+    width: auto !important;
+    font-size: 12px !important;
+    padding: 0 5px !important;
+    font-weight: normal !important;
+}
+
+img.spinner {
+    width: 19px;
+    height: 19px;
+}
+
+#stickynotice.rateLimited {
     background: url(../../media/top-rateLimited.svg);
 }
 
@@ -1388,3 +1471,15 @@ div.mulequeue.progress:not(.AReduced) > div.bar.rateLimited {
     text-align: left;
 }
 
+.pagesearch.result {
+    width: 100px;
+    height: 30px;
+    padding: 5px;
+    margin: 5px;
+    position: absolute;
+    box-shadow: #000000 2px 2px;
+    background: #00c1e3;
+    font-weight: bold;
+    text-shadow: 1px 1px #000000;
+    z-index: 5002;
+}

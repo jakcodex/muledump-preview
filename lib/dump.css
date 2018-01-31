@@ -518,10 +518,20 @@ td.cont > div {
     z-index: 1000;
 }
 
-#pagesearch {
+#pagesearch.full {
     width: 150px !important;
     height: 23px !important;
     padding: 0 4px 0 0 !important;
+}
+
+#pagesearch.small {
+    width: 29px !important;
+    height: 23px !important;
+    padding: 0 4px 0 0 !important;
+}
+
+#pagesearch.small > input {
+    text-align: center;
 }
 
 #pagesearch > input {
