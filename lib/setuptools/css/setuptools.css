@@ -907,6 +907,10 @@ div.AccountsList > div.controller.exportAccountsJS:hover,
     width: 650px;
 }
 
+.fl-MuleQueueHistory .featherlight-content {
+    width: 800px;
+}
+
 .fl-BackupsManager .featherlight-content {
     min-width: 350px;
     max-width: 510px;
@@ -1437,12 +1441,25 @@ div.mulequeue.main.menu.reload {
     padding: 0;
 }
 
+div.mulequeue.main.menu {
+    font-size: 12px !important;
+    font-weight: normal !important;
+}
+
+div.setuptools.mulequeue.link.history {
+    font-size: 16px !important;
+}
+
 div.mulequeue.queueCount {
     cursor: initial !important;
     width: auto !important;
     font-size: 12px !important;
     padding: 0 5px !important;
     font-weight: normal !important;
+}
+
+div.QueueHistory > div.list > div.historyitem {
+    padding: 0 2px;
 }
 
 img.spinner {

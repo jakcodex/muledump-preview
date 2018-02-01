@@ -8,14 +8,14 @@ If you reload Muledump while in the middle of a queue it will resume where it le
 
 ### Task Menu
 
-#### Run Task Immediately
+#### ```Run Task Immediately```
 
 The task is ran immediately skipping the account load delay wait time.
 
-#### Run Task Next
+#### ```Run Task Next```
 
 The task is placed at the front of the queue and will run next.
 
-#### Cancel Task
+#### ```Cancel Task```
 
 The task is cancelled and removed from the queue.

@@ -310,6 +310,11 @@ Maximum amount of time in seconds the background task can run without pinging be
 
 Maximum number of concurrent requests to run in MuleQueue (presently not user changeable).
 
+#### setuptools.data.config.mqKeepHistory
+`[default: number|100]`
+
+Maximum number of MuleQueue history records to keep.
+
 #### setuptools.data.config.mulelogin
 `[default: number|0]`
 

@@ -1,4 +1,4 @@
-**2018-01-??** version 9.1.0
+**2018-02-??** version 9.1.0
 
 - Bug Fixes
   * Totals not stretching with window resizing when set to automatic width (#116)

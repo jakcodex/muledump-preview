@@ -130,6 +130,8 @@ body {
     display: inline-block;
     font: 14px/26px sans-serif;
     max-width: 780px;
+    max-height: 400px;
+    overflow: hidden;
 }
 
 #errors:empty { display: none; }
