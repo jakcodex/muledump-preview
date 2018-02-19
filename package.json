@@ -1,6 +1,6 @@
 {
   "name": "Muledump Preview",
-  "version": "9.1.8",
+  "version": "9.1.0",
   "description": "A utility for managing all of your ROTMG mules.",
   "homepage": "https://jakcodex.github.io/muledump-preview/",
   "dependencies": {
