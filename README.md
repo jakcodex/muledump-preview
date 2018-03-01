@@ -25,7 +25,7 @@ See the [Requirements](REQUIREMENTS.md) page for more information.
 
 ## Release Information
 
-This is a preview release of Jakcodex/Muledump v9.1.
+This is a preview release of Jakcodex/Muledump v9.2.
 
 Muledump Online is available hosted on Github [here](https://jakcodex.github.io/muledump-preview/muledump.html).
 
@@ -33,7 +33,7 @@ All released versions are available for download [here](https://github.com/jakco
 
 ## Muledump Online Version
 
-- Open **```https://jakcodex.github.io/muledump/muledump.html```**
+- Open [https://jakcodex.github.io/muledump-preview/muledump.html](https://jakcodex.github.io/muledump-preview/muledump.html)
 - Returning users can upload a backup or import their existing accounts.js file
 - New users will be guided through first time setup
 - This version runs entirely on your local computer and is updated automatically with new releases
@@ -106,7 +106,7 @@ Click to read more about our [Privacy Policy](privacy-policy.md).
 
 ## Jakcodex/Muledump License
 
-Copyright 2017 [Jakcodex](https://github.com/jakcodex)
+Copyright 2018 [Jakcodex](https://github.com/jakcodex)
 
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 

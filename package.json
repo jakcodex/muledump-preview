@@ -1,6 +1,6 @@
 {
   "name": "Muledump Preview",
-  "version": "9.1.0",
+  "version": "9.2.0",
   "description": "A utility for managing all of your ROTMG mules.",
   "homepage": "https://jakcodex.github.io/muledump-preview/",
   "dependencies": {
@@ -8,7 +8,8 @@
     "clipboard": "git://github.com/zenorocha/clipboard.js.git^1.7.1",
     "masonry-layout": "git://github.com/desandro/masonry.git^4.2.0",
     "featherlight": "git://github.com/noelboss/featherlight.git^1.7.8",
-    "html2canvas": "git://github.com/niklasvh/html2canvas.git^1.0.0"
+    "html2canvas": "git://github.com/niklasvh/html2canvas.git^1.0.0",
+    "seasalt": "git://github.com/jakcodex/seasalt.git^0.0.2"
   },
   "repository": {
     "type": "git",
