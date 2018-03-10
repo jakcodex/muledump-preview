@@ -1,26 +1,36 @@
 **2018-03-??** version 9.2.0
 
 - Bug Fixes
+  * Certain skins getting positioned incorrectly (#120)
+  * Removing deleted accounts from groups race condition (#124 again)
   * Page Search binding getting overwritten (#135)
-  * Portraits crashing on invalid skin (#146)
+  * MuleQueue menu not always closing (doClose fixed; doHoverClose remains) (#141)
+  * Portraits crashing on invalid skin data (#146)
+  * Accounts sometimes left on Mulequeue config indefinitely due to account errors (#148)
 
 - New Features
-  * MuleCrypt - account and data encryption (dev only, no linked ui, not functional)
+  * MuleCrypt - account and data encryption (dev only, no linked ui, not functional) (#46)
   * Detect and alert about in-game account gift chest bug (#133)
+  * Realmeye Menu - access wiki and trading thru Muledump (#153)
 
 - Improvements
   * Items on accounts in loginOnly mode now get counted in totals (#108)
+  * Mulequeue History can now toggle displaying IGN (#136)
   * OCL updated to use HTTPS and other improvements (#138)
   * Account data cache age now based on UTC Midnight from localtime (#139)
   * Add number of unlocked chests to Account Info (#145)
+  * Clicking 'X Tasks Running' option in Mulequeue menu opens the UI (#151)
+  * Testing is now configurable per account (#155)
   * Account in use timeout added to MuleQueue history errors
+  * Account errors moved to new error bar
 
-- Added performance profiling (#149)
+- Added performance time profiling (#149)
 - OCL disabled for Steamworks users
 - Usage Analytics improvements (removed totals, fixed init issue)
-- Libsodium 0.7.5 added
-- Seasalt 0.0.2 added
-- localForage 1.5.7 added
+- Libsodium 0.7.3 added
+- Seasalt 0.1.0 added
+- JTimer-Tools 0.1.1 added
+- ClipboardJS updated to 2.0.0
 - jsSHA256 removed
 - Reorganized lib/ a bit
 

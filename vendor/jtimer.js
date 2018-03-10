@@ -1,3 +1,5 @@
+//  JTimer v0.1.1
+
 class JTimer {
 
     constructor(options) {
@@ -73,9 +75,16 @@ class JTimer {
                 for ( var j = 0; j < options.plugins.length; j++ ) {
                     if (typeof options.plugins[j] === 'string') {
 
+                        /*/
+                        //  Internal Plugin Loading
+                        //  Update the custom plugin section with your own data
+                        /*/
+
                         //  cannot dynamically load classes
-                        if ( options.plugins[j] === 'JTimerAggregate' ) {
+                        if ( options.plugins[j] === 'aggregate' ) {
                             options.plugins[j] = new JTimerAggregate(this, ( (typeof options.pluginsOptions === 'object') ? options.pluginsOptions[options.plugins[j]] : undefined));
+                        } else if ( options.plugins[j] === 'MyCustomPlugin' ) {
+                            //  options.plugins[j] = new MyCustomPlugin(...);
                         } else throw "Unrecognized plugin - " + options.plugins[j];
 
                     } else if (typeof options.plugins[j] !== 'object') throw "Provided plugin was not a valid object at index " + j;
@@ -252,8 +261,8 @@ class JTimer {
 //  collects results from many timers and calculates averages
 class JTimerAggregate {
 
-    //  calculate the sample average
-    calculate() {
+    //  calculate the sample statistics
+    run() {
 
         //  prepare for calculations
         if ( this.samples.length === 0 ) return;
@@ -374,6 +383,100 @@ class JTimerAggregate {
             this.error = e;
             if ( ['string', 'number', 'boolean', 'object'].indexOf(typeof e) === -1 ) throw 'JTimerAggregate/Error - ' + this.timer.options.name + ' - invalid error message';
             console.error('JTimerAggregate/Error - ' + ( this.timer.options.name || 'Unknown') + ' - ' + e);
+            return;
+
+        }
+
+        //  push the new sample
+        this.samples.push(this.timer.runtime);
+        this.run();
+
+        //  remove the timer if it was provided at runtime
+        if ( timer instanceof JTimer ) delete this.timer;
+
+    }
+
+    //  precision rounding
+    round(number, precision) {
+
+        if ( typeof precision !== 'number' ) precision = this.options.precision;
+        if ( typeof precision !== 'number' ) precision = 0;
+        var factor = Math.pow(10, precision);
+        return Math.round(number * factor) / factor;
+
+    }
+
+}
+
+//  integrate timer with universal analytics user page timing
+class JTimerUATiming {
+
+    //  calculate the sample average
+    run() {
+
+        //  your code to process the samples
+        //  this.samples contains all recorded values
+        //  if running JTimer with an internal plugin, this.timer is accessible here
+
+    }
+
+    //  build the timer aggregate
+    constructor(timer, options) {
+
+        this.options = options;
+        if ( typeof timer === 'object' && !(timer instanceof JTimer) ) {
+
+            this.options = timer;
+            timer = undefined;
+
+        }
+
+        if ( typeof this.options !== 'object' ) this.options = {};
+
+        try {
+
+            if ( typeof this.options !== 'object' ) throw 'Supplied options is not a valid type';
+
+            //  automatically run the aggregate if a timer is supplied
+            if ( typeof timer === 'object' && !(timer instanceof JTimer) ) throw "Supplied timer is not a valid timer";
+
+        } catch (e) {
+
+            this.state = 'error';
+            this.error = e;
+            if ( ['string', 'number', 'boolean', 'object'].indexOf(typeof e) === -1 ) throw 'TimerPlugin/Error - invalid error message';
+            console.error(e);
+            return;
+
+        }
+
+        this.timer = timer;
+        this.samples = [];
+
+    }
+
+    //  receive a timer callbackup
+    callback(timer) {
+
+        try {
+
+            if ( timer instanceof JTimer ) {
+
+                //  state must be done
+                if ( this.timer instanceof JTimer ) throw "Timer was supplied at construction";
+                this.timer = timer;
+
+            } else this.timer = {options:{}};
+
+            //  state must be done
+            if ( this.timer.state !== 'done' ) throw "Supplied timer is not in a valid state";
+
+        } catch (e) {
+
+            this.state = 'error';
+            this.error = e;
+            if ( ['string', 'number', 'boolean', 'object'].indexOf(typeof e) === -1 ) throw 'Plugin/Error - ' + this.timer.options.name + ' - invalid error message';
+            console.error('Plugin/Error - ' + ( this.timer.options.name || 'Unknown') + ' - ' + e);
             return;
 
         }
