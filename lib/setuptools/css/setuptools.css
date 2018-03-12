@@ -811,6 +811,17 @@ div.AccountsList > div.controller.exportAccountsJS:hover,
     background-color: #3c0e19 !important;
 }
 
+.menuStyle.ack {
+    opacity: 0.9;
+    font-weight: normal;
+    color: #95f8ff;
+    background-color: #25394b;
+}
+
+.menuStyle.ack:hover {
+    background-color: #1d535f !important;
+}
+
 .menuStyle.positive {
     color: #7df67f;
     background-color: #132b1c;
