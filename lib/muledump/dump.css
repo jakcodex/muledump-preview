@@ -553,3 +553,58 @@ td.cont > div {
     height: 100%;
     width: 100%;
 }
+
+div.mule > div.stats {
+    width: 250px;
+    margin: 0 5px 5px 5px;
+}
+
+div.mule > div.stats > div.flex-container {
+    justify-content: space-between !important;
+    width: 100%;
+}
+
+div.mule > div.stats > div > div:first-child {
+    width: 150px;
+    overflow: hidden;
+}
+
+div.mule > div.stats > div > div:last-child {
+    width: 100px;
+    overflow: hidden;
+}
+
+div.mule > div.stats > div:nth-child(even) {
+    color: #a1f2ff;
+}
+
+div#totalsMenu {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer !important;
+    padding: 2px 2px 1px 3px !important;
+}
+
+div#totalsMenu:hover {
+    box-shadow: #ffffff 0 0 1px 1px;
+}
+
+div#totalsMenu:hover > div:first-child {
+    box-shadow: #00ceff 0 0 1px 1px;
+}
+
+div#totalsMenu > div:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: #00ceff 0 0 1px 1px;
+    width: 16px;
+    height: 15px;
+    margin-top: -1px;
+}
+
+div#totalsMenu > div:last-child {
+    margin-left: 5px;
+    letter-spacing: 1px;
+}

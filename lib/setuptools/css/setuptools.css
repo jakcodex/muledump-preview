@@ -404,6 +404,7 @@ a.setuptools.app.config.settings.action.eraseCache:hover {
 
 .setuptools.div.menu > div:not(.input) {
     padding-left: 10px;
+    padding-right: 10px;
 }
 
 .setuptools.div.menu > div:not(:last-child) {
@@ -431,6 +432,16 @@ a.setuptools.app.config.settings.action.eraseCache:hover {
     padding: 0;
     margin: 0;
     overflow: hidden;
+}
+
+.setuptools.div.menu div.select > select {
+    font-size: 12px;
+    width: 100%;
+    border: #707070 solid 2px;
+    background-color: #333;
+    padding: 3px;
+    color: #ffffff;
+    outline: none;
 }
 
 .setuptools.div.menu div.input > div > div:first-child {
