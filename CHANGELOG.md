@@ -10,6 +10,7 @@
   * Firefox item filter doesn't work with gift chests (#154)
   * Context menu getting repositioned erroneously when scrolled (#159)
   * Character Sorting doesn't work for accounts.js users (#166)
+  * Page Search doesn't work for accounts.js users (#170)
 
 - New Features
   * Detect and alert about in-game account gift chest bug (#133)
