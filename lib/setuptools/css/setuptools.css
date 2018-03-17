@@ -131,21 +131,24 @@ div.setuptools.app.uploadData {
 
 
 .featherlight-content::-webkit-scrollbar-track,
-.scrollbar::-webkit-scrollbar-track
+.scrollbar::-webkit-scrollbar-track,
+.setuptools.div.menu::-webkit-scrollbar-track
 {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
     background-color: #002464;
 }
 
 .featherlight-content::-webkit-scrollbar,
-.scrollbar::-webkit-scrollbar
+.scrollbar::-webkit-scrollbar,
+.setuptools.div.menu::-webkit-scrollbar
 {
     width: 10px;
     background-color: #F5F5F5;
 }
 
 .featherlight-content::-webkit-scrollbar-thumb,
-.scrollbar::-webkit-scrollbar-thumb
+.scrollbar::-webkit-scrollbar-thumb,
+.setuptools.div.menu::-webkit-scrollbar-thumb
 {
     background-color: #254adf;
 
@@ -1267,7 +1270,8 @@ a.rateLimited:hover {
     text-decoration: none !important;
 }
 
-.mulequeue-topMenu {
+.mulequeue-topMenu,
+.totalsMenu {
     background-color: #2c2c2c !important;
 }
 

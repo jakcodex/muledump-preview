@@ -1,4 +1,4 @@
-**2018-03-16** version 9.2.0
+**2018-03-??** version 9.2.0
 
 - Bug Fixes
   * Certain skins getting positioned incorrectly (#120)
@@ -9,6 +9,7 @@
   * Accounts sometimes left on Mulequeue config indefinitely due to account errors (#148)
   * Firefox item filter doesn't work with gift chests (#154)
   * Context menu getting repositioned erroneously when scrolled (#159)
+  * Character Sorting doesn't work for accounts.js users (#166)
 
 - New Features
   * Detect and alert about in-game account gift chest bug (#133)

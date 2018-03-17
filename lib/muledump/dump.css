@@ -555,27 +555,33 @@ td.cont > div {
 }
 
 div.mule > div.stats {
-    width: 250px;
-    margin: 0 5px 5px 5px;
+    max-width: 250px;
+    margin: 0 1px 1px 1px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between !important;
 }
 
 div.mule > div.stats > div.flex-container {
-    justify-content: space-between !important;
     width: 100%;
+    justify-content: space-between !important;
 }
 
-div.mule > div.stats > div > div:first-child {
-    width: 150px;
-    overflow: hidden;
+div.mule > div.stats > div.flex-container > div:first-child {
+    flex-basis: 60%;
 }
 
-div.mule > div.stats > div > div:last-child {
-    width: 100px;
-    overflow: hidden;
+div.mule > div.stats > div.flex-container > div:last-child {
+    flex-basis: 40%;
 }
 
-div.mule > div.stats > div:nth-child(even) {
-    color: #a1f2ff;
+div.mule > div.stats > div.flex-container:nth-child(even) {
+    background-color: #222;
+}
+
+div.mule > div.stats > div.flex-container:nth-child(odd) {
+    color: #90ccff;
 }
 
 div#totalsMenu {
@@ -607,4 +613,9 @@ div#totalsMenu > div:first-child {
 div#totalsMenu > div:last-child {
     margin-left: 5px;
     letter-spacing: 1px;
+}
+
+div.noTotals {
+    display: none;
+    padding: 5px 0;
 }
