@@ -36,6 +36,9 @@
 - Added performance time profiling (#149)
 - OCL disabled for Steamworks users
 - Usage Analytics improvements (removed totals, fixed init issue)
+- Updated Masonry style settings
+- Accounts Save button made more visible
+- Began converting jquery bindings for event namespaces and removing deprecated code
 - Libsodium 0.7.3 added
 - Seasalt 0.1.0 added
 - JTimer-Tools 0.1.1 added

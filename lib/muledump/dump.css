@@ -461,6 +461,10 @@ td.cont > div {
     border: none;
 }
 
+.mule {
+    margin-bottom: 10px;
+}
+
 #stickynotice,
 .stickynotice {
     padding: 4px;

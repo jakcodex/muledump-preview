@@ -798,7 +798,7 @@ div.massSwitch > div.link {
     color: #2386ff;
 }
 
-div.AccountsList > div.controller.saveAccounts:hover,
+div.AccountsList > div.controller.saveAccounts:not(.saveNotice):hover,
 div.AccountsList > div.controller.importAccountsJS:hover,
 div.AccountsList > div.controller.exportAccountsJS:hover,
 .menuStyle:hover {
@@ -1159,6 +1159,15 @@ img.hidden {
     padding: 5px;
 }
 
+@keyframes savepulse {
+    0% {
+        background-color: #213154;
+    }
+    100% {
+        background-color: #225b7f;
+    }
+}
+
 @keyframes notifypulse {
     0% {
         background-color: #0094ff;
@@ -1227,6 +1236,11 @@ img.hidden {
 .notifyPulse {
     color: #ffffff;
     animation: notifypulse 3s infinite;
+    animation-direction: alternate;
+}
+
+.savePulse {
+    animation: savepulse 3s infinite;
     animation-direction: alternate;
 }
 
