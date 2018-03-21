@@ -1,6 +1,6 @@
 # SetupTools Object Reference
 
-Last Updated: 2018-02-01
+Last Updated: 2018-03-21
 
 SetupTools started off large and will only get larger. This document outlines all the methods and keys found in SetupTools in an effort to make understanding it easier on future development and new devs.
 
@@ -85,7 +85,7 @@ An identifier placed in certain local storage keys to identify the specific Mule
 
 Full URL for Appspot production server endpoint.
 
-#### setuptools.config.appspotTesting =
+#### setuptools.config.appspotTesting
 `[default: string|https://rotmgtesting.appspot.com/]`
 
 Full URL for Appspot testing server endpoint.
@@ -1176,7 +1176,7 @@ The following is a basic list of event namespaces and their associated selectors
 
 This list is presently not exhaustive and not all event handlers have been converted to use namespaces yet.
 
-### `lib/muledump/muledump.js` Events
+### lib/muledump/muledump.js Events
 
 #### click.muledump.itemFilter
 ```js
@@ -1218,14 +1218,14 @@ $('#about')
 $('.drawhelp.docs')
 ```
 
-### `lib/muledump/export.js` Events
+### lib/muledump/export.js Events
 
 #### click.muledump.exportMenu
 ```js
 $('#export')
 ```
 
-### `lib/muledump/mule.js` Events
+### lib/muledump/mule.js Events
 
 #### click.muledump.reloader
 ```js
@@ -1263,7 +1263,7 @@ $('div.boost')
 $('div.boost')
 ```
 
-### `lib/muledump/options.js` Events
+### lib/muledump/options.js Events
 
 #### change.muledump.options
 ```js
@@ -1310,7 +1310,7 @@ $('.handle.options')
 $('.handle.options')
 ```
 
-### `lib/setuptools/src/setuptools.js` Events
+### lib/setuptools/src/setuptools.js Events
 
 #### mouseover.muledump.mainMenu
 ```js
