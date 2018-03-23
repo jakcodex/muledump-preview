@@ -182,7 +182,6 @@ div.setuptools.app.uploadData {
 .setuptools.app.config.settings select {
     clear: right;
     float: right;
-    height: 24px;
 }
 
 .setuptools.app.save {

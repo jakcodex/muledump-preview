@@ -32,8 +32,9 @@
   * Gift chests width now adjustable (#164)
   * Account in use timeout added to MuleQueue history errors
 
-- Removed Gold Purchased due to inaccurate data coming from Deca
 - Added performance time profiling (#149)
+- Various Firefox-specific style improvements
+- Removed Gold Purchased due to inaccurate data coming from Deca
 - OCL disabled for Steamworks users
 - Usage Analytics improvements (removed totals, fixed init issue)
 - Updated Masonry style settings
