@@ -49,6 +49,8 @@ Whether or not to display all animations, reduced animations, or minimal animati
 #### ```Auto Complete for Password Managers```
 When disabled this prevents passwords managers from interfering with username and password fields.
 
+Warning: This setting might get ignored by your browser making the setting useless.
+
 #### ```Automatic Backups```
 Automatically create daily backups of your configuration stored in browser local storage.
 

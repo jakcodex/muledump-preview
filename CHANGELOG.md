@@ -1,4 +1,14 @@
-**2018-03-??** version 9.2.0
+**2018-04-??** version 9.3.0
+
+- New Features
+  * Totals can be displayed with items disabled on mules (#169)
+  * Totals in global mode can find accounts with specific items
+  * White Bag tracker in progress (#168)
+
+- Improvements
+  * Calculation of totals data is now cached to reduce cpu usage (#127)
+
+**2018-03-22** version 9.2.0
 
 - Bug Fixes
   * Certain skins getting positioned incorrectly (#120)
@@ -28,7 +38,7 @@
   * Testing is now configurable per account (#155)
   * Copy Menu added to Mule Menu (#160)
   * Account errors moved to new error bar (#161)
-  * Autocomplete can be disabled to prevent password manager annoyance (#163)
+  * Autocomplete can be disabled to prevent password manager annoyance [may not be respected by browsers] (#163)
   * Gift chests width now adjustable (#164)
   * Account in use timeout added to MuleQueue history errors
 

@@ -25,7 +25,7 @@ See the [Requirements](REQUIREMENTS.md) page for more information.
 
 ## Release Information
 
-This is a preview release of Jakcodex/Muledump v9.2.
+This is a preview release of Jakcodex/Muledump v9.3.
 
 Muledump Online is available hosted on Github [here](https://jakcodex.github.io/muledump-preview/muledump.html).
 
@@ -37,7 +37,7 @@ All released versions are available for download [here](https://github.com/jakco
 - Returning users can upload a backup or import their existing accounts.js file
 - New users will be guided through first time setup
 - This version runs entirely on your local computer and is updated automatically with new releases
-- All data submitted and stored in this version never leave your computer
+- All user and account data submitted and stored in this version never leaves your computer
 
 ## Muledump Local Version
 
@@ -55,7 +55,7 @@ All released versions are available for download [here](https://github.com/jakco
 - MuleQueue - Task queuing to control the flow of requests from Muledump
 - Vault display is now fully customizable and comes with four pre-defined layouts
 - Full character skin and dye support in portraits
-- Totals filtering on fame bonus, feed power, soulbound, ut, and st
+- Totals filtering on fame bonus, feed power, soulbound, ut, and st, and specified accounts
 - Character Sorting by fame, exp, total fame, class, active time, maxed stats, and custom lists
 - Character Lists allow you to create custom Muledump account layouts showing only characters you specify 
 - Exporting works with the following modes: text, csv, json, image, imgur
@@ -66,8 +66,12 @@ All released versions are available for download [here](https://github.com/jakco
 - click on item to filter accounts that hold it
 - click on account name for individual options menu
 - ctrl-click account name to temporarily hide it from totals
+- ctrl-click on an item to open its Realmeye menu
+- ctrl-click on two items to open the Realmeye Trading menu
 - logins thru muledump count towards daily login calendar
 - account settings include automatic reload, login-only (daily calendar only), and cache disable
+- right click anywhere on a mule to access the mule menu
+- active mulequeue can be resumed if muledump is closed
 
 ## Check out the [Frequently Asked Questions](https://github.com/jakcodex/muledump/wiki/Frequently-Asked-Questions) and explore the [wiki](https://github.com/jakcodex/muledump/wiki) for more information!
 
@@ -99,6 +103,18 @@ Muledump Renders and Constants are maintained by [tuvior](https://github.com/tuv
 ## FYI
 
 The following paths are for Github Pages configuration and are not apart of the Muledump code: _layouts, assets, and _config.yml.
+
+## Donations
+
+People ask about donating to the Jakcodex/Muledump project rather frequently. This project has not been without its expenses, so your contributions are welcome and appreciated.
+
+If you are so inclined, you can donate to one of these locations:
+
+##### Paypal
+paypal@jakcodex.io
+
+##### Bitcoin
+bitcoin:1FfFBFNcWuvZMFRvZ7K9byh341h7yJte2P
 
 ## Privacy Policy
 
