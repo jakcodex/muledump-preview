@@ -388,7 +388,7 @@ a.setuptools.app.config.settings.action.eraseCache:hover {
     box-shadow: #111 0 0 1px 4px;
 }
 
-.setuptools.header.noselect {
+.setuptools.header {
     background-color: #222;
 }
 
@@ -398,6 +398,25 @@ a.setuptools.app.config.settings.action.eraseCache:hover {
     width: 100%;
     box-sizing: border-box;
     padding: 7px;
+}
+
+.smallMenuCells > div {
+    padding: 5px !important;
+}
+
+.smallMenuCells > div.header:not(.noselect):hover {
+    background-color: #383838 !important;
+}
+
+.smallMenuCells div:hover,
+.smallMenuCells div:hover > a {
+    color: #56a7ff !important;
+    text-decoration: none !important;
+    transition-duration: 0.5s;
+}
+
+.smallMenuCells div:hover > a:hover {
+    text-decoration: none !important;
 }
 
 .setuptools.div.menu > div:not(.noselect) {
@@ -948,6 +967,10 @@ div.AccountsList > div.controller.exportAccountsJS:hover,
     width: 370px;
 }
 
+.fl-Totals .featherlight-content {
+    width: 852px;
+}
+
 .fl-IndexCentered .featherlight-content {
     width: 370px;
     text-align: center;
@@ -1089,6 +1112,26 @@ div.tooltip {
     text-align: left;
     background-color: #2c2c2c;
     height: 36px;
+}
+
+.hiddenItemsTooltip {
+    z-index: 9999999999 !important;
+}
+
+#accountFilterList {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+#accountFilterList > div {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#accountFilterList > div:hover {
+    color: #4a82ff;
+    cursor: pointer;
 }
 
 div.tooltip > div:not(.ignore) {

@@ -1,12 +1,17 @@
 **2018-04-??** version 9.3.0
 
 - New Features
-  * Totals can be displayed with items disabled on mules (#169)
-  * Totals in global mode can find accounts with specific items
+  * Global Totals added to display items even when disabled on mules (#169)
+  * Items can be permanently hidden from display in totals (#172)
+  * Massively expanded totals filtering options (#174)
   * White Bag tracker in progress (#168)
 
 - Improvements
   * Calculation of totals data is now cached to reduce cpu usage (#127)
+  * Client configuration lazy saving option added (#173)
+  * Account Filter list added to Totals Settings Status UI (#175)
+
+Note: New filter options are mostly placeholders presently!
 
 **2018-03-22** version 9.2.0
 
