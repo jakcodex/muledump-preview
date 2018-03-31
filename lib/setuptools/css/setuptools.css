@@ -968,7 +968,7 @@ div.AccountsList > div.controller.exportAccountsJS:hover,
 }
 
 .fl-Totals .featherlight-content {
-    width: 852px;
+    width: 810px;
 }
 
 .fl-IndexCentered .featherlight-content {
@@ -1099,9 +1099,9 @@ input[type="checkbox"] {
     margin-right: 0 !important;
 }
 
-.dragbox div.selected, .selected {
-    background-color: #040f51;
-    color: #22b7da;
+.dragbox div.selected, .selected:not(.item) {
+    background-color: #040f51 !important;
+    color: #22b7da !important;
 }
 
 div.tooltip {
