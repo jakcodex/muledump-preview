@@ -864,8 +864,8 @@ div.AccountsList > div.controller.exportAccountsJS:hover,
 }
 
 .menuStyle.disabled {
-    color: #65676a;
-    background-color: #37393d;
+    color: #65676a !important;
+    background-color: #37393d !important;
 }
 
 .menuStyle.disabled:hover {
@@ -1056,6 +1056,10 @@ div.AccountsList > div.controller.exportAccountsJS:hover,
 
 .h100 {
     height: 100%;
+}
+
+.p5 {
+    padding: 5px;
 }
 
 input[type="checkbox"] {
