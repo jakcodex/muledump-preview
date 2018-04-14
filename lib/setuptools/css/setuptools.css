@@ -1603,3 +1603,33 @@ strong.negative {
 .realmeyeBorder {
     background-color: #00b0fc;
 }
+
+#itemSlotTypeSorting {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+#itemSlotTypeSorting > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 125px;
+    padding: 10px;
+    margin: 5px;
+    background-color: #333;
+    border: #000000 solid 1px;
+    cursor: pointer;
+}
+
+#itemSlotTypeSorting > div:hover {
+    background-color: #3d4f55;
+}
+
+.expansion {
+    cursor: pointer;
+}
+
+.expansion:hover {
+    color: #00ceff;
+}

@@ -8,12 +8,14 @@
   * Items can be permanently hidden from display in totals (#172)
   * Massively expanded totals filtering options (#174)
   * Named totals configurations can be named and switched between (#178)
+  * Customize sort order of item groups (#188)
   * White Bag tracker in progress (#168)
 
 - Improvements
   * Calculation of totals data is now cached to reduce cpu usage (#127)
   * Client configuration lazy saving option added (#173)
   * Account Filter list added to Totals Settings Status UI (#175)
+  * Item groups now identified better with virtualSlotType (#176)
   * Added Total Living Death Fame and All Time Account Fame to Account Info (#180, #181)
   * RealmAPI HTTP errors now properly reported (#184)
 
