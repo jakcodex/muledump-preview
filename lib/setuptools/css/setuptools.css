@@ -1118,7 +1118,8 @@ div.tooltip {
     height: 36px;
 }
 
-.hiddenItemsTooltip {
+.hiddenItemsTooltip,
+.itemSubsortingTooltip {
     z-index: 9999999999 !important;
 }
 
@@ -1604,6 +1605,15 @@ strong.negative {
     background-color: #00b0fc;
 }
 
+#itemSubsortingBox > div {
+    transition: 0.3s linear;
+    cursor: pointer;
+}
+
+#itemSubsortingBox > div:hover {
+    background-color: #3e6a7d;
+}
+
 #itemSlotTypeSorting {
     justify-content: space-between;
     align-items: center;
@@ -1614,14 +1624,31 @@ strong.negative {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 125px;
+    width: 135px;
+    height: 40px;
     padding: 10px;
     margin: 5px;
     background-color: #333;
     border: #000000 solid 1px;
     cursor: pointer;
+    transition: 0.3s linear;
 }
 
+.itemSlotTypeSorting.enabled {
+    border: #6fffe9 solid 1px !important;
+}
+
+.dragging,
+.dragging:hover {
+    background-color: #3a7078 !important;
+}
+
+.dragging.bright,
+.dragging.bright:hover {
+    background-color: #4b879b !important;
+}
+
+#itemSlotTypeSorting > div:active,
 #itemSlotTypeSorting > div:hover {
     background-color: #3d4f55;
 }
@@ -1633,3 +1660,21 @@ strong.negative {
 .expansion:hover {
     color: #00ceff;
 }
+
+
+.draggingtail {
+    transition: 0s !important;
+    animation-name: draggingtail;
+    animation-duration: 0.75s;
+}
+
+@keyframes draggingtail {
+    0% {
+        background-color: #3d4f55;
+    }
+
+    100% {
+        background-color: #333;
+    }
+}
+

@@ -8,6 +8,7 @@
   * Items can be permanently hidden from display in totals (#172)
   * Massively expanded totals filtering options (#174)
   * Named totals configurations can be named and switched between (#178)
+  * Customize sort order of items (#186)
   * Customize sort order of item groups (#188)
   * White Bag tracker in progress (#168)
 
