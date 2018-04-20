@@ -135,7 +135,7 @@ div.setuptools.app.uploadData {
 .setuptools.div.menu::-webkit-scrollbar-track
 {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-    background-color: #002464;
+    background: rgb(44, 74, 96);
 }
 
 .featherlight-content::-webkit-scrollbar,
@@ -143,6 +143,7 @@ div.setuptools.app.uploadData {
 .setuptools.div.menu::-webkit-scrollbar
 {
     width: 10px;
+    height: 10px;
     background-color: #F5F5F5;
 }
 
@@ -150,8 +151,7 @@ div.setuptools.app.uploadData {
 .scrollbar::-webkit-scrollbar-thumb,
 .setuptools.div.menu::-webkit-scrollbar-thumb
 {
-    background-color: #254adf;
-
+    background: rgb(59, 134, 180);
 }
 
 .setuptools.app.config.settings:not(a) {
@@ -1200,6 +1200,11 @@ img.hidden {
     display: none;
 }
 
+.tooltip-textiles {
+    height: auto !important;
+    padding: 5px;
+}
+
 .tooltip-boost {
     height: auto !important;
     width: 175px;
@@ -1605,6 +1610,13 @@ strong.negative {
     background-color: #00b0fc;
 }
 
+#itemSubsortingBox {
+    max-height: 440px;
+    overflow-y: scroll;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
 #itemSubsortingBox > div {
     transition: 0.3s linear;
     cursor: pointer;
@@ -1625,9 +1637,9 @@ strong.negative {
     justify-content: center;
     align-items: center;
     width: 135px;
-    height: 40px;
+    height: 44px;
     padding: 10px;
-    margin: 5px;
+    margin: 10px 5px 5px 5px;
     background-color: #333;
     border: #000000 solid 1px;
     cursor: pointer;
@@ -1661,20 +1673,8 @@ strong.negative {
     color: #00ceff;
 }
 
-
-.draggingtail {
-    transition: 0s !important;
-    animation-name: draggingtail;
-    animation-duration: 0.75s;
-}
-
-@keyframes draggingtail {
-    0% {
-        background-color: #3d4f55;
-    }
-
-    100% {
-        background-color: #333;
-    }
+#hiddenItems:empty {
+    height: 0 !important;
+    overflow: hidden !important;
 }
 

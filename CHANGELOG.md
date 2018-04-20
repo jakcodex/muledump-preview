@@ -10,7 +10,6 @@
   * Named totals configurations can be named and switched between (#178)
   * Customize sort order of items (#186)
   * Customize sort order of item groups (#188)
-  * White Bag tracker in progress (#168)
 
 - Improvements
   * Calculation of totals data is now cached to reduce cpu usage (#127)
@@ -19,10 +18,9 @@
   * Item groups now identified better with virtualSlotType (#176)
   * Added Total Living Death Fame and All Time Account Fame to Account Info (#180, #181)
   * RealmAPI HTTP errors now properly reported (#184)
+  * Totals can be reinitialized to accept new sorting orders (#191)
 
 - Renders updated to X24.0.0
-
-Note: New filter options are mostly placeholders presently!
 
 **2018-03-22** version 9.2.0
 
