@@ -176,9 +176,10 @@ body {
     background-color: #545454;
     cursor: pointer;
     overflow: hidden;
-    margin: 4px 2px;
+    margin: 2px;
     text-decoration: none;
 }
+
 
 .portrait {
     float: left;
@@ -374,7 +375,7 @@ td.cont > div {
     padding: 1px 1px 1px 4px;
     font-weight: normal;
     font-size: 14px;
-    margin: 4px 2px;
+    margin: 2px;
 }
 .scont .star {
     font-size: 1.2em;

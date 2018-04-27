@@ -1646,8 +1646,9 @@ strong.negative {
     transition: 0.3s linear;
 }
 
+.mule.filteringEnabled,
 .itemSlotTypeSorting.enabled {
-    border: #6fffe9 solid 1px !important;
+    border: #00eaff solid 1px !important;
 }
 
 .dragging,
