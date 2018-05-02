@@ -1,7 +1,8 @@
-**2018-04-??** version 9.3.0
+**2018-05-??** version 9.3.0
 
 - Bug Fixes
   * toggle_filter does not work when type is off globally but on locally (#179)
+  * Mules sometimes overlap when the layout changes (#187)
 
 - New Features
   * Global Totals added to display items even when disabled on mules (#169)
@@ -10,6 +11,7 @@
   * Named totals configurations can be named and switched between (#178)
   * Customize sort order of items (#186)
   * Customize sort order of item groups (#188)
+  * Sorting Mode options: feed power, fame bonus, alphabetical, standard (#192)
 
 - Improvements
   * Calculation of totals data is now cached to reduce cpu usage (#127)
@@ -19,8 +21,11 @@
   * Added Total Living Death Fame and All Time Account Fame to Account Info (#180, #181)
   * RealmAPI HTTP errors now properly reported (#184)
   * Totals can be reinitialized to accept new sorting orders (#191)
+  * Mule Menu button can be hidden (#193)
+  * Quick access context menu added to body (#195)
 
-- Renders updated to X24.0.0
+- Renders updated to X25.0.0
+- Shift+Click mechanics now prevent random text selection
 
 **2018-03-22** version 9.2.0
 
@@ -215,7 +220,7 @@
 **2017-10-29** version 0.8.1-7
 
 - Updated renders/constants (does not include Halloween update)
-``
+
 **2017-10-12** version 0.8.1-6
 
 - Bug Fixes
