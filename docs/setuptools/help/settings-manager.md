@@ -1,4 +1,4 @@
-## Settings Manager
+# Settings Manager
 
 ### Muledump Settings
 
@@ -14,7 +14,7 @@ Display error messages when encountered.
 #### ```Enable One-click Login```
 Whether or not to enable the support of muledump:// links.
 
-#### ```Gift Chests Width````
+#### ```Gift Chests Width```
 Numbers of gift chests to display per row.
 
 #### ```Page Search```

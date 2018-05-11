@@ -3,6 +3,7 @@
 - Bug Fixes
   * toggle_filter does not work when type is off globally but on locally (#179)
   * Mules sometimes overlap when the layout changes (#187)
+  * About page opens when update check fails (#200)
 
 - New Features
   * Global Totals added to display items even when disabled on mules (#169)

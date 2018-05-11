@@ -1679,3 +1679,15 @@ strong.negative {
     overflow: hidden !important;
 }
 
+#drawhelpBox h2 {
+    border-bottom: 1px solid #ffffff;
+}
+
+#drawhelpBox h3 {
+    color: #90ccff;
+    background-color: #333;
+}
+
+#drawhelpBox h4 {
+    color: #90ccff;
+}

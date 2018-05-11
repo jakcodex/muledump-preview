@@ -1,6 +1,6 @@
-## Groups Manager
+# Groups Manager
 
-### Available Actions
+## Available Actions
 
 #### ```Create Group```
 
@@ -14,7 +14,7 @@ Enable all groups.
 
 Disable all groups.
 
-### Existing Groups Manager
+## Existing Groups Manager
 
 Left click a group to select it.
 
@@ -28,7 +28,7 @@ Right click to open group menu.
 
 Groups can be sorted in order of priority (highest priority is farthest to the left). They can be moved left or right one spot, or to the start or end of the list.
 
-### Group Menu
+## Group Menu
 
 #### ```Edit```
 
@@ -74,7 +74,7 @@ Merge two or more selected groups into a new group.
 
 Delete selected groups.
 
-### Selection Menu
+## Selection Menu
 
 #### ```Select All```
 

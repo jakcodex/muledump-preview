@@ -52,7 +52,7 @@ Enabling Global Totals will display all matching items found over all enabled ac
 
 ## <a href="#" id="fo"></a>Filter Options
 
-Muledump Totals supports a wide variety of configurable filters that you can use to determine what gets displayed in Totals.
+Muledump Totals supports a wide variety of configurable filters that you can use to determine what gets displayed.
 
 ### Standard Filters
 
@@ -100,14 +100,14 @@ Muledump Totals can be set to sort in different modes.
 
 Items are sorted by Item Group and can be customized to meet your liking.
 
-### Alphabetical
+#### Alphabetical
 
 Items are sorted alphabetically.
 
-### Fame Bonus
+#### Fame Bonus
 
 Items are sorted by fame bonus (highest to lowest).
 
-### Feed Power
+#### Feed Power
 
 Items are sorted by feed power (highest to lowest).
