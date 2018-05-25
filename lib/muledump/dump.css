@@ -560,11 +560,10 @@ td.cont > div {
 }
 
 div.mule > div.stats {
-    max-width: 250px;
+    width: 250px;
     margin: 0 1px 1px 1px;
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
     justify-content: space-between !important;
 }
 

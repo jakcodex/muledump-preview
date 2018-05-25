@@ -803,6 +803,7 @@ div.massSwitch > div.link {
     background-color: #12182b;
     border: #000 solid 2px;
     margin-right: 5px;
+    transition: 0.3s linear;
 }
 
 .formStyle {
@@ -1121,22 +1122,6 @@ div.tooltip {
 .hiddenItemsTooltip,
 .itemSubsortingTooltip {
     z-index: 9999999999 !important;
-}
-
-#accountFilterList {
-    flex-wrap: wrap;
-    justify-content: flex-start;
-}
-
-#accountFilterList > div {
-    margin: 10px;
-    display: flex;
-    justify-content: center;
-}
-
-#accountFilterList > div:hover {
-    color: #4a82ff;
-    cursor: pointer;
 }
 
 div.tooltip > div:not(.ignore) {
@@ -1672,6 +1657,26 @@ strong.negative {
 
 .expansion:hover {
     color: #00ceff;
+}
+
+#accountFilterList {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+#accountFilterList > div {
+    display: flex;
+    justify-content: center;
+    margin: 5px 5px 0 0;
+    padding: 5px;
+    border: #000000 solid 1px;
+    background-color: #333;
+    transition: 0.3s linear;
+}
+
+#accountFilterList > div:hover {
+    background-color: #3d4f55;
+    cursor: pointer;
 }
 
 #hiddenItems:empty {

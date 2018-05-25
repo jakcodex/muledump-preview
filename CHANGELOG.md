@@ -25,7 +25,7 @@
   * Mule Menu button can be hidden (#193)
   * Quick access context menu added to body (#195)
 
-- Renders updated to X25.0.0
+- Renders updated to X26.0.0
 - Shift+Click mechanics now prevent random text selection
 
 **2018-03-22** version 9.2.0
