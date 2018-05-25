@@ -24,6 +24,7 @@
   * Totals can be reinitialized to accept new sorting orders (#191)
   * Mule Menu button can be hidden (#193)
   * Quick access context menu added to body (#195)
+  * Backup Assistant is delayed to prevent hiding of startup errors (#203)
 
 - Renders updated to X26.0.0
 - Shift+Click mechanics now prevent random text selection
