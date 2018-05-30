@@ -46,7 +46,7 @@ Items in Muledump totals display can be permanently hidden by Shift+Clicking it 
 
 All hidden items can be seen here and selectively removed with another Shift+Click.
 
-## <a href="#" id="dn"></a>Display Mode
+## <a href="#" id="dm"></a>Display Mode
 
 By default, Muledump Totals will only display the items that are displayed on your mules.
 
@@ -60,7 +60,7 @@ Muledump Totals supports a wide variety of configurable filters that you can use
 
 Standard Filters are the original filters to come with Muledump. When enabled only items matching the enabled filter will be displayed.
 
-There are available item filters for: Feed Power, Fame Bonus, and soulbound, UT, and ST items.
+There are available item filters for: Feed Power, Fame Bonus, Soulbound, Not Soulbound, UT, and ST items.
 
 #### Feed Power Filter
 

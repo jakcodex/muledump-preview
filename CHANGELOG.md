@@ -13,6 +13,7 @@
   * Customize sort order of items (#186)
   * Customize sort order of item groups (#188)
   * Sorting Mode options: feed power, fame bonus, alphabetical, standard (#192)
+  * Added new Standard Filter for Non-Soulbound Items (#202)
 
 - Improvements
   * Calculation of totals data is now cached to reduce cpu usage (#127)
@@ -25,9 +26,11 @@
   * Mule Menu button can be hidden (#193)
   * Quick access context menu added to body (#195)
   * Backup Assistant is delayed to prevent hiding of startup errors (#203)
+  * Selected gift items more easily recognizable in display (#206)
 
 - Renders updated to X26.0.0
 - Shift+Click mechanics now prevent random text selection
+- Various styling improvements
 
 **2018-03-22** version 9.2.0
 

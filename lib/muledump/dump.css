@@ -104,7 +104,7 @@ body {
 #totals, .mule, .guid, .reload, .item { display: inline-block; }
 
 #totals {
-    margin: 10px 0 10px 25px    ;
+    margin: 10px 3px;
     display: block;
     border: solid 2px #555;
     line-height: 0;
@@ -367,6 +367,11 @@ td.cont > div {
     background-color: #daa520;
 }
 
+.itemsc.gifts .item.selected {
+    outline: 2px solid #ffffff !important;
+    background-color: #f6ff50;
+}
+
 /* stars */
 .scont {
     background-color: #222;
@@ -437,7 +442,7 @@ td.cont > div {
 /*Curlip*/
 
 #stage, #errors {
-    margin: 5px 22px;
+    margin: 10px 0;
 }
 
 #errors > div {

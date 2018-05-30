@@ -12,12 +12,12 @@ a.red {
 
 a.red:hover {
     letter-spacing: 1px;
-    color: #0094ff !important;
+    color: #5aaeff !important;
     text-decoration: underline !important;
 }
 
 a.setuptools:hover {
-    color: #0094ff !important;
+    color: #5aaeff !important;
 }
 
 a.setuptools:not(.save):hover {
@@ -1589,6 +1589,10 @@ img.spinner {
 
 strong.negative {
     color: #da281e;
+}
+
+strong.info {
+    color: #af23da;
 }
 
 .realmeyeBorder {
