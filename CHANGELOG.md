@@ -27,7 +27,9 @@
   * Quick access context menu added to body (#195)
   * Backup Assistant is delayed to prevent hiding of startup errors (#203)
   * Selected gift items more easily recognizable in display (#206)
+  * Added Help Menu (#208)
 
+- Diagnostics tools added for localStorage (#207)
 - Renders updated to X26.0.0
 - Shift+Click mechanics now prevent random text selection
 - Various styling improvements

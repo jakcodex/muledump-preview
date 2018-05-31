@@ -11,11 +11,14 @@ The maximum numbers of characters to be displayed in on the webpage per row.
 #### ```Display Errors```
 Display error messages when encountered.
 
-#### ```Enable One-click Login```
+#### ```Enable One Click Login```
 Whether or not to enable the support of muledump:// links.
 
 #### ```Gift Chests Width```
 Numbers of gift chests to display per row.
+
+#### ```Mule Menu```
+Whether or not to display the Mule Menu icon on mules.
 
 #### ```Page Search```
 Format to display page search: Full width, shortened, or off.
@@ -54,6 +57,9 @@ Warning: This setting might get ignored by your browser making the setting usele
 #### ```Automatic Backups```
 Automatically create daily backups of your configuration stored in browser local storage.
 
+#### ```Automatically Reload Account Data```
+Whether or not accounts set to Automatic Reload will execute the action.
+
 #### ```Debug Logging```
 Whether or not to output the debug logs to the browser console.
 
@@ -72,6 +78,9 @@ Example: [a, b, c] + [d, e, f] + [g, h, i] = [a, d, g, b, e, h, c, f, i]
 Groups Manager accounts are merged with their order arranged by overall order 
 
 Example: [a, b, c] + [d, e, f] + [g, h, i] = [a, b, c, d, e, f, g, h, i]
+
+#### ```Lazily Save Minor Config Changes```
+Length of time between lazySave requests (to reduce storage write volume on auto saving features).
 
 #### ```Longpress Length in Seconds```
 Length of time that a long left click takes to activate.
