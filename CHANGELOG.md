@@ -1,4 +1,4 @@
-**2018-05-??** version 9.3.0
+**2018-06-??** version 9.3.0
 
 - Bug Fixes
   * toggle_filter does not work when type is off globally but on locally (#179)
