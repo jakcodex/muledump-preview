@@ -88,7 +88,11 @@ Shift+Click on a mule to add and remove it from the Account Filter. Accounts in 
 
 You can reset the Account Filter by opening the Totals Menu and choosing 'Reset Account Filter'.
 
-Alternatively, you can remove a mule from the standard Totals by Ctrl+Clicking it to disable it temporarily.
+### Disabled Account Filter
+
+The Disabled Account Filter allows you to select one or more displayed accounts and disable them from being included in Totals.
+
+Ctrl+Click on a mule to add or remove it from the Disabled Account Filter. Disabled accounts will be darkened.
 
 ### Hidden Item Filter
 

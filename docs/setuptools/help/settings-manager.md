@@ -87,6 +87,9 @@ Groups Manager accounts are merged with their order arranged by overall order
 
 Example: [a, b, c] + [d, e, f] + [g, h, i] = [a, b, c, d, e, f, g, h, i]
 
+#### ```Hide Muledump Version Text```
+Hides the `Jakcodex / Muledump v1.2.3` text in the Muledump header.
+
 #### ```Lazily Save Minor Config Changes```
 Length of time between lazySave requests (to reduce storage write volume on auto saving features).
 

@@ -14,6 +14,8 @@
   * Customize sort order of item groups (#188)
   * Sorting Mode options: feed power, fame bonus, alphabetical, standard (#192)
   * Added new Standard Filter for Non-Soulbound Items (#202)
+  * Take screenshots of characters and mules (#211)
+  * Disabled mules state now persists on reload (#213)
 
 - Improvements
   * Calculation of totals data is now cached to reduce cpu usage (#127)
@@ -32,6 +34,7 @@
 - Diagnostics tools added for localStorage (#207)
 - Renders updated to X26.0.0
 - Shift+Click mechanics now prevent random text selection
+- Product name and version added to top bar with setting to hide it
 - Various styling improvements
 
 **2018-03-22** version 9.2.0

@@ -157,6 +157,11 @@ The URL to the Muledump Github archive (for linking release downloads).
 
 The URL to the Muledump Github raw archive (for linking single-file downloads).
 
+#### setuptools.config.goHomeSkip
+`[default: array|...]`
+
+A list of lightbox pages which will not have the goHome button drawn.
+
 #### setuptools.config.hostedDomain
 `[default: string|jakcodex.github.io]`
 
@@ -431,20 +436,25 @@ Number of gift chests to display per row. If set to zero it will match the row l
 
 How to merge accounts configured in the groups manager (0=off, 1=parallel, 2=serial).
 
+#### setuptools.data.config.hideHeaderText
+`[default: boolean|false]`
+
+Whether or not to hide the Muledump product information from the top bar.
+
 #### setuptools.data.config.lazySave
 `[default: number|10000]`
 
 The time in miliseconds between lazySave cycles.
 
-#### setuptools.data.config.loginOnlyTotals
-`[default: boolean|true]`
-
-Whether or not accounts marked loginOnly count towards displayed totals.
-
 #### setuptools.data.config.longpress
 `[default: number|1000]`
 
 How long a long left click must last to register as a longpress.
+
+#### setuptools.data.config.lowStorageSpace
+`[default: boolean|true]`
+
+Whether or not to display a notice when low storage space is detected.
 
 #### setuptools.data.config.maximumBackupCount
 `[default: number|10]`

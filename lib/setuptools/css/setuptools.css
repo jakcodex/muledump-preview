@@ -1700,3 +1700,21 @@ strong.info {
 #drawhelpBox h4 {
     color: #90ccff;
 }
+
+
+.systemsReport > div:first-child {
+    width: 60%;
+}
+
+.systemsReport > div:last-child {
+    width: 40%;
+    text-align: right;
+}
+
+div.systemsReport:nth-child(even) > div {
+    background-color: #111;
+}
+
+div.systemsReport:nth-child(odd) > div {
+    color: #90ccff;
+}

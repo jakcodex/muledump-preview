@@ -48,24 +48,29 @@
 	<script type="application/javascript" src="lib/setuptools/src/analytics.js"></script>
 </head>
 <body class="scrollbar">
-	<span id="accopts" style="display: none;" class="menu"></span>
-	<div class="handle"><span id="options" class="menu"></span></div>
+	<span id="accopts" style="display: none;" class="menu noselect"></span>
+	<div class="handle"><span id="options" class="menu noselect"></span></div>
 	<div id="fix">
 		<div id="previewnotice"></div>
 		<div id="stickynotice"></div>
-		<div id="top" class="flex-container noFlexAutoWidth" style="justify-content: flex-end; flex-flow: row nowrap;">
-			<div id="notice" style="display: none;">Notice</div>
-			<div id="pagesearch" class="searchName full">
-				<input type="text" name="searchName" placeholder="Email or Username">
+		<div id="topContainer" class="flex-container" style="justify-content: space-between;">
+			<div id="intro" class="flex-container noFlexAutoWidth" style="flex-shrink: 0;">
+				<div class="version ml5 mr5">Jakcodex / Muledump is loading ...</div>
 			</div>
-			<div id="totalsMenu" style="overflow: hidden;"><div>&#9751;</div><div>Totals</div></div>
-			<div class="handle options"><span>Options</span></div>
-			<div id="setuptools">Setup</div>
-			<div id="mulequeue">MuleQueue</div>
-			<div class="handle"><span>Export</span><span id="export" class="menu"></span></div>
-			<div id="about">About</div>
-			<div id="help">Help</div>
-			<a href="https://github.com/jakcodex/muledump" target="_blank">Home</a>
+			<div id="top" class="flex-container noFlexAutoWidth" style="justify-content: flex-end; flex-flow: row nowrap;">
+				<div id="notice" style="display: none;">Notice</div>
+				<div id="pagesearch" class="searchName full">
+					<input type="text" name="searchName" placeholder="Email or Username">
+				</div>
+				<div id="totalsMenu">Totals</div>
+				<div class="handle options"><span>Options</span></div>
+				<div id="setuptools">Setup</div>
+				<div id="mulequeue">MuleQueue</div>
+				<div class="handle"><span>Export</span><span id="export" class="menu"></span></div>
+				<div id="about">About</div>
+				<div id="help">Help</div>
+				<a href="https://github.com/jakcodex/muledump" target="_blank">Home</a>
+			</div>
 		</div>
 	</div>
 	<div id="main">

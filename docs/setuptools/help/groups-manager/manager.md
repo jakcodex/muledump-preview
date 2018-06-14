@@ -1,9 +1,13 @@
 # Groups Manager
 
 [Available Actions](#aa)
+
 [Existing Groups Manager](#egm)
+
 [Group Menu](#gm)
+
 [Selection Menu](#sm)
+
 [Group Editor](#ge)
 
 ## <a href="#" id="aa"></a>Available Actions
