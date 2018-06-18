@@ -342,6 +342,7 @@ hr {
 .mule.disabled { opacity: 0.5; }
 
 .mule > table {
+    background-color: #333;
     margin: 0;
     padding: 2px;
     border-spacing: 0;
@@ -449,6 +450,7 @@ table.chars {
 
 #stage, #errors {
     margin: 10px 0;
+    background-color: #212121;
 }
 
 #errors > div {
@@ -463,6 +465,7 @@ table.chars {
 
 #main {
     margin: 10px;
+    background-color: #212121;
 }
 
 .mule:not(.setuptools),
@@ -597,6 +600,7 @@ div.mule > div.stats > div.flex-container:nth-child(even) {
 
 div.mule > div.stats > div.flex-container:nth-child(odd) {
     color: #90ccff;
+    background-color: #333;
 }
 
 div.noTotals {
