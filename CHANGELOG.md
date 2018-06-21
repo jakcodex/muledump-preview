@@ -1,3 +1,11 @@
+**2018-??-??** version 9.4.0
+
+- Bug Fixes
+  * Mule parse crashes on unknown classes (#218)
+
+- New Features
+  * SetupTools Compression on localStorage (#217)
+
 **2018-06-18** version 9.3.0
 
 - Bug Fixes
@@ -14,6 +22,7 @@
   * Customize sort order of item groups (#188)
   * Sorting Mode options: feed power, fame bonus, alphabetical, standard (#192)
   * Added new Standard Filter for Non-Soulbound Items (#202)
+  * Alert users when localStorage problems are detected (#208)
   * Disabled mules state now persists on reload (#213)
   * Added screenshot menu to generate a variety of Muledump screenshots (#215)
 
