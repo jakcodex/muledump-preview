@@ -1017,6 +1017,11 @@ div.AccountsList > div.controller.exportAccountsJS:hover,
     transition: background-color 2s ease;
 }
 
+.fl-Exporter .featherlight-content {
+    min-width: 400px;
+    max-width: 80%;
+}
+
 /* other */
 
 .ml5 {
@@ -1286,6 +1291,10 @@ img.hidden {
     animation-direction: alternate;
 }
 
+.pastebin {
+    text-decoration: line-through;
+}
+
 a.rateLimited {
     color: #ff0000;
     text-decoration: none;
@@ -1322,12 +1331,19 @@ a.rateLimited:hover {
 }
 
 .mulequeue-topMenu,
-.totalsMenu {
+.totalsMenu,
+.exporterMenu {
     background-color: #2c2c2c !important;
 }
 
+.exporterMenu {
+    text-align: center;
+}
+
 .mulequeue-topMenu a,
-.mulequeue-topMenu a:hover {
+.mulequeue-topMenu a:hover,
+.exporterMenu a,
+.exporterMenu a:hover {
     color: #fff !important;
     text-decoration: none !important;
     font-weight: normal !important;
