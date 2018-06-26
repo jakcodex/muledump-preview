@@ -6,6 +6,11 @@
 - New Features
   * SetupTools Compression on localStorage (#217)
 
+- Improvements
+  * Muledump Exporter in progress (#211)
+  * Detect clock skew and account for it when timing daily login reset (#212)
+  * Totals export width can be customized (#219)
+
 **2018-06-18** version 9.3.0
 
 - Bug Fixes

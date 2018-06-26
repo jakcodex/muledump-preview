@@ -1,6 +1,6 @@
-DirectoryIndex index.php?apiPath=index
+DirectoryIndex README.md.html
 RewriteEngine on
-RewriteRule ^api/([a-z]*)/(.*)$ index.php?apiPath=$1&data=$2 [NC,L]
-RewriteRule ^api/(.*)/?$ index.php?apiPath=$1 [NC,L]
-RewriteRule ^api/?$ index.php?apiPath=index [NC,L]
-RewriteRule ^help help.html [NC,L]
+RewriteRule ^api/(time|tz)/(.*)/?$ index.php?apiPath=$1&data=$2 [NC,L]
+RewriteRule ^api/time/?$ index.php?apiPath=time [NC,L]
+RewriteRule ^api/?.*?$ index.php?apiPath=index [NC,L]
+RewriteRule ^help README.md.html [NC,L]
