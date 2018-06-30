@@ -4,12 +4,19 @@
   * Mule parse crashes on unknown classes (#218)
 
 - New Features
+  * Upload Totals Export text to paste service (#214)
   * SetupTools Compression on localStorage (#217)
 
 - Improvements
   * Muledump Exporter in progress (#211)
   * Detect clock skew and account for it when timing daily login reset (#212)
   * Totals export width can be customized (#219)
+
+**2018-06-29** version 9.3.1
+
+- Renders updated to X27.0.0
+- One Click Login updated with new URLs
+- Item groups / slotmap updated
 
 **2018-06-18** version 9.3.0
 
