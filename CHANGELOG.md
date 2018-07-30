@@ -2,12 +2,14 @@
 
 - Bug Fixes
   * Mule parse crashes on unknown classes (#218)
+  * Dead characters cleaned up from Custom lists (#222)
 
 - New Features
   * Upload Totals Export text to paste service (#214)
   * SetupTools Compression on localStorage (#217)
 
 - Improvements
+  * Character Sorting UI rewritten (#201)
   * Muledump Exporter in progress (#211)
   * Detect clock skew and account for it when timing daily login reset (#212)
   * Totals export width can be customized (#219)

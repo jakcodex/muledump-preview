@@ -412,7 +412,7 @@ a.setuptools.app.config.settings.action.eraseCache:hover {
 .smallMenuCells div:hover > a {
     color: #56a7ff !important;
     text-decoration: none !important;
-    transition-duration: 0.5s;
+    transition: 0.2s linear;
 }
 
 .smallMenuCells div:hover > a:hover {
@@ -1032,6 +1032,10 @@ div.AccountsList > div.controller.exportAccountsJS:hover,
     margin-bottom: 5px;
 }
 
+.mb0 {
+    margin-bottom: 0;
+}
+
 .mr5 {
     margin-right: 5px;
 }
@@ -1259,6 +1263,11 @@ img.hidden {
     box-shadow: 0 0 1px 4px #000;
 }
 
+.setuptools .featherlight-content {
+    border-bottom: 0;
+    padding: 25px;
+}
+
 .flex-container {
     display: flex;
 }
@@ -1331,7 +1340,8 @@ a.rateLimited:hover {
 }
 
 .mulequeue-topMenu,
-.totalsMenu {
+.totalsMenu,
+.smallMenuCells {
     background-color: #2c2c2c !important;
 }
 
@@ -1342,7 +1352,9 @@ a.rateLimited:hover {
 .mulequeue-topMenu a,
 .mulequeue-topMenu a:hover,
 .exporterMenu a,
-.exporterMenu a:hover {
+.exporterMenu a:hover,
+.smallMenuCells a,
+.smallMenuCells a:hover {
     color: #fff !important;
     text-decoration: none !important;
     font-weight: normal !important;
@@ -1651,7 +1663,8 @@ strong.info {
 }
 
 .mule.filteringEnabled,
-.itemSlotTypeSorting.enabled {
+.itemSlotTypeSorting.enabled,
+.charsort.enabled {
     border: #00eaff solid 1px !important;
 }
 
