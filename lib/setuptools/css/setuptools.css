@@ -955,6 +955,10 @@ div.AccountsList > div.controller.exportAccountsJS:hover,
     width: 800px;
 }
 
+.fl-Chsort .featherlight-content {
+    width: 904px;
+}
+
 .fl-BackupsManager .featherlight-content {
     min-width: 350px;
     max-width: 510px;
