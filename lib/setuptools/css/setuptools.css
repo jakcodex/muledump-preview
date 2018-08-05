@@ -1750,3 +1750,18 @@ div.systemsReport:nth-child(even) > div {
 div.systemsReport:nth-child(odd) > div {
     color: #90ccff;
 }
+
+div#charField {
+    height: 225px;
+    overflow-y: scroll;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+div#charField > div.cell {
+    cursor: pointer;
+    width: 200px;
+    flex-grow: 0;
+    margin: 5px;
+    padding: 4px 2px 2px 2px;
+}
