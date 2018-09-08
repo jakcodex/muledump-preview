@@ -1016,6 +1016,10 @@ div.AccountsList > div.controller.exportAccountsJS:hover,
     width: 600px;
 }
 
+.fl-Wardrobe .featherlight-content {
+    max-width: 570px;
+}
+
 .fl-MuleCryptAnimated.featherlight {
     background: rgba(0, 0, 0, 0.8) url('../../media/mulecrypt-background.svg') !important;
     transition: background-color 2s ease;
@@ -1132,9 +1136,18 @@ div.tooltip {
     height: 36px;
 }
 
+.ownedSkinsTooltip,
 .hiddenItemsTooltip,
 .itemSubsortingTooltip {
     z-index: 9999999999 !important;
+}
+
+.ownedSkinsTooltip {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ffffff !important;
+    margin-top: -5px;
 }
 
 div.tooltip > div:not(.ignore) {
@@ -1666,6 +1679,7 @@ strong.info {
     transition: 0.3s linear;
 }
 
+.ownedSkins img.enabled,
 .mule.filteringEnabled,
 .itemSlotTypeSorting.enabled,
 .charsort.enabled {
@@ -1764,4 +1778,12 @@ div#charField > div.cell {
     flex-grow: 0;
     margin: 5px;
     padding: 4px 2px 2px 2px;
+}
+
+.ownedSkins:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+img.ownedSkins:hover {
+    border: solid 1px #ffffff !important;
 }
