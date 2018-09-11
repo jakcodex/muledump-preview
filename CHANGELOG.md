@@ -1,4 +1,13 @@
-**2018-08-05??** version 9.4.0
+**2018-09-??** version 9.5.0
+
+- Bug Fixes
+  * UserConfiguration import not consistent across OS's (#235)
+
+- New Features
+  * White Bag Tracker (#168)
+  * Skin Wardrobe (#227)
+
+**2018-08-06** version 9.4.0
 
 - Bug Fixes
   * Mule parse crashes on unknown classes (#218)
@@ -24,7 +33,7 @@
 
 - Samurai class fully supported (#216)
 - Vault layouts updated for 120 vaults (#225)
-- Renders updated to X28.0.0
+- Renders updated to X28.0.0F
 
 **2018-06-29** version 9.3.1
 

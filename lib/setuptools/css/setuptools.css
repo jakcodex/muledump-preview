@@ -1020,6 +1020,10 @@ div.AccountsList > div.controller.exportAccountsJS:hover,
     max-width: 570px;
 }
 
+.fl-Whitebags .featherlight-content {
+    width: 564px;
+}
+
 .fl-MuleCryptAnimated.featherlight {
     background: rgba(0, 0, 0, 0.8) url('../../media/mulecrypt-background.svg') !important;
     transition: background-color 2s ease;
@@ -1136,6 +1140,7 @@ div.tooltip {
     height: 36px;
 }
 
+.whitebagTrackerTooltip,
 .ownedSkinsTooltip,
 .hiddenItemsTooltip,
 .itemSubsortingTooltip {
@@ -1784,6 +1789,18 @@ div#charField > div.cell {
     margin-bottom: 20px;
 }
 
+div.item.wb:hover:not(.selected),
 img.ownedSkins:hover {
     border: solid 1px #ffffff !important;
+}
+
+div.wbmenu {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+    padding: 0 50px;
+}
+
+div.wbmenu > div {
+    margin: 5px;
 }
