@@ -6,6 +6,8 @@
 - New Features
   * White Bag Tracker (#168)
   * Skin Wardrobe (#227)
+  * Added new Option for Shrinking Mules (#237)
+  * Added new Standard Filter for White Bag Items (#239)
 
 **2018-08-06** version 9.4.0
 

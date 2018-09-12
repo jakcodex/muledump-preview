@@ -86,7 +86,7 @@ body {
 
 .menu:not(.setuptools) label:hover,
 .menu:not(.setuptools) input:hover ~ label,
-#export div:hover,
+div#export div:hover,
 #top > div:hover, #top > a:hover {
     background: #253c63 !important;
     color: #fff;
@@ -95,12 +95,12 @@ body {
 .menu:not(.setuptools) div { overflow: hidden; }
 .menu:not(.setuptools) div>div>div { padding-left: 15px; }
 
-#export {
+div#export {
     width: auto;
     text-align: center;
     z-index: 2000;
 }
-#export div { padding: 0 5px; }
+div#export div { padding: 0 5px; }
 
 #totals, .mule, .guid, .reload, .item { display: inline-block; }
 
