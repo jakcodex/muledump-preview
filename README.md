@@ -27,7 +27,7 @@ See the [Requirements](REQUIREMENTS.md) page for more information.
 
 ## Release Information
 
-This is a preview release of Jakcodex/Muledump v9.4.
+This is a preview release of Jakcodex/Muledump v9.5.
 
 Muledump Online is available hosted on Github [here](https://jakcodex.github.io/muledump-preview/muledump.html).
 
@@ -54,19 +54,24 @@ All released versions are available for download [here](https://github.com/jakco
 - [SetupTools](docs/setuptools/index.md) - An easy to use, browser-based user interface for managing Muledump
 - [Groups Manager](docs/setuptools/groups-manager/manager.md) - Account grouping and ordering utility to customize the Muledump accounts list
 - [Muledump Online](https://jakcodex.github.io/muledump/muledump.html) - Load Muledump directly from Github using SetupTools
+- [One Click Login](https://github.com/jakcodex/muledump/wiki/One-Click-Login) - Login to your accounts via the browser or Flash Projector with one click
+- [Storage Compression](https://github.com/jakcodex/muledump/wiki/Storage-Compression) - Store more data in the browser than previously possible
+- [Muledump Totals](https://github.com/jakcodex/muledump/wiki/Totals) - Filtering on fame bonus, feed power, soulbound, tradeable, ut, and st, and specified accounts, and easy switching between pre-defined totals configs
+- [Skin Wardrobe](docs/features/skinwardrobe.md) - View all skins owned by your accounts
+- [White Bag Tracker](docs/features/whitebags.ms) - Track your white bag collection the way you want to
 - MuleQueue - Task queuing to control the flow of requests from Muledump
-- Vault display is now fully customizable and comes with four pre-defined layouts
+- Vault display is fully customizable and comes with four pre-defined layouts
 - Full character skin and dye support in portraits
-- Totals filtering on fame bonus, feed power, soulbound, ut, and st, and specified accounts
-- Character Sorting by fame, exp, total fame, class, active time, maxed stats, and custom lists
-- Character Lists allow you to create custom Muledump account layouts showing only characters you specify 
-- Exporting works with the following modes: text, csv, json, image, imgur
+- Character sorting by fame, exp, total fame, class, active time, maxed stats, and custom lists
+- Custom character lists allow you to create custom Muledump account layouts showing only characters you specify
+- Exporting works with the following modes: text, csv, json, image, imgur, paste
 - Fully compliant with Deca rate limiting
 
 ## Not so obvious features
 
 - click on item to filter accounts that hold it
 - click on account name for individual options menu
+- shift+click an account to filter totals display
 - ctrl-click account name to temporarily hide it from totals
 - ctrl-click on an item to open its Realmeye menu
 - ctrl-click on two items to open the Realmeye Trading menu
@@ -74,8 +79,13 @@ All released versions are available for download [here](https://github.com/jakco
 - account settings include automatic reload, login-only (daily calendar only), and cache disable
 - right click anywhere on a mule to access the mule menu
 - active mulequeue can be resumed if muledump is closed
+- See a full list of available actions at the [Keyboard and Mouse Controls](https://github.com/jakcodex/muledump/wiki/Keyboard-and-Mouse-Controls) wiki
 
 ## Check out the [Frequently Asked Questions](https://github.com/jakcodex/muledump/wiki/Frequently-Asked-Questions) and explore the [wiki](https://github.com/jakcodex/muledump/wiki) for more information!
+
+[Steam Users Setup Guide](https://github.com/jakcodex/muledump/wiki/Steam-Users-Setup-Guide)
+
+[Kongregate Users Setup Guide](https://github.com/jakcodex/muledump/wiki/Kongregate-Users-Setup-Guide)
 
 <a id="jakcodex-supportandcontributions"></a>
 ## Support and Contributions
@@ -94,13 +104,17 @@ Feel free to submit pull requests or patches if you have any Muledump changes yo
 
 Muledump versions are described as x.y.p where x is the major version, y is the minor version, and p is the patch version.
 
-All incrementes of x or y are published as an official Muledump Local release. Subsequent patches after release will not be published as a new release.
+All version increments are published as an official Muledump Local release.
 
 Muledump Online always runs the latest version of Muledump with all patches.
 
 ## Special Thanks
 
-Muledump Renders and Constants are maintained by [tuvior](https://github.com/tuvior).
+Muledump Renders are maintained by [tuvior](https://github.com/tuvior).
+
+This project uses open source libraries from many projects. See our dependencies to check them out.
+
+This project uses textures and animated graphics courtesey of [Loading.io](https://www.loading.io).
 
 ## FYI
 

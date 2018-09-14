@@ -1797,10 +1797,10 @@ img.ownedSkins:hover {
 div.wbmenu {
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin-bottom: 16px;
-    padding: 0 50px;
+    margin-bottom: 10px;
 }
 
-div.wbmenu > div {
-    margin: 5px;
+div.wbmenu:last-child {
+    margin-bottom: 16px;
 }
+
