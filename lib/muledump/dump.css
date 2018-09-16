@@ -241,10 +241,18 @@ hr {
     width: 40px;
     height: 40px;
     margin: 2px;
-    background: url(../renders.png) #545454;
     overflow: hidden;
     z-index: 100;
     cursor: pointer;
+}
+
+.item:not(.silhouette) {
+    background: url(../renders.png) #545454;
+}
+
+.item.silhouette {
+    background: url(../media/itemsilhouettes.png) #545454;
+    opacity: 0.6;
 }
 
 .item.selected {

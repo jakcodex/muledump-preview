@@ -101,8 +101,18 @@ input.setuptools.app.wideinput {
     color: #ffffff;
 }
 
+.featherlight-inner select:focus {
+    border: #22b7da solid 2px !important;
+}
+
+.featherlight-inner select:hover {
+    border: #5f9eb1 solid 2px;
+    transition: 0.1s linear;
+}
+
 .featherlight-inner select,
 .featherlight-inner input {
+    transition: 0.1s linear;
     font-size: 12px;
     width: 200px;
     border: #707070 solid 2px;

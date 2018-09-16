@@ -2,12 +2,19 @@
 
 - Bug Fixes
   * UserConfiguration import not consistent across OS's (#235)
+  * Exporter when Totals disabled producing error (#238)
 
 - New Features
   * White Bag Tracker (#168)
   * Skin Wardrobe (#227)
   * Added new Option for Shrinking Mules (#237)
   * Added new Standard Filter for White Bag Items (#239)
+
+- Improvements
+  * Mac OS key bindings added (#240)
+  * Empty equipment slots now show item silhouette (#241)
+
+- Settings Manager reorganized
 
 **2018-08-06** version 9.4.0
 
