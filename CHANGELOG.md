@@ -7,14 +7,18 @@
 - New Features
   * White Bag Tracker (#168)
   * Skin Wardrobe (#227)
+  * Automatic disable/delete of invalid/banned accounts (#230)
   * Added new Option for Shrinking Mules (#237)
   * Added new Standard Filter for White Bag Items (#239)
 
 - Improvements
   * Mac OS key bindings added (#240)
-  * Empty equipment slots now show item silhouette (#241)
+  * Empty equipment slots now optionally show item silhouette (#241)
 
 - Settings Manager reorganized
+- Wawawa's Progress Tracker updated to 0.8.4
+- html2canvas updated to 1.0.0-alpha.12
+- Masonry updated to 4.2.2
 
 **2018-08-06** version 9.4.0
 

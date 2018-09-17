@@ -810,7 +810,7 @@ div.massSwitch > div.link {
     width: 200px;
     padding: 3px;
     color: #00ceff;
-    background-color: #12182b;
+    background-color: #132236;
     border: #000 solid 2px;
     margin-right: 5px;
     transition: 0.3s linear;
@@ -847,7 +847,7 @@ div.AccountsList > div.controller.exportAccountsJS:hover,
 
 .menuStyle.negative {
     color: #f6a084;
-    background-color: #2b1215;
+    background-color: #321417;
 }
 
 .menuStyle.negative:hover {
@@ -892,7 +892,7 @@ div.AccountsList > div.controller.exportAccountsJS:hover,
 
 .menuStyle.notice {
     color: #c78bff;
-    background-color: #231525;
+    background-color: #2c1d2e;
 }
 
 .menuStyle.notice:hover {
@@ -1801,7 +1801,9 @@ div#charField > div.cell {
 
 div.item.wb:hover:not(.selected),
 img.ownedSkins:hover {
-    border: solid 1px #ffffff !important;
+    outline: solid 2px #ffffff !important;
+    outline-offset: -1px;
+    transition: 0.1s linear;
 }
 
 div.wbmenu {
