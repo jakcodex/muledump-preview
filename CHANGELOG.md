@@ -8,6 +8,7 @@
   * White Bag Tracker (#168)
   * Skin Wardrobe (#227)
   * Automatic disable/delete of invalid/banned accounts (#230)
+  * Muledump CORS Adapter for Firefox (#232)
   * Added new Option for Shrinking Mules (#237)
   * Added new Standard Filter for White Bag Items (#239)
 

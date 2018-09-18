@@ -1163,6 +1163,7 @@ div.tooltip {
     align-items: center;
     border: 2px solid #ffffff !important;
     margin-top: -5px;
+    margin-left: -1px;
 }
 
 div.tooltip > div:not(.ignore) {
