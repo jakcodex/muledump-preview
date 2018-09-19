@@ -1,12 +1,14 @@
 # Settings Manager
 
-[Muledump Settings](#ms)
+[Muledump](#ms)
 
-[SetupTools Settings](#sts)
+[SetupTools](#sts)
+
+[Advanced](#advs)
 
 [Assistants](#as)
 
-[System Settings](#ss)
+[System](#ss)
 
 ### <a href="#" id="ms"></a>Muledump Settings
 
@@ -22,14 +24,14 @@ Display error messages when encountered.
 #### ```Enable One Click Login```
 Whether or not to enable the support of muledump:// links.
 
+#### ```Equipment Silhouettes```
+Whether or not to display equipment silhouettes in empty slots.
+
 #### ```Export Default Mode```
 What export mode to utilize if you click the Export button without selecting a format.
 
 #### ```Gift Chests Width```
 Numbers of gift chests to display per row.
-
-#### ```Mule Menu```
-Whether or not to display the Mule Menu icon on mules.
 
 #### ```Page Search```
 Format to display page search: Full width, shortened, or off.
@@ -39,9 +41,6 @@ Number of items to display per row in totals. Whole screen automatically adjusts
 
 #### ```Totals Export Width```
 Number of items to display per row in totals when exporting an image.
-
-#### ```Use Smart Layout```
-Whether or not to use Masonry to generate the page layout.
 
 ### <a href="#" id="sts"></a>SetupTools Settings
 
@@ -60,22 +59,13 @@ Whether or not to display a notice on a new version or patch release.
 
 Muledump Online only
 
-#### ```Animations```
-Whether or not to display all animations, reduced animations, or minimal animations.
-
-#### ```Auto Complete for Password Managers```
-When disabled this prevents passwords managers from interfering with username and password fields.
-
 Warning: This setting might get ignored by your browser making the setting useless.
-
-#### ```Automatic Backups```
-Automatically create daily backups of your configuration stored in browser local storage.
 
 #### ```Automatically Reload Account Data```
 Whether or not accounts set to Automatic Reload will execute the action.
 
-#### ```Debug Logging```
-Whether or not to output the debug logs to the browser console.
+#### ```Bad Accounts Reaction```
+How to handle bad accounts (invalid credentials, banned).
 
 #### ```Groups Manager Mode```
 Which mode Groups Manager is running in. Possible modes are:
@@ -96,6 +86,26 @@ Example: [a, b, c] + [d, e, f] + [g, h, i] = [a, b, c, d, e, f, g, h, i]
 #### ```Hide Muledump Version Text```
 Hides the `Jakcodex / Muledump v1.2.3` text in the Muledump header.
 
+#### ```Maximum Backups in Local Storage```
+SetupTools stores backups in your browser's local storage. This utilizes disk space on your computer. This feature limits the maximum number of exposed backups to keep before auto-deleting the oldest.
+
+#### ```Menu Position```
+Position of the Muledump menu.
+
+### <a href="#" id="advs"></a>Advanced Settings
+
+#### ```Animations```
+Whether or not to display all animations, reduced animations, or minimal animations.
+
+#### ```Auto Complete for Password Managers```
+When disabled this prevents passwords managers from interfering with username and password fields.
+
+#### ```Automatic Backups```
+Automatically create daily backups of your configuration stored in browser local storage.
+
+#### ```Debug Logging```
+Whether or not to output the debug logs to the browser console.
+
 #### ```Lazily Save Minor Config Changes```
 Length of time between lazySave requests (to reduce storage write volume on auto saving features).
 
@@ -105,11 +115,8 @@ Length of time that a long left click takes to activate.
 #### ```Low Storage Space Check```
 Whether or not to warn you if browser storage space is running out.
 
-#### ```Maximum Backups in Local Storage```
-SetupTools stores backups in your browser's local storage. This utilizes disk space on your computer. This feature limits the maximum number of exposed backups to keep before auto-deleting the oldest.
-
-#### ```Menu Position```
-Position of the Muledump menu.
+#### ```Mule Menu```
+Whether or not to display the Mule Menu icon on mules.
 
 #### ```Prevent Auto Download```
 When downloading data from SetupTools, this feature prevents you from accidentally downloading a backup of sensitive account information to your Downloads folder.
@@ -119,6 +126,9 @@ Whether or not to use SetupTools Compression to reduce size of data stored in br
 
 #### ```Time Synchronize```
 Whether or not to check if your computer clock's time is correct.
+
+#### ```Use Smart Layout```
+Whether or not to use Masonry to generate the page layout.
 
 ### <a href="#" id="as"></a>Assistants Settings
 

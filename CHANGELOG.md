@@ -3,6 +3,7 @@
 - Bug Fixes
   * UserConfiguration import not consistent across OS's (#235)
   * Exporter when Totals disabled producing error (#238)
+  * Account options changes not updating totals (#245)
 
 - New Features
   * White Bag Tracker (#168)
