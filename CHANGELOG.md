@@ -6,6 +6,7 @@
   * Account options changes not updating totals (#245)
 
 - New Features
+  * Character portraits show clothing and accessory texture info (#144)
   * White Bag Tracker (#168)
   * Skin Wardrobe (#227)
   * Automatic disable/delete of invalid/banned accounts (#230)

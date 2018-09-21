@@ -6,6 +6,12 @@ In the Totals mode, the White Bag Tracker shows your owned white bags and a quan
 
 In the Owned mode, the White Bag Tracker shows your owned skins without the quantity.
 
+#### Notice
+
+Importing white bag counts should be done with Custom Character Sorting Lists turned off unless you want to import the white bag data from just those characters.
+
+## UI Usage
+
 [Actions](#act)
 
 [Exporter](#exp)

@@ -250,9 +250,16 @@ hr {
     background: url(../renders.png) #545454;
 }
 
+.item.transbackground {
+    background: url(../renders.png);
+}
+
 .item.silhouette {
     background: url(../media/itemsilhouettes.png) #545454;
-    opacity: 0.6;
+}
+
+.item.silhouette25p {
+    background: url(../media/itemsilhouettes_25p.png) #545454;
 }
 
 .item.selected {
