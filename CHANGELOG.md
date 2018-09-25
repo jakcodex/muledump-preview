@@ -22,6 +22,7 @@
 - Wawawa's Progress Tracker updated to 0.8.4
 - html2canvas updated to 1.0.0-alpha.12
 - Masonry updated to 4.2.2
+- Renders updated to X29.0.1
 
 **2018-08-06** version 9.4.0
 
@@ -49,7 +50,7 @@
 
 - Samurai class fully supported (#216)
 - Vault layouts updated for 120 vaults (#225)
-- Renders updated to X28.0.0F
+- Renders updated to X28.0.0
 
 **2018-06-29** version 9.3.1
 

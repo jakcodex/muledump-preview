@@ -1051,20 +1051,24 @@ div.AccountsList > div.controller.exportAccountsJS:hover,
 
 /* other */
 
+.m0 {
+    margin: 0 !important;
+}
+
 .ml5 {
-    margin-left: 5px;
+    margin-left: 5px !important;
 }
 
 .mb5 {
-    margin-bottom: 5px;
+    margin-bottom: 5px !important;
 }
 
 .mb0 {
-    margin-bottom: 0;
+    margin-bottom: 0 !important;
 }
 
 .mr5 {
-    margin-right: 5px;
+    margin-right: 5px !important;
 }
 
 .mr0 {
@@ -1072,19 +1076,19 @@ div.AccountsList > div.controller.exportAccountsJS:hover,
 }
 
 .mt10 {
-    margin-top: 10px;
+    margin-top: 10px !important;
 }
 
 .mt5 {
-    margin-top: 5px;
+    margin-top: 5px !important;
 }
 
 .mt15 {
-    margin-top: 15px;
+    margin-top: 15px !important;
 }
 
 .ol1 {
-    margin-left: -1px;
+    margin-left: -1px !important;
 }
 
 .w100 {
@@ -1178,6 +1182,11 @@ div.tooltip {
     border: 2px solid #ffffff !important;
     margin-top: -5px;
     margin-left: -1px;
+}
+
+div.ownedSkinsTooltip > div {
+    padding: 5px 10px;
+    color: #fff;
 }
 
 div.tooltip > div:not(.ignore) {
@@ -1392,8 +1401,18 @@ a.rateLimited:hover {
     background-color: #2c2c2c !important;
 }
 
-.exporterMenu {
+div.exporterMenu {
     text-align: center;
+}
+
+div.exporterMenu > div:nth-child(1),
+div.exporterMenu > div:nth-child(2) {
+    padding: 0 15px 0 0;
+}
+
+textarea.setuptools.text.exporter {
+    height: 400px;
+    margin: 15px 0 0 0;
 }
 
 .mulequeue-topMenu a,
@@ -1670,7 +1689,7 @@ strong.info {
 }
 
 .realmeyeBorder {
-    background-color: #00b0fc;
+    background-color: #00b0fc !important;
 }
 
 #itemSubsortingBox {
@@ -1815,6 +1834,27 @@ div#charField > div.cell {
     margin-bottom: 20px;
 }
 
+div.ownedSkins {
+    background-color: #222;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+div.ownedSkins > div:nth-child(1) {
+    justify-content: space-between;
+    padding: 5px;
+    border: 2px solid #000000;
+    background-color: #333;
+}
+
+div.ownedSkins > div:nth-child(1) > div {
+    font-size: 14px;
+}
+
+div.ownedSkins > div:nth-child(1) > div:nth-child(2) {
+    font-weight: bold;
+}
+
 div.item.cloth.selector:hover:not(.enabled),
 div.item.wb:hover:not(.selected),
 img.ownedSkins:hover {
@@ -1833,3 +1873,36 @@ div.wbmenu:last-child {
     margin-bottom: 16px;
 }
 
+div.wbmenu > div:nth-child(1) {
+    width: 45%;
+    justify-content: flex-end;
+}
+
+div.wbmenu > div:nth-child(2) {
+    width: 45%;
+    justify-content: flex-start;
+}
+
+div.wbmenu > div:nth-child(1) > select,
+div.wbmenu > div:nth-child(2) > div {
+    width: 50%;
+    height: 26px;
+}
+
+div.wbimportoptions {
+    justify-content: space-between;
+    margin: 25px 0 0 0;
+    flex-flow: column;
+}
+
+div.wbimportoptions > div {
+    justify-content: space-between;
+}
+
+.bg222 {
+    background-color: #222;
+}
+
+.bg333 {
+    background-color: #333;
+}
