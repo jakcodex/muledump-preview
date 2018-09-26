@@ -1,4 +1,4 @@
-**2018-09-??** version 9.5.0
+**2018-09-26** version 9.5.0
 
 - Bug Fixes
   * UserConfiguration import not consistent across OS's (#235)

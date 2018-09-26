@@ -1789,8 +1789,9 @@ strong.info {
 }
 
 #drawhelpBox h3 {
-    color: #90ccff;
+    color: #74c8ff;
     background-color: #333;
+    padding: 2px 5px;
 }
 
 #drawhelpBox h4 {

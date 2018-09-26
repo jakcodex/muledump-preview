@@ -295,6 +295,11 @@ URL to the remote Paste REST API endpoint.
 
 Default request parameters added to all RealmAPI requests.
 
+#### setuptools.config.realmApiTimeout
+`[default: number|10000]`
+
+Request timeout in milliseconds for all RealmAPI AJAX calls.
+
 #### setuptools.config.realmeyeUrl
 `[default: string|https://www.realmeye.com]`
 

@@ -63,7 +63,7 @@ A modified version of the Totals Export, it supports the same output formats.
 
 ### Totals Mode
 
-1. Shift+Click on an item not marked as owned or with a quantity of 0 to add or remove it from the owned list.
+1. Shift+Click on an unowned item or item of zero quantity to add or remove it from the owned list.
 1. Click on an item to increase its value by 1. Automatically adds new items to owned list.
 1. Ctrl+Click on an item to decrease its value by 1.
 
