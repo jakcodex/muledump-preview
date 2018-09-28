@@ -1,3 +1,11 @@
+**2018-0?-??** version 9.6.0
+
+- New Features
+  * Backup and restore of account data cache (#205)
+
+- FileSaver.js 1.3.8 added
+- JSZip 3.1.5 added
+
 **2018-09-26** version 9.5.0
 
 - Bug Fixes
