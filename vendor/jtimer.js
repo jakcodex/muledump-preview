@@ -501,3 +501,5 @@ class JTimerUATiming {
     }
 
 }
+
+let = ntimer = JTimer()

@@ -138,7 +138,7 @@ userConfiguration.muledump.totals.configSets = {
 //          "slotOrder": [],  //  see lib/slotmap.js for a list of item groups and their virtualSlotType; skipping this setting uses default sorting order
 //          "itemFilter": [],  //  item ids in a comma-separated list
 //          "slotSubOrder": {},  //  honestly don't bother attempting this one for now; if you want to the format is {"vst1": [itemid, itemid, itemid], "vst2": [itemid, itemid, itemid]} for each vst you wish to suborder.
-//          "sortingMode": "fb"  //  possibilities are: standard, alphabetical, fb, fp
+//          "sortingMode": "fb"  //  possibilities are: standard, alphabetical, fb, fp, items
 //        }
 //    }
 };

@@ -1,8 +1,17 @@
-**2018-0?-??** version 9.6.0
+**201?-??-??** version 9.6.0
+
+- Bug Fixes
+  * Rate limiter doesn't reset MuleQueue state properly (#258)
 
 - New Features
-  * Backup and restore of account data cache (#205)
+  * Backup Archive - Zip backups with all configuration and account data cache (#205)
+  * Added new Sorting Mode: Item Count (#259)
 
+- Improvements
+  * Added settings to toggle individual tooltips display (#249)
+  * Rate limiting can be manually reset (#254)
+
+- Timestamps added to console logging
 - FileSaver.js 1.3.8 added
 - JSZip 3.1.5 added
 
