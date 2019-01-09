@@ -3,7 +3,8 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
 	<meta name="description" content="A complete management system for all your ROTMG mules">
-	<title>Muledump</title>
+	<meta name="robots" content="noindex">
+	<title>Muledump Preview</title>
 	<script type="application/javascript" src="vendor/jtimer.js"></script>
 	<script type="application/javascript" src="lib/muledump/timing.js"></script>
 	<link type="text/css" rel="stylesheet" href="lib/muledump/dump.css">
@@ -41,6 +42,7 @@
 	<script type="application/javascript" src="lib/setuptools/src/init.js"></script>
 	<script type="application/javascript" src="lib/setuptools/src/lightbox.js"></script>
 	<script type="application/javascript" src="lib/setuptools/src/muledump.js"></script>
+	<script type="application/javascript" src="lib/setuptools/src/vaultbuilder.js"></script>
 	<script type="application/javascript" src="lib/setuptools/src/totals.js"></script>
 	<script type="application/javascript" src="lib/setuptools/src/chsort.js"></script>
 	<script type="application/javascript" src="lib/setuptools/src/storage.js"></script>
@@ -63,8 +65,10 @@
 			</div>
 			<div id="top" class="flex-container noFlexAutoWidth" style="justify-content: flex-end; flex-flow: row nowrap;">
 				<div id="notice" style="display: none;">Notice</div>
+				<div id="vaultbuilderButton" title="Vault Builder"><div class="vaultbuilder button">&nbsp;</div></div>
+				<div id="pagesearchButton"><div class="pagesearch button account">&nbsp;</div></div>
 				<div id="pagesearch" class="searchName full">
-					<input type="text" name="searchName" placeholder="Email or Username">
+					<input type="text" name="searchName" placeholder="Page Search">
 				</div>
 				<div id="totalsMenu">Totals</div>
 				<div class="handle options"><span>Options</span></div>

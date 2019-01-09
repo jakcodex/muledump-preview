@@ -1,4 +1,4 @@
-**201?-??-??** version 9.6.0
+**2019-??-??** version 9.6.0
 
 - Bug Fixes
   * Rate limiter doesn't reset MuleQueue state properly (#258)
@@ -8,6 +8,7 @@
   * Added new Sorting Mode: Item Count (#259)
 
 - Improvements
+  * Vault Builder enables managing custom vault layouts in SetupTools (#31)
   * Added settings to toggle individual tooltips display (#249)
   * Rate limiting can be manually reset (#254)
 

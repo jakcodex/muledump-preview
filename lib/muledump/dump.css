@@ -164,7 +164,7 @@ div#export div { padding: 0 5px; }
     overflow: hidden;
 }
 
-.button {
+.button:not(.pagesearch):not(.vaultbuilder) {
     display: inline-block;
     float: right;
     width: 18px;
@@ -225,7 +225,7 @@ hr {
 .stat.bad.very { color: #ff0000; }
 .stat.small { font-size: 11px; }
 
-.items {
+.items:not(.pagesearch):not(.vaultbuilder) {
     line-height: 0;
 }
 

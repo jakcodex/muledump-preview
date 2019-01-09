@@ -418,6 +418,7 @@ a.setuptools.app.config.settings.action.eraseCache:hover {
     background-color: #383838 !important;
 }
 
+
 .smallMenuCells div:hover,
 .smallMenuCells div:hover > a {
     color: #56a7ff !important;
@@ -450,7 +451,7 @@ a.setuptools.app.config.settings.action.eraseCache:hover {
     background-color: #253c63;
 }
 
-.setuptools.div.menu div.input {
+.setuptools.div.menu:not(.simpleForm) div.input {
     padding: 7px;
 }
 
@@ -458,14 +459,14 @@ a.setuptools.app.config.settings.action.eraseCache:hover {
     color: rgb(49, 164, 214);
 }
 
-.setuptools.div.menu div.input > div {
+.setuptools.div.menu:not(.simpleForm) div.input > div {
     width: 100%;
     padding: 0;
     margin: 0;
     overflow: hidden;
 }
 
-.setuptools.div.menu div.select > select {
+.setuptools.div.menu:not(.simpleForm) div.select > select {
     font-size: 12px;
     width: 100%;
     border: #707070 solid 2px;
@@ -475,7 +476,7 @@ a.setuptools.app.config.settings.action.eraseCache:hover {
     outline: none;
 }
 
-.setuptools.div.menu div.input > div > div:first-child {
+.setuptools.div.menu:not(.simpleForm) div.input > div > div:first-child {
     width: auto;
     height: auto;
     margin: 0;
@@ -484,13 +485,13 @@ a.setuptools.app.config.settings.action.eraseCache:hover {
     clear: left;
 }
 
-.setuptools.div.menu div.input > div > div:first-child > input {
+.setuptools.div.menu:not(.simpleForm) div.input > div > div:first-child > input {
     width: 140px !important;
     height: 21px;
     margin: 0;
 }
 
-.setuptools.div.menu div.input > div > div:last-child {
+.setuptools.div.menu:not(.simpleForm) div.input > div:not(.flex-container) > div:last-child {
     width: 31px;
     margin: 3px 0 0 0 !important;
     text-align: center;
@@ -834,6 +835,14 @@ div.AccountsList > div.controller.exportAccountsJS:hover,
     background-color: #142346 !important;
 }
 
+.menuStyle.bright {
+    background-color: #143247;
+}
+
+.menuStyle.bright:hover {
+    background-color: #163f56 !important;
+}
+
 .menuStyle.neutral {
     color: #f6dfb8;
     background-color: #2b2829;
@@ -1049,6 +1058,10 @@ div.AccountsList > div.controller.exportAccountsJS:hover,
     max-width: 80%;
 }
 
+.fl-VaultBuilder .featherlight-content {
+    max-width: 90%;
+}
+
 /* other */
 
 .m0 {
@@ -1069,6 +1082,10 @@ div.AccountsList > div.controller.exportAccountsJS:hover,
 
 .mr5 {
     margin-right: 5px !important;
+}
+
+.mr10 {
+    margin-right: 10px !important;
 }
 
 .mr0 {
@@ -1397,8 +1414,12 @@ a.rateLimited:hover {
 
 .mulequeue-topMenu,
 .totalsMenu,
-.smallMenuCells {
+.smallMenuCells:not(.bright) {
     background-color: #2c2c2c !important;
+}
+
+.smallMenuCells.bright {
+    background-color: #3f3f3f !important;
 }
 
 div.exporterMenu {
@@ -1680,6 +1701,24 @@ img.spinner {
     z-index: 5002;
 }
 
+div.pagesearch.account.button {
+    background: url(../../media/character-change-right-18x18.png);
+    width: 18px;
+    height: 18px;
+}
+
+div.pagesearch.items.button {
+    background: url(../../media/vault-18x16.png);
+    width: 18px;
+    height: 16px;
+}
+
+div.vaultbuilder.button {
+    background: url(../../media/vaultportal-16x18.png);
+    width: 16px;
+    height: 18px;
+}
+
 strong.negative {
     color: #da281e;
 }
@@ -1906,4 +1945,90 @@ div.wbimportoptions > div {
 
 .bg333 {
     background-color: #333;
+}
+
+#vaultbuilder > div.manager > div {
+    width: 46px;
+    height: 46px;
+    margin: 5px;
+    padding: 2px 4px;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    cursor: pointer;
+    transition: 0.15s linear;
+}
+
+#vaultbuilder > div.manager > div:hover {
+    box-shadow: 0 0 6px #000000 inset;
+}
+
+#vaultbuilder > div.manager > div > span {
+    width: 42px;
+    height: 14px;
+}
+
+#vaultbuilder > div.manager > div > span > input {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+}
+
+#vaultbuilder > div.manager > div.blank {
+    background-color: #444;
+}
+
+#vaultbuilder > div.manager > div.blank:hover {
+    background-color: #555;
+}
+
+#vaultbuilder > div.manager > div.blank.drag.bright:hover {
+    background-color: #777;
+}
+
+#vaultbuilder > div.manager > div.opened {
+    background: url(../../media/chest-opened.png) #3a88a5;
+}
+
+#vaultbuilder > div.manager > div.opened:hover {
+    background-color: #8cc1cd;
+}
+
+#vaultbuilder > div.manager > div.opened.drag.bright:hover {
+    background-color: #a4dae6;
+}
+
+#vaultbuilder > div.manager > div.closed {
+    background: url(../../media/chest-closed.png) #666;
+}
+
+#vaultbuilder > div.manager > div.closed:hover {
+    background-color: #a58c36;
+}
+
+#vaultbuilder > div.manager > div.closed.drag.bright:hover {
+    background-color: #cdb43a;
+}
+
+.conflict {
+    border: 2px red dashed !important;
+}
+
+div.simpleForm > div.input > div {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+div.simpleForm input {
+    background-color: transparent;
+    outline: 0;
+    border: solid 2px #707070;
+    padding: 4px;
+    color: #ffffff;
 }
