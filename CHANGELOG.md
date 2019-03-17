@@ -4,13 +4,14 @@
   * Rate limiter doesn't reset MuleQueue state properly (#258)
 
 - New Features
-  * Backup Archive - Zip backups with all configuration and account data cache (#205)
+  * Backup Archive - Create and restore backups with all configuration and account data cache (#205)
   * Added new Sorting Mode: Item Count (#259)
 
 - Improvements
   * Vault Builder enables managing custom vault layouts in SetupTools (#31)
   * Added settings to toggle individual tooltips display (#249)
   * Rate limiting can be manually reset (#254)
+  * Abbreviate long numbers in totals (#265)
 
 - Timestamps added to console logging
 - FileSaver.js 1.3.8 added

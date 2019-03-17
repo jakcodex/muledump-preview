@@ -122,6 +122,15 @@ input.setuptools.app.wideinput {
     outline: none;
 }
 
+.featherlight-inner select:focus {
+    outline: none !important;
+}
+
+select,
+select:focus {
+    outline: none !important
+}
+
 .setuptools textarea, textarea.setuptools {
     background-color: #000;
     color: #fff;
@@ -162,6 +171,16 @@ div.setuptools.app.uploadData {
 .setuptools.div.menu::-webkit-scrollbar-thumb
 {
     background: rgb(59, 134, 180);
+}
+
+.notice.scrollbar::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background: rgb(96, 57, 86);
+}
+
+.notice.scrollbar::-webkit-scrollbar-thumb
+{
+    background: rgb(180, 117, 164);
 }
 
 .setuptools.app.config.settings:not(a) {
@@ -419,14 +438,14 @@ a.setuptools.app.config.settings.action.eraseCache:hover {
 }
 
 
-.smallMenuCells div:hover,
-.smallMenuCells div:hover > a {
+.smallMenuCells:not(.simpleForm) div:not(.menuStyle):hover,
+.smallMenuCells:not(.simpleForm) div:not(.menuStyle):hover > a {
     color: #56a7ff !important;
     text-decoration: none !important;
     transition: 0.2s linear;
 }
 
-.smallMenuCells div:hover > a:hover {
+.smallMenuCells:not(.simpleForm) div:not(.menuStyle):hover > a:hover {
     text-decoration: none !important;
 }
 
@@ -804,6 +823,7 @@ div.massSwitch > div.link {
     color: #00ceff;
 }
 
+.menuStyle + label,
 .menuStyle {
     float: left;
     cursor: pointer;
@@ -835,15 +855,18 @@ div.AccountsList > div.controller.exportAccountsJS:hover,
     background-color: #142346 !important;
 }
 
-.menuStyle.bright {
+.menuStyle.bright,
+.menuStyle.bright + label {
     background-color: #143247;
 }
 
-.menuStyle.bright:hover {
+.menuStyle.bright:hover,
+.menuStyle.bright:hover + label {
     background-color: #163f56 !important;
 }
 
-.menuStyle.neutral {
+.menuStyle.neutral,
+.menuStyle.neutral + label {
     color: #f6dfb8;
     background-color: #2b2829;
     cursor: initial !important;
@@ -854,7 +877,8 @@ div.AccountsList > div.controller.exportAccountsJS:hover,
     cursor: initial !important;
 }
 
-.menuStyle.negative {
+.menuStyle.negative,
+.menuStyle.negative + label {
     color: #f6a084;
     background-color: #321417;
 }
@@ -863,7 +887,8 @@ div.AccountsList > div.controller.exportAccountsJS:hover,
     background-color: #3c0e19 !important;
 }
 
-.menuStyle.ack {
+.menuStyle.ack,
+.menuStyle.ack + label {
     opacity: 0.9;
     font-weight: normal;
     color: #95f8ff;
@@ -881,6 +906,15 @@ div.AccountsList > div.controller.exportAccountsJS:hover,
 
 .menuStyle.positive:hover {
     background-color: #103c29 !important;
+}
+
+.menuStyle.positive.bright {
+    color: #7df67f !important;
+    background-color: #163725 !important;
+}
+
+.menuStyle.positive.bright:hover {
+    background-color: #124b36 !important;
 }
 
 .menuStyle.disabled {
@@ -906,6 +940,15 @@ div.AccountsList > div.controller.exportAccountsJS:hover,
 
 .menuStyle.notice:hover {
     background-color: #302532 !important;
+}
+
+.menuStyle.notice.bright {
+     color: #c78bff;
+     background-color: #3a2b3c;
+ }
+
+.menuStyle.notice.bright:hover {
+    background-color: #48374a !important;
 }
 
 .menuSmall {
@@ -1076,6 +1119,10 @@ div.AccountsList > div.controller.exportAccountsJS:hover,
     margin-bottom: 5px !important;
 }
 
+.mb10 {
+    margin-bottom: 10px !important;
+}
+
 .mb0 {
     margin-bottom: 0 !important;
 }
@@ -1106,6 +1153,15 @@ div.AccountsList > div.controller.exportAccountsJS:hover,
 
 .ol1 {
     margin-left: -1px !important;
+}
+
+
+.w50 {
+    width: 50% !important;
+}
+
+.w75 {
+    width: 75% !important;
 }
 
 .w100 {
@@ -1166,14 +1222,11 @@ input[type="checkbox"] {
 }
 
 .dragbox div.selected,
-.selected:not(.item) {
+.selected:not(.item):not(.menuStyle) {
     background-color: #040f51 !important;
     color: #22b7da !important;
 }
 
-div.tooltip:not(.autoHeight) {
-    height: 36px;
-}
 
 div.tooltip {
     z-index: 500;
@@ -1246,9 +1299,7 @@ div.tooltip div.bagType {
     width: 26px;
     height: 26px;
     position: relative;
-    margin-left: 6px;
-    margin-right: 2px;
-    margin-top: 5px;
+    margin-right: 6px;
 }
 
 img.boost {
@@ -1385,6 +1436,16 @@ a.rateLimited {
 
 a.rateLimited:hover {
     color: #ff0000;
+}
+
+a.rateLimited.orange {
+    color: #ffbcb9;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+a.rateLimited.orange:hover {
+    color: #02faff;
 }
 
 .running {
@@ -1671,7 +1732,8 @@ img.spinner {
     background: url(../../media/top-rateLimited.svg);
 }
 
-.buttonStyle {
+.buttonStyle,
+.buttonStyle + label {
     border: #707070 solid 2px;
     text-align: center;
     vertical-align: middle;
@@ -2017,6 +2079,10 @@ div.wbimportoptions > div {
     border: 2px red dashed !important;
 }
 
+.simpleForm .selected {
+    border: 2px #BBBBBB dashed !important;
+}
+
 div.simpleForm > div.input > div {
     display: flex;
     width: 100%;
@@ -2032,3 +2098,27 @@ div.simpleForm input {
     padding: 4px;
     color: #ffffff;
 }
+
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+/*
+.inputfile + label {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: white;
+    background-color: black;
+    display: inline-block;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+    background-color: red;
+}
+*/
