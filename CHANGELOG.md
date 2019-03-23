@@ -2,16 +2,20 @@
 
 - Bug Fixes
   * Rate limiter doesn't reset MuleQueue state properly (#258)
+  * One-click Login not working for some browser users (#266)
 
 - New Features
   * Backup Archive - Create and restore backups with all configuration and account data cache (#205)
   * Added new Sorting Mode: Item Count (#259)
+  * Added new Option for showing Class Stats (best level/fame) (#269)
+  * One Click Login v2 - Runtime configuration (#270)
 
 - Improvements
   * Vault Builder enables managing custom vault layouts in SetupTools (#31)
   * Added settings to toggle individual tooltips display (#249)
   * Rate limiting can be manually reset (#254)
   * Abbreviate long numbers in totals (#265)
+  * Renders Update Notifier includes version dates (#267)
 
 - Timestamps added to console logging
 - FileSaver.js 1.3.8 added

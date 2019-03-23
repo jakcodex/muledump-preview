@@ -183,6 +183,10 @@ div.setuptools.app.uploadData {
     background: rgb(180, 117, 164);
 }
 
+.overflowyScroll {
+    overflow-y: scroll;
+}
+
 .setuptools.app.config.settings:not(a) {
     clear: both;
     float: left;
@@ -296,8 +300,18 @@ a.setuptools.app.config.settings.action.eraseCache:hover {
     color: #bb0b00 !important;
 }
 
-.featherlight-content strong, .featherlight-content code {
+.featherlight-content strong,
+.featherlight-content code,
+.featherlight-content span.strong {
     color: #22b7da;
+}
+
+.featherlight-content span.strong {
+    font-weight: normal;
+}
+
+.featherlight-content strong.help {
+    cursor: pointer;
 }
 
 .setuptools.app.backups.options {
@@ -819,8 +833,12 @@ div.massSwitch > div.link {
 
 /* button types */
 
-.menuStyleHover:hover {
+.menuStyleHover:not(.nohover):hover {
     color: #00ceff;
+}
+
+.menuStyle.nohover {
+    cursor: initial !important;
 }
 
 .menuStyle + label,
@@ -851,7 +869,7 @@ div.massSwitch > div.link {
 div.AccountsList > div.controller.saveAccounts:not(.saveNotice):hover,
 div.AccountsList > div.controller.importAccountsJS:hover,
 div.AccountsList > div.controller.exportAccountsJS:hover,
-.menuStyle:hover {
+.menuStyle:not(.nohover):hover {
     background-color: #142346 !important;
 }
 
@@ -860,8 +878,8 @@ div.AccountsList > div.controller.exportAccountsJS:hover,
     background-color: #143247;
 }
 
-.menuStyle.bright:hover,
-.menuStyle.bright:hover + label {
+.menuStyle.bright:not(.nohover):hover,
+.menuStyle.bright:not(.nohover):hover + label {
     background-color: #163f56 !important;
 }
 
@@ -872,7 +890,7 @@ div.AccountsList > div.controller.exportAccountsJS:hover,
     cursor: initial !important;
 }
 
-.menuStyle.neutral:hover {
+.menuStyle.neutral:not(.nohover):hover {
     background-color: #2b2829 !important;
     cursor: initial !important;
 }
@@ -883,7 +901,7 @@ div.AccountsList > div.controller.exportAccountsJS:hover,
     background-color: #321417;
 }
 
-.menuStyle.negative:hover {
+.menuStyle.negative:not(.nohover):hover {
     background-color: #3c0e19 !important;
 }
 
@@ -895,7 +913,7 @@ div.AccountsList > div.controller.exportAccountsJS:hover,
     background-color: #25394b;
 }
 
-.menuStyle.ack:hover {
+.menuStyle.ack:not(.nohover):hover {
     background-color: #1d535f !important;
 }
 
@@ -904,7 +922,7 @@ div.AccountsList > div.controller.exportAccountsJS:hover,
     background-color: #132b1c;
 }
 
-.menuStyle.positive:hover {
+.menuStyle.positive:not(.nohover):hover {
     background-color: #103c29 !important;
 }
 
@@ -913,7 +931,7 @@ div.AccountsList > div.controller.exportAccountsJS:hover,
     background-color: #163725 !important;
 }
 
-.menuStyle.positive.bright:hover {
+.menuStyle.positive.bright:not(.nohover):hover {
     background-color: #124b36 !important;
 }
 
@@ -922,12 +940,12 @@ div.AccountsList > div.controller.exportAccountsJS:hover,
     background-color: #37393d !important;
 }
 
-.menuStyle.disabled:hover {
+.menuStyle.disabled:not(.nohover):hover {
     color: #5b6876 !important;
     background-color: #3a434d !important;
 }
 
-.menuStyle.disabled.truly:hover {
+.menuStyle.disabled.truly:not(.nohover):hover {
     color: #65676a !important;
     background-color: #37393d !important;
     cursor: initial !important;
@@ -938,7 +956,7 @@ div.AccountsList > div.controller.exportAccountsJS:hover,
     background-color: #2c1d2e;
 }
 
-.menuStyle.notice:hover {
+.menuStyle.notice:not(.nohover):hover {
     background-color: #302532 !important;
 }
 
@@ -947,7 +965,7 @@ div.AccountsList > div.controller.exportAccountsJS:hover,
      background-color: #3a2b3c;
  }
 
-.menuStyle.notice.bright:hover {
+.menuStyle.notice.bright:not(.nohover):hover {
     background-color: #48374a !important;
 }
 
@@ -1068,6 +1086,10 @@ div.AccountsList > div.controller.exportAccountsJS:hover,
 
 .fl-Settings .featherlight-content {
     width: 497px;
+}
+
+.fl-SettingsLarge .featherlight-content {
+    width: 800px;
 }
 
 .fl-SettingsSmall .featherlight-content {
@@ -1285,8 +1307,12 @@ span.tooltip.feed {
     color: #fc8642;
 }
 
-span.tooltip.generic.text {
+span.generic.text {
     color: #b3b3b3;
+}
+
+span.generic.text.dark {
+    color: #9b9b9b;
 }
 
 span.tooltip.famebonus.value {
@@ -2122,3 +2148,112 @@ div.simpleForm input {
     background-color: red;
 }
 */
+
+div.ocl.manager {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+div.ocl.manager input {
+    padding-left: 7px;
+}
+
+div.ocl.manager select,
+div.ocl.manager input {
+    width: 100%;
+    display: flex;
+    flex-shrink: 1;
+}
+
+div.ocl.manager > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+div.ocl.manager > div:first-child {
+    width: 60%;
+}
+
+div.ocl.manager > div:last-child {
+    width: 40%;
+}
+
+div.ocl.configuration > div {
+    justify-content: flex-start;
+    display: flex;
+    width: 100%;
+}
+
+div.ocl.configuration > div:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+div.ocl.configuration > div > div {
+    display: flex;
+    align-items: center;
+}
+
+div.ocl.configuration > div > div:first-child {
+    width: 40%;
+}
+
+div.ocl.configuration > div > div:last-child {
+    justify-content: center;
+    width: 60%;
+}
+
+div.ocl.profiles {
+    margin-left: 20px;
+    border: #00b0fc solid 2px;
+    flex-wrap: wrap;
+    max-height: 250px;
+}
+
+div.ocl.profiles > div:not(:first-child) {
+    cursor: pointer;
+}
+
+div.ocl.profiles > div:first-child {
+    background-color: #1f2a34;
+    font-size: 14px;
+}
+
+div.ocl.profiles > div.link {
+    background-color: #28333b;
+    transition: 0.2s linear;
+}
+
+div.ocl.profiles > div.link:hover {
+    background-color: #2b3441;
+}
+
+div.ocl.profiles > div {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    transition: 0.2s linear;
+}
+
+div.ocl.profiles > div:not(:first-child):not(.link):nth-child(even) {
+    background-color: #333333;
+}
+
+div.ocl.profiles > div:not(:first-child):not(.link):nth-child(even):hover {
+    background-color: #393939;
+}
+
+div.ocl.profiles > div:not(:first-child):not(.link):nth-child(odd) {
+    background-color: #222222;
+}
+
+div.ocl.profiles > div:not(:first-child):not(.link):nth-child(odd):hover {
+    background-color: #292929;
+}
+
+

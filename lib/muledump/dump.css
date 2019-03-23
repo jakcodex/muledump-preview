@@ -668,3 +668,20 @@ div.wbstage > div.header:not(:first-child) {
     outline: 2px solid #8de2e8;
     outline-offset: -1px;
 }
+
+div.classstats div.cell > div {
+    color: #ffffff;
+}
+
+div.classstats div.cell:first-child {
+    background-color: #153a50;
+}
+
+div.classstats div.cell:last-child {
+    background-color: #162a41;
+}
+
+div.classstats > div.class {
+    background-image: linear-gradient(#153a50, #163249, #162a41) !important;
+}
+
