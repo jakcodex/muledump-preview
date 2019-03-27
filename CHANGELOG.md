@@ -16,6 +16,8 @@
   * Rate limiting can be manually reset (#254)
   * Abbreviate long numbers in totals (#265)
   * Renders Update Notifier includes version dates (#267)
+  * Added new Dev Tool: Config Viewer (#271) 
+  * Added new Dev Tool: Console Viewer (#272)
 
 - Timestamps added to console logging
 - FileSaver.js 1.3.8 added

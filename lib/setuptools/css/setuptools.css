@@ -49,7 +49,6 @@ input[name="checkAll"] {
 
 .setuptools .featherlight-content {
     min-width: 20%;
-    max-width: 50%;
 }
 
 .setuptools-small .featherlight-content {
@@ -902,7 +901,17 @@ div.AccountsList > div.controller.exportAccountsJS:hover,
 }
 
 .menuStyle.negative:not(.nohover):hover {
-    background-color: #3c0e19 !important;
+    background-color: #410e19 !important;
+}
+
+.menuStyle.negative.bright,
+.menuStyle.negative.bright + label {
+    color: #f6a084;
+    background-color: #4b181b;
+}
+
+.menuStyle.negative.bright:not(.nohover):hover {
+    background-color: #5a101e !important;
 }
 
 .menuStyle.ack,
@@ -1127,10 +1136,22 @@ div.AccountsList > div.controller.exportAccountsJS:hover,
     max-width: 90%;
 }
 
+.fl-ConsoleViewer .featherlight-content {
+    width: 60%;
+}
+
 /* other */
 
 .m0 {
     margin: 0 !important;
+}
+
+.m5 {
+    margin: 5px !important;
+}
+
+.ml0 {
+    margin-left: 0px !important;
 }
 
 .ml5 {
@@ -2256,4 +2277,12 @@ div.ocl.profiles > div:not(:first-child):not(.link):nth-child(odd):hover {
     background-color: #292929;
 }
 
+div.muledump.configviewer:nth-child(even),
+div.muledump.consoleviewer:nth-child(even){
+    background-color: #444444;
+}
 
+div.muledump.configviewer:nth-child(odd),
+div.muledump.consoleviewer:nth-child(odd){
+    background-color: #333333;
+}

@@ -12,6 +12,12 @@ Global $config = ObjCreate("Scripting.Dictionary")
 ;;  run in admin mode
 $config.Add("admin", "false");
 
+;;  enable runtime parameter support
+$config.Add("params", "true")
+
+;;  enable setting admin permissions via runtime params
+$config.Add("adminparams", "false")
+
 ;;  select mode (accepts: browser, flash)
 $config.Add("mode", "browser");
 
@@ -27,11 +33,11 @@ $config.Add("client", "https://www.realmofthemadgod.com/client");
 ;;  output debugging information
 $config.Add("debug", "false")
 
+;;  enforce parameter security
+$config.Add("paramsecurity", "true")
+
 ;;  search paths
 $config.Add("paths", "localhost,www.realmofthemadgod.com,test.realmofthemadgod.com,#localWithNet")
-
-;;  enable runtime parameter support
-$config.Add("params", "true")
 
 #include <String.au3>
 #include <File.au3>
@@ -42,10 +48,9 @@ $root = "HKEY_CLASSES_ROOT\muledump"
 $title = "Muledump One Click Login Installer"
 $adminRightsError = "Error - Requires Admin Privileges" & @CRLF & @CRLF & "Either edit mulelogin.au3 in a text editor and set 'admin' to true in the config or update your request parameters" & @CRLF & @CRLF & "For more help see:" & @CRLF & "https://github.com/jakcodex/muledump/wiki/One-Click-Login"
 
-Func _GetAdminRight($sCmdLineRaw = "")
+Func _GetAdminRights()
     If Not IsAdmin() and $config.Item("admin") == "true" Then
-        If Not $sCmdLineRaw Then $sCmdLineRaw = $CmdLineRaw
-        ShellExecute(@AutoItExe, $sCmdLineRaw, "", "runas")
+        ShellExecute(@AutoItExe, $CmdLineRaw, "", "runas")
         ProcessClose(@AutoItPID)
         Exit
     EndIf
@@ -73,7 +78,7 @@ EndFunc
 
 Func _install()
     $config.Item('admin') = 'true';
-    _GetAdminRight()
+    _GetAdminRights()
 	Local $k
 	$k = RegEnumKey($root, 1)
 	If @error == 2 Then
@@ -168,11 +173,15 @@ If UBound($data) == 4 and $config.Item("params") == "true" Then
             If IsArray($paramPieces) Then
                 If $config.Exists($paramPieces[1]) Then
 
+                    If $paramPieces[1] == "paramsecurity" Then ContinueLoop
+
                     ;;  supplied path must be one of the already configured paths
-                    If $paramPieces[1] == "paths" Then
+                    If $config.Item("paramsecurity") == "true" and $paramPieces[1] == "paths" Then
                         Local $result = StringInStr($config.Item("paths"), $paramPieces[2])
                         If @error or $result == 0 Then _error("Invalid paths provided")
                     EndIf
+
+                    If $config.Item("paramsecurity") == "true" and $paramPieces[1] == "admin" and $config.Item("adminparams") == "false" Then ContinueLoop
 
                     $config.Item($paramPieces[1]) = $paramPieces[2]
                     $config.Item($paramPieces[1]) = StringReplace($config.Item($paramPieces[1]), "%5C", "\")
@@ -186,7 +195,7 @@ If UBound($data) == 4 and $config.Item("params") == "true" Then
 EndIf
 
 ;;  obtain admin privileges if enabled
-_GetAdminRight()
+_GetAdminRights()
 
 ;;  display debugging information
 If $config.Item("debug") == "true" Then
@@ -232,7 +241,7 @@ FileClose($search)
 
 If $config.Item("mode") == "browser" Then
 
-    If $config.Item("params") == "true" Then
+    If $config.Item("params") == "true" and $config.Item("paramsecurity") == "true" Then
         Local $result = StringRegExp($config.Item("path"), "^https://(realmofthemadgodhrd\.appspot.com|(([a-z]*)\.(realmofthemadgod\.com)))(\/?|\/.*)$");
         If @error or $result == 0 Then _error("Invalid path provided: " & $config.Item("path"))
     EndIf
@@ -241,7 +250,7 @@ If $config.Item("mode") == "browser" Then
 
 ElseIf $config.Item("mode") == "flash" Then
 
-    If $config.Item("params") == "true" Then
+    If $config.Item("params") == "true" and $config.Item("paramsecurity") == "true" Then
         Local $result
         $result = StringRegExp($config.Item("path"), "^[a-zA-Z]:\\.*?flashplayer_.*?\.exe$");
         If @error or $result == 0 Then _error("Invalid path provided: " & $config.Item("path"))
