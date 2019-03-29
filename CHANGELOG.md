@@ -8,7 +8,7 @@
   * Backup Archive - Create and restore backups with all configuration and account data cache (#205)
   * Added new Sorting Mode: Item Count (#259)
   * Added new Option for showing Class Stats (best level/fame) (#269)
-  * One Click Login v2 - Runtime configuration (#270)
+  * One Click Login v2 - Profiles, per-account settings, T1 support (#270)
 
 - Improvements
   * Vault Builder enables managing custom vault layouts in SetupTools (#31)
