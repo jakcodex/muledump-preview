@@ -1138,6 +1138,7 @@ div.AccountsList > div.controller.exportAccountsJS:hover,
 
 .fl-ConsoleViewer .featherlight-content {
     width: 60%;
+    min-width: 900px;
 }
 
 /* other */

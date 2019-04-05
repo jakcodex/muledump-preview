@@ -87,7 +87,7 @@ Func _install()
 	EndIf
 	If @error == 1 Then _write()
 	$k = MsgBox(6 + 32, $title, _
-		'One Click Login is already installed. What would you like to do?' & @CRLF & @CRLF & _
+		'One Click Login is already installed.' & @CRLF & @CRLF & 'What would you like to do?' & @CRLF & @CRLF & _
 		'"Cancel" to do nothing' & @CRLF & _
 		'"Try Again" to reinstall' & @CRLF & _
 		'"Continue" to uninstall')

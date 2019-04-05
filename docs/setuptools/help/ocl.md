@@ -50,7 +50,7 @@ When enabled, Windows UAC will prompt for authorization every time you click an 
 
 Optional; restricts OCL to updating RotMG.sol files for only specific hostnames.
 
-## Profiles
+## Note About Testing Server
 
- 
+If you set a profile that utilizes `www.realmofthemadgod.com` to a testing account, it will automatically switch to `test.realmofthemadgod.com` without needing to create a new, testing-specific OCL profile.  
  

@@ -843,7 +843,7 @@ Adds the provided html to the page being built. Build data is stored in an array
 
 Processes and removes all special build data for the specified page (settitle, goback, etc), builds the HTML response data, and sends it to setuptools.lightbox.create().
 
-#### setuptools.lightbox.ajax(object e, object drawhelpData, object self [, boolean net=false])
+#### setuptools.lightbox.drawHelp(object e, object drawhelpData, object self [, boolean net=false])
 
 This method is intended to be bound to a link to the Github Pages hostname. It is primarily bound thru the drawhelp button, but it can be used on custom links as well.
  
@@ -857,7 +857,7 @@ setuptools.lightbox.build('myspace-method', ' \
 ');
 setuptools.lightbox.settitle('myspace-method', 'My Method Title');
 setuptools.lightbox.display('myspace-method');
-$('.setuptools.link.somehelpdoc').click(function(e) { setuptools.lightbox.ajax(e, {title: 'My help title'}, this); });
+$('.setuptools.link.somehelpdoc').click(function(e) { setuptools.lightbox.drawHelp(e, {title: 'My help title'}, this); });
 ```
 
 This creates a lightbox with a link in its message. When the link is clicked the Ajax response data is processed for links and displayed in a lightbox. The class noclose prevents SetupTools from erasing the previous page so when the user closes the help doc they are returned to the original page. 

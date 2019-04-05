@@ -401,7 +401,7 @@ table.chars {
     background-color: #222;
     border-radius: 6px;
     float: left;
-    padding: 1px 1px 1px 4px;
+    padding: 1px 4px 1px 4px;
     font-weight: normal;
     font-size: 14px;
     margin: 2px;
@@ -409,7 +409,7 @@ table.chars {
 .scont .star {
     font-size: 1.2em;
     line-height: 0;
-    margin: 0 0.1em 0 0.2em;
+    margin: 0 0 0 0.2em;
 }
 
 .warn {

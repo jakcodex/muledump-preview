@@ -13,6 +13,7 @@
 - Improvements
   * Vault Builder enables managing custom vault layouts in SetupTools (#31)
   * Added settings to toggle individual tooltips display (#249)
+  * Chain help popup link clicks in ui (#251)
   * Rate limiting can be manually reset (#254)
   * Abbreviate long numbers in totals (#265)
   * Renders Update Notifier includes version dates (#267)
