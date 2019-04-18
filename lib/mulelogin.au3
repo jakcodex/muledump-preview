@@ -1,6 +1,6 @@
 ;;
 ;; One Click Login v2
-;; + Parameters rule the world!
+;; + Runtime parameter support
 ;; + https://github.com/jakcodex/muledump/wiki/One+Click+Login for more information
 ;;
 ;; If configuring via Muledump then you don't need to change anything in this file.
@@ -242,8 +242,8 @@ FileClose($search)
 If $config.Item("mode") == "browser" Then
 
     If $config.Item("params") == "true" and $config.Item("paramsecurity") == "true" Then
-        Local $result = StringRegExp($config.Item("path"), "^https://(realmofthemadgodhrd\.appspot.com|(([a-z]*)\.(realmofthemadgod\.com)))(\/?|\/.*)$");
-        If @error or $result == 0 Then _error("Invalid path provided: " & $config.Item("path"))
+        Local $result = StringRegExp($config.Item("path"), "^https://(realmofthemadgodhrd\.appspot.com|(([a-zA-Z0-9]*)\.(realmofthemadgod\.com)))(\/?|\/[a-zA-Z0-9-_]*?)$");
+        If @error or $result == 0 Then _error("Invalid path provided: " & $config.Item("path") & @CRLF & @CRLF & "If the value is correct then try disabling param security in the au3 file config.")
     EndIf
 
     ShellExecute($config.Item("path"))
@@ -252,11 +252,11 @@ ElseIf $config.Item("mode") == "flash" Then
 
     If $config.Item("params") == "true" and $config.Item("paramsecurity") == "true" Then
         Local $result
-        $result = StringRegExp($config.Item("path"), "^[a-zA-Z]:\\.*?flashplayer_.*?\.exe$");
-        If @error or $result == 0 Then _error("Invalid path provided: " & $config.Item("path"))
+        $result = StringRegExp($config.Item("path"), "^[a-zA-Z]:\\[a-zA-Z0-9-_\\]*?flashplayer_[a-zA-Z0-9-_\.]*?\.exe$");
+        If @error or $result == 0 Then _error("Invalid path provided: " & $config.Item("path") & @CRLF & @CRLF & "If the value is correct then try disabling param security in the au3 file config.")
 
-        $result = StringRegExp($config.Item("client"), "^(https://([a-z]*)\.(realmofthemadgod\.com)(\/?|\/.*)|[a-zA-Z]:\\.*?AssembleeGameClient[0-9]*\.swf)$");
-        If @error or $result == 0 Then _error("Invalid client provided: " & $config.Item("client"))
+        $result = StringRegExp($config.Item("client"), "^(https://([a-zA-Z0-9]*)\.(realmofthemadgod\.com)(\/?|\/.*)|[a-zA-Z]:\\.*?AssembleeGameClient[0-9]*\.swf)$");
+        If @error or $result == 0 Then _error("Invalid client provided: " & $config.Item("client") & @CRLF & @CRLF & "If the value is correct then try disabling param security in the au3 file config.")
     EndIf
 
     ShellExecute($config.Item("path"), $config.Item("client"))

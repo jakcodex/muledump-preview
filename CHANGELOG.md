@@ -3,6 +3,7 @@
 - Bug Fixes
   * Rate limiter doesn't reset MuleQueue state properly (#258)
   * One-click Login not working for some browser users (#266)
+  * Skin wardrobe broken due to Golden Archer skin exception (#273)
 
 - New Features
   * Backup Archive - Create and restore backups with all configuration and account data cache (#205)

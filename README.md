@@ -1,15 +1,10 @@
 Google, why you do this?? The main repository is: [https://github.com/jakcodex/muledump](https://github.com/jakcodex/muledump)
 
-![Jakcodex/Muledump](https://img.shields.io/badge/jakcodex-muledump-blue.svg?style=flat-square)
-[![Muledump Local](https://img.shields.io/badge/dynamic/json.svg?label=local&colorB=4286f4&prefix=v&suffix=&query=$.version&uri=https%3A%2F%2Fraw.githubusercontent.com%2Fjakcodex%2Fmuledump%2Fmaster%2Fpackage.json)](https://github.com/jakcodex/muledump/releases/)
-[![Muledump Online](https://img.shields.io/badge/dynamic/json.svg?label=online&colorB=9e43f9&prefix=v&suffix=&query=$.version&uri=https%3A%2F%2Fjakcodex.github.io%2Fmuledump%2Fpackage.json)](https://jakcodex.github.io/muledump/muledump.html)
-[![Muledump Preview](https://img.shields.io/badge/dynamic/json.svg?label=preview&colorB=5942f4&prefix=v&suffix=&query=$.version&uri=https%3A%2F%2Fraw.githubusercontent.com%2Fjakcodex%2Fmuledump-preview%2Fmaster%2Fpackage.json)](https://jakcodex.github.io/muledump-preview/muledump.html)
-
 ## Welcome
 
-This is a fork of Atomizer's [Muledump](https://github.com/atomizer) made to address the required changes since the most recent upstream release.
+This is a fork of Atomizer's [Muledump](https://github.com/atomizer).
 
-You can read about the reasoning for a new fork in the [upstream notes](UPSTREAM.md).
+You can read about the reason for creating this fork at the [upstream notes](UPSTREAM.md).
 
 ## Synopsis
 
@@ -58,6 +53,7 @@ All released versions are available for download [here](https://github.com/jakco
 - [Storage Compression](https://github.com/jakcodex/muledump/wiki/Storage-Compression) - Store more data in the browser than previously possible
 - [Muledump Totals](https://github.com/jakcodex/muledump/wiki/Totals) - Filtering on fame bonus, feed power, soulbound, tradeable, ut, and st, and specified accounts, and easy switching between pre-defined totals configs
 - [White Bag Tracker](docs/muledump/whitebags.md) - Track your white bag collection the way you want to
+- Archive Backups - Backup and restore Muledump with account data to prevent having to reload unnecessarily
 - Skin Wardrobe - View all skins owned by your accounts
 - MuleQueue - Task queuing to control the flow of requests from Muledump
 - Vault display is fully customizable and comes with four pre-defined layouts
@@ -78,7 +74,7 @@ All released versions are available for download [here](https://github.com/jakco
 - logins thru muledump count towards daily login calendar
 - account settings include automatic reload, login-only (daily calendar only), and cache disable
 - right click anywhere on a mule to access the mule menu
-- active mulequeue can be resumed if muledump is closed
+- active mulequeue can be resumed if muledump is closed or reloaded
 - See a full list of available actions at the [Keyboard and Mouse Controls](https://github.com/jakcodex/muledump/wiki/Keyboard-and-Mouse-Controls) wiki
 
 ## Check out the [Frequently Asked Questions](https://github.com/jakcodex/muledump/wiki/Frequently-Asked-Questions) and explore the [wiki](https://github.com/jakcodex/muledump/wiki) for more information!
@@ -92,7 +88,7 @@ All released versions are available for download [here](https://github.com/jakco
 
 Jakcodex/Muledump operates its own Discord server - [https://discord.gg/JFS5fqW](https://discord.gg/JFS5fqW).
 
-Feel free to join and ask for help getting setup, hear about new updates, offer your suggestions and feedback, or just say hi.
+Feel free to join and ask for help getting setup, hear about new updates, offer your suggestions and feedback, or just say hi. We love to hear from the community!
 
 If you encounter a bug, have a feature request, or have any other feedback you can also check out the [issue tracker](https://github.com/jakcodex/muledump/issues) to see if it's already being discussed. If not then you can [submit a new issue](https://github.com/jakcodex/muledump/issues/new).
 
