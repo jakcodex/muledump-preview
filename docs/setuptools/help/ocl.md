@@ -40,6 +40,16 @@ The default profile is used when an OCL link is clicked and no other profile is 
 
 Only for use with Flash Projector mode. This is the path to the game SWF file (default: https://www.realmofthemadgod.com/client)
 
+### Custom Window Title
+
+*Flash Projector Only* - Set the game client window title to a custom value.
+
+Set to `false` to disable changing the default window title.
+
+### Include Account Name
+
+*Flash Projector Only* - Whether or not to include the account's guid or IGN in the link
+
 ### Use Admin Privileges
 
 OCL will request admin privileges before executing. If you're getting errors about needing admin privileges then enable this.

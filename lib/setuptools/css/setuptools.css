@@ -878,7 +878,8 @@ div.AccountsList > div.controller.exportAccountsJS:hover,
 }
 
 .menuStyle.bright:not(.nohover):hover,
-.menuStyle.bright:not(.nohover):hover + label {
+.menuStyle.bright:not(.nohover):hover + label,
+.menuStyle.selected.checkbox{
     background-color: #163f56 !important;
 }
 
@@ -1099,6 +1100,10 @@ div.AccountsList > div.controller.exportAccountsJS:hover,
 
 .fl-SettingsLarge .featherlight-content {
     width: 800px;
+}
+
+.fl-OclManager .featherlight-content {
+    width: 900px;
 }
 
 .fl-SettingsSmall .featherlight-content {
@@ -2220,12 +2225,12 @@ div.ocl.configuration > div > div {
 }
 
 div.ocl.configuration > div > div:first-child {
-    width: 40%;
+    width: 30%;
 }
 
 div.ocl.configuration > div > div:last-child {
     justify-content: center;
-    width: 60%;
+    width: 70%;
 }
 
 div.ocl.profiles {

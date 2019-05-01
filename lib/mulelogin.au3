@@ -39,6 +39,12 @@ $config.Add("paramsecurity", "true")
 ;;  search paths
 $config.Add("paths", "localhost,www.realmofthemadgod.com,test.realmofthemadgod.com,#localWithNet")
 
+;;  default window title
+$config.Add("title", "Muledump One Click Login")
+
+;;  account ign (included by request)
+$config.Add("ign", "");
+
 #include <String.au3>
 #include <File.au3>
 #include <Array.au3>
@@ -152,6 +158,50 @@ Func _build()
 	$string = StringRegExpReplace($string,"\?{8}",Hex(Int(StringLen(StringMid($string,15))/2)))
 EndFunc
 
+Func _ProcessGetHWnd($iPid, $iOption = 1, $sTitle = "", $iTimeout = 2000)
+    Local $aReturn[1][1] = [[0]], $aWin, $hTimer = TimerInit()
+
+    While 1
+
+        ; Get list of windows
+        $aWin = WinList($sTitle)
+
+        ; Searches thru all windows
+        For $i = 1 To $aWin[0][0]
+
+            ; Found a window owned by the given PID
+            If $iPid = WinGetProcess($aWin[$i][1]) Then
+
+                ; Option 0 or 1 used
+                If $iOption = 1 OR ($iOption = 0 And $aWin[$i][0] <> "") Then
+                    Return $aWin[$i][1]
+
+                ; Option 2 is used
+                ElseIf $iOption = 2 Then
+                    ReDim $aReturn[UBound($aReturn) + 1][2]
+                    $aReturn[0][0] += 1
+                    $aReturn[$aReturn[0][0]][0] = $aWin[$i][0]
+                    $aReturn[$aReturn[0][0]][1] = $aWin[$i][1]
+                EndIf
+            EndIf
+        Next
+
+        ; If option 2 is used and there was matches then the list is returned
+        If $iOption = 2 And $aReturn[0][0] > 0 Then Return $aReturn
+
+        ; If timed out then give up
+        If TimerDiff($hTimer) > $iTimeout Then ExitLoop
+
+        ; Waits before new attempt
+        Sleep(Opt("WinWaitDelay"))
+    WEnd
+
+
+    ; No matches
+    SetError(1)
+    Return 0
+EndFunc
+
 If $CmdLine[0] = 0 Then _install()
 
 ;;  process the command input
@@ -182,6 +232,7 @@ If UBound($data) == 4 and $config.Item("params") == "true" Then
                     EndIf
 
                     If $config.Item("paramsecurity") == "true" and $paramPieces[1] == "admin" and $config.Item("adminparams") == "false" Then ContinueLoop
+                    If $paramPieces[2] == "" Then ContinueLoop
 
                     $config.Item($paramPieces[1]) = $paramPieces[2]
                     $config.Item($paramPieces[1]) = StringReplace($config.Item($paramPieces[1]), "%5C", "\")
@@ -239,6 +290,7 @@ FileClose($search)
 ; launch one-click login
 ;;
 
+Global $pid = 0
 If $config.Item("mode") == "browser" Then
 
     If $config.Item("params") == "true" and $config.Item("paramsecurity") == "true" Then
@@ -259,7 +311,16 @@ ElseIf $config.Item("mode") == "flash" Then
         If @error or $result == 0 Then _error("Invalid client provided: " & $config.Item("client") & @CRLF & @CRLF & "If the value is correct then try disabling param security in the au3 file config.")
     EndIf
 
-    ShellExecute($config.Item("path"), $config.Item("client"))
+    $pid = Run($config.Item("path") & " " & $config.Item("client"))
+
+    If $pid > 0 And Not($config.Item("title") == "" Or $config.Item("title") == "false") Then
+        Local $name = $config.Item("title")
+        If Not($config.Item("ign") == "") Then
+            $name &= " - " & $config.Item("ign")
+        EndIf
+        Local $win = _ProcessGetHWnd($pid)
+        WinSetTitle($win, "", $name)
+    EndIf
 
 Else
 

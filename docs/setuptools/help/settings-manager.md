@@ -8,6 +8,8 @@
 
 [Assistants](#as)
 
+[Analytics](#al)
+
 [System](#ss)
 
 ## <a href="#" id="ms"></a>Muledump Settings
@@ -155,6 +157,20 @@ Whether or not to show the item information panel.
 
 ### ```XP Boosters Tooltip Assistant```
 Whether or not to show the XP Boosters information panel.
+
+## <a href="#" id="al"></a>Analytics Settings
+
+### ```Enable Analytics```
+Master on/off switch for Usage Analytics.
+
+### ```Activity Ping```
+Activity ping tells analytics Muledump is running.
+
+### ```Errors and Bugs```
+The types of errors and bugs encountered.
+
+### ```Options and Features```
+The options and features that are being used.
 
 ## <a href="#" id="ss"></a>System Settings
 

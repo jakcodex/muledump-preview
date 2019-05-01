@@ -20,6 +20,7 @@
   * Renders Update Notifier includes version dates (#267)
   * Added new Dev Tool: Config Viewer (#271) 
   * Added new Dev Tool: Console Viewer (#272)
+  * Usage Analytics enabled in Muledump Local (#276)
 
 - Timestamps added to console logging
 - FileSaver.js 1.3.8 added
