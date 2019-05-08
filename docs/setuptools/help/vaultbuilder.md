@@ -62,9 +62,9 @@ Display vaults in editor as opened or closed based on the vault ownership of a s
 
 Import or Export a backup of custom vault layouts.
 
-## Display Closed Vaults
+## Show Empty Vaults
 
-Shows closed vaults in the vault editor when enabled.
+Show empty vaults when displaying in Muledump.
 
 ## Width Compression
 

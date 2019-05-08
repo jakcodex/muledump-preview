@@ -2,8 +2,10 @@
 
 - Bug Fixes
   * Rate limiter doesn't reset MuleQueue state properly (#258)
-  * One-click Login not working for some browser users (#266)
-  * Skin wardrobe broken due to Golden Archer skin exception (#273)
+  * Ancestor Fame Achievement not working (#262) [tuvior]
+  * One-click Login not working for some browser users (#266) [tuvior]
+  * Skin wardrobe broken due to Golden Archer skin exception (#273) [tuvior]
+  * Unknown items missing from display (#277)
 
 - New Features
   * Backup Archive - Create and restore backups with all configuration and account data cache (#205)
@@ -22,9 +24,11 @@
   * Added new Dev Tool: Console Viewer (#272)
   * Usage Analytics enabled in Muledump Local (#276)
 
-- Timestamps added to console logging
+- Added Secluded Thicken and Cursed Library to dungeon portal list
+- Timestamps added to console logs
 - FileSaver.js 1.3.8 added
 - JSZip 3.1.5 added
+- JQuery updated to 3.4.1
 
 **2018-09-26** version 9.5.0
 
