@@ -1,10 +1,18 @@
-**2019-??-??** version 9.6.0
+**2019-05-19** version 9.6.1
 
 - Bug Fixes
-  * Rate limiter doesn't reset MuleQueue state properly (#258)
+  * Muledump Local failing to load for accounts.js users (#280)
+  * Settings from accounts.js not importing in bypass mode (#281)
+  * OCL not working for accounts.js users (#282)
+  * Usage Analytics not working for accounts.js users (#283)
+
+**2019-05-17** version 9.6.0
+
+- Bug Fixes
+  * Rate limiter does not reset MuleQueue state properly (#258)
   * Ancestor Fame Achievement not working (#262) [tuvior]
   * One-click Login not working for some browser users (#266) [tuvior]
-  * Skin wardrobe broken due to Golden Archer skin exception (#273) [tuvior]
+  * Skin wardrobe broken due to Golden Archer skin exception (#273)
   * Unknown items missing from display (#277)
 
 - New Features
@@ -24,11 +32,14 @@
   * Added new Dev Tool: Console Viewer (#272)
   * Usage Analytics enabled in Muledump Local (#276)
 
-- Added Secluded Thicken and Cursed Library to dungeon portal list
+- Added Secluded Thicket and Cursed Library to dungeon portal list
 - Timestamps added to console logs
-- FileSaver.js 1.3.8 added
-- JSZip 3.1.5 added
+- Clipboard.js updated to 2.0.4
+- Html2Canvas updated to 1.0.0-rc1
 - JQuery updated to 3.4.1
+- Libsodium.js updated to 0.7.4
+- FileSaver.js 2.0.2 added
+- JSZip 3.2.0 added
 
 **2018-09-26** version 9.5.0
 

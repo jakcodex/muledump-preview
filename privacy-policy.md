@@ -10,19 +10,15 @@ Absolutely no account data, email addresses, IP addresses, or any other personal
 Usage Analytics can be disabled in the Settings Manager in Muledump.
 
 #### Muledump CORS Adapter
+> *Starting with Chrome, extension version 1.1.0* 
+> *Starting with Firefox, extension version 2.1.0*
 
-##### Chrome 
-> *Starting with version 1.1.0* 
-
-The Chrome web store extension utilizes Google Analytics to collect basic usage information including: 
+The Chrome web store and Firefox Add-on extensions utilize Google Analytics to collect basic usage information including: 
 
 1. User interface pageviews and actions  
 1. The base URLs for requests whose response was modified (i.e. the api endpoint)
 
-Absolutely no personally identifying or private information is collected. You can opt-out in the Usage Analytics page of the extension menu.
-
-##### Firefox
-The Firefox addon does not collect any usage analytics or any other sort of data.
+Absolutely no personally identifying or private information is collected. You can opt-out in the extension options.
 
 ## About Usage Analytics in Jakcodex/Muledump
 
