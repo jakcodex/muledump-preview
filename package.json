@@ -1,25 +1,64 @@
 {
   "name": "Muledump Preview",
-  "version": "9.6.13",
+  "version": "10.0.0",
+  "author": {
+    "name": "Jakisaurus",
+    "email": "apps@jakcodex.io"
+  },
   "description": "A utility for managing all of your ROTMG mules.",
   "homepage": "https://jakcodex.github.io/muledump-preview/",
   "dependencies": {
-    "jquery": "^3.4.1",
     "clipboard": "^2.0.4",
-    "masonry-layout": "^4.2.2",
     "featherlight": "^1.7.8",
-    "html2canvas": "^1.0.0",
-    "libsodium-wrappers": "^0.7.4",
-    "seasalt": "^0.1.0",
-    "jtimer-tools": "^0.1.0",
-    "snappyjs": "^0.6.0",
     "file-saver": "^2.0.2",
-    "jszip": "^3.2.0"
+    "html2canvas": "^1.0.0-rc.3",
+    "jquery": "^3.4.1",
+    "jszip": "^3.2.0",
+    "libsodium-wrappers": "^0.7.4",
+    "masonry-layout": "^4.2.2",
+    "snappyjs": "^0.6.0"
   },
+  "devDependencies": {
+    "electron": "^6.0.1",
+    "electron-builder": "^21.2.0"
+  },
+  "bundledDependencies": [
+    "jquery",
+    "clipboard",
+    "masonry-layout",
+    "featherlight",
+    "html2canvas",
+    "libsodium-wrappers",
+    "seasalt",
+    "jtimer-tools",
+    "snappyjs",
+    "file-saver",
+    "jszip"
+  ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/jakcodex/muledump-preview"
+    "url": "https://github.com/jakcodex/muledump"
   },
-  "bugs": {"url": "https://github.com/jakcodex/muledump/issues"},
-  "license": "BSD-3-Clause"
+  "bugs": {
+    "url": "https://github.com/jakcodex/muledump/issues"
+  },
+  "license": "BSD-3-Clause",
+  "main": "app.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder",
+    "dist": "electron-builder -wl"
+  },
+  "build": {
+    "appId": "jakcodex.muledump.desktop",
+    "productName": "Jakcodex Muledump Desktop",
+    "win": {
+      "target": "portable"
+    },
+    "linux": {
+      "target": ["deb", "rpm"],
+      "category": "game"
+    }
+  },
+  "postinstall": "electron-builder install-app-deps"
 }

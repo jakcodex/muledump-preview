@@ -1,1 +1,7 @@
 /accounts.js
+/package-lock.json
+/.idea
+/jsdoc
+/lib/ext
+/unused
+/yarn
