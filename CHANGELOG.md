@@ -1,13 +1,7 @@
-**2019-??-??** version 10.0.0
-
-- Muledump App now available
-
-**2019-??-??** version 9.7.0
+**2019-08-18** version 9.6.4
 
 - Bug Fixes
-  * Archive Backups only backing up some account data (#287)
-  
-- Various changes to prepare for 10.0.0
+  * OCL parameters not being read in Firefox due to Firefox v68 changes
 
 **2019-08-11** version 9.6.3
 
